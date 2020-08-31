@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components/macro'
+import PropTypes from 'prop-types'
 
 export default function EntryList({ influencerData }) {
   return (
@@ -35,32 +36,34 @@ export default function EntryList({ influencerData }) {
 }
 
 const ContainerStyled = styled.section`
-  text-align: center;
+  width: 400px;
 `
 
 const Headline = styled.h1`
   font-family: 'Poppins';
   font-weight: 400;
+  text-align: center;
 `
 
 const Container = styled.section`
   background: #ffffff1a;
-  height: 400px;
+  height: 200px;
   width: 400px;
 `
 const Username = styled.h2`
-  padding: 250px 0 0 0;
   font-family: 'Poppins';
   font-weight: 600;
+  line-height: 100px;
+  text-align: center;
 `
 const Categories = styled.h3`
   font-family: 'Poppins';
   font-weight: 300;
+  text-align: center;
 `
 
 const DetailList = styled.ul`
   text-align: left;
-  padding: 48px 60px 300px 90px;
   list-style-type: none;
   font-family: 'Poppins';
   font-weight: 300;
@@ -68,3 +71,7 @@ const DetailList = styled.ul`
 const DetailItem = styled.li`
   margin: 10px 0;
 `
+
+EntryList.propTypes = {
+  influencerData: PropTypes.array,
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
 
-export default function EntryList({ influencerData }) {
+export default function InfluencerList({ influencerData }) {
   return (
     <ContainerStyled>
       <Headline>Search</Headline>
@@ -72,6 +72,6 @@ const DetailItem = styled.li`
   margin: 10px 0;
 `
 
-EntryList.propTypes = {
+InfluencerList.propTypes = {
   influencerData: PropTypes.array,
 }

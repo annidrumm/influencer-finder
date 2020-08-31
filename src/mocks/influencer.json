@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "username": "@fitness4life",
+    "categories": ["Fitness"],
+    "follower": "10k",
+    "gender": "female",
+    "age": "25 years",
+    "location": "Hamburg",
+    "languages": ["German, ", "English"]
+  },
+
+  {
+    "id": 2,
+    "username": "@VeganPlace",
+    "categories": ["Food", "Health"],
+    "follower": "1.000",
+    "gender": "female",
+    "age": "28 years",
+    "location": "Munich",
+    "languages": ["German, ", "English"]
+  },
+
+  {
+    "id": 3,
+    "username": "@fashionist",
+    "categories": ["Fashion"],
+    "follower": "46k",
+    "gender": "female",
+    "age": "24 years",
+    "location": "Munich",
+    "languages": ["German, ", "English"]
+  },
+
+  {
+    "id": 4,
+    "username": "@WorldTraveller",
+    "categories": ["Travel", "Food"],
+    "follower": "5.000",
+    "gender": "male",
+    "age": "32 years",
+    "location": "Cologne",
+    "languages": ["English"]
+  },
+
+  {
+    "id": 5,
+    "username": "@LipstickPalace",
+    "categories": ["Beauty"],
+    "follower": "10k",
+    "gender": "female",
+    "age": "26 years",
+    "location": "Munich",
+    "languages": ["German, ", "English"]
+  },
+
+  {
+    "id": 6,
+    "username": "@InteriorDesign",
+    "categories": ["Interior"],
+    "follower": "46k",
+    "gender": "male",
+    "age": "35 years",
+    "location": "Hamburg",
+    "languages": ["English"]
+  }
+]

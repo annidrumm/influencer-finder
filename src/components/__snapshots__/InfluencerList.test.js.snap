@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfluencerList renders correctly 1`] = `
+.c0 {
+  width: 400px;
+}
+
+.c1 {
+  background: #ffffff1a;
+  height: 200px;
+  width: 400px;
+}
+
+.c2 {
+  font-family: 'Poppins';
+  font-weight: 600;
+  line-height: 100px;
+  text-align: center;
+}
+
+.c3 {
+  font-family: 'Poppins';
+  font-weight: 300;
+  text-align: center;
+}
+
+.c4 {
+  text-align: left;
+  list-style-type: none;
+  font-family: 'Poppins';
+  font-weight: 300;
+}
+
+.c5 {
+  margin: 10px 0;
+}
+
+<section
+  className="c0"
+>
+  <section
+    className="posts"
+  >
+    <section>
+      <section
+        className="c1"
+      >
+        <h2
+          className="c2"
+        >
+          @fitness4life
+        </h2>
+        <h3
+          className="c3"
+        >
+          Fitness
+        </h3>
+      </section>
+      <ul
+        className="c4"
+      >
+        <li
+          className="c5"
+        >
+          Follower: 
+          10k
+        </li>
+        <li
+          className="c5"
+        >
+          Gener: 
+          female
+        </li>
+        <li
+          className="c5"
+        >
+          Age: 
+          25 years
+        </li>
+        <li
+          className="c5"
+        >
+          Location: 
+          Hamburg
+        </li>
+        <li
+          className="c5"
+        >
+          Languages: 
+          German, 
+           
+        </li>
+      </ul>
+    </section>
+  </section>
+</section>
+`;

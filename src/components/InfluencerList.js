@@ -5,7 +5,6 @@ import PropTypes from 'prop-types'
 export default function InfluencerList({ influencerData }) {
   return (
     <ContainerStyled>
-      <Headline>Search</Headline>
       <section className="posts">
         {influencerData.map((post) => {
           return (
@@ -37,12 +36,6 @@ export default function InfluencerList({ influencerData }) {
 
 const ContainerStyled = styled.section`
   width: 400px;
-`
-
-const Headline = styled.h1`
-  font-family: 'Poppins';
-  font-weight: 400;
-  text-align: center;
 `
 
 const Container = styled.section`

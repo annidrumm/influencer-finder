@@ -22,7 +22,7 @@ describe('InfluencerList', () => {
     const { findByText } = render(
       <InfluencerList influencerData={influencerData} />
     )
-    expect(findByText(influencerData.username)).toBeInTheDocument()
+    expect(findByText(influencerData[0].username)).toBeInTheDocument()
     // expect(findByText(influencerData.categories)).toBeInTheDocument()
     // expect(findByText(influencerData.follower)).toBeInTheDocument()
     // expect(findByText(influencerData.gender)).toBeInTheDocument()

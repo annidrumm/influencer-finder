@@ -3,7 +3,6 @@ import { render, findByText } from '@testing-library/react'
 import renderer from 'react-test-renderer'
 import InfluencerList from './InfluencerList.js'
 import 'jest-styled-components'
-import influencerData from '../mocks/influencer.json'
 
 describe('InfluencerList', () => {
   const influencerData = [
@@ -23,7 +22,7 @@ describe('InfluencerList', () => {
     const { findByText } = render(
       <InfluencerList influencerData={influencerData} />
     )
-    expect(findByText(influencerData.post)).toBeInTheDocument()
+    expect(findByText(influencerData.username)).toBeInTheDocument()
     // expect(findByText(influencerData.categories)).toBeInTheDocument()
     // expect(findByText(influencerData.follower)).toBeInTheDocument()
     // expect(findByText(influencerData.gender)).toBeInTheDocument()

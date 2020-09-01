@@ -39,7 +39,7 @@ exports[`InfluencerList renders correctly 1`] = `
   className="c0"
 >
   <section
-    className="posts"
+    className="profiles"
   >
     <section>
       <section

@@ -4,44 +4,40 @@ import PropTypes from 'prop-types'
 
 export default function InfluencerList({ influencerData }) {
   return (
-    <ContainerStyled>
-      <section className="posts">
-        {influencerData.map((post) => {
-          return (
-            <section key={post.id}>
-              <Container>
-                <Username>{post.username}</Username>
-                <Categories>{post.categories}</Categories>
-              </Container>
-              <DetailList>
-                <DetailItem key={post.username}>
-                  Follower: {post.follower}
-                </DetailItem>
-                <DetailItem key={post.gender}>Gener: {post.gender}</DetailItem>
-                <DetailItem key={post.age}>Age: {post.age}</DetailItem>
-                <DetailItem key={post.location}>
-                  Location: {post.location}
-                </DetailItem>
-                <DetailItem key={post.languages}>
-                  Languages: {post.languages}{' '}
-                </DetailItem>
-              </DetailList>
-            </section>
-          )
-        })}
-      </section>
-    </ContainerStyled>
+    <section className="profiles">
+      {influencerData.map((profile) => {
+        return (
+          <section key={profile.id}>
+            <Container>
+              <Username>{profile.username}</Username>
+              <Categories>{profile.categories}</Categories>
+            </Container>
+            <DetailList>
+              <DetailItem key={profile.username}>
+                Follower: {profile.follower}
+              </DetailItem>
+              <DetailItem key={profile.gender}>
+                Gener: {profile.gender}
+              </DetailItem>
+              <DetailItem key={profile.age}>Age: {profile.age}</DetailItem>
+              <DetailItem key={profile.location}>
+                Location: {profile.location}
+              </DetailItem>
+              <DetailItem key={profile.languages}>
+                Languages: {profile.languages}{' '}
+              </DetailItem>
+            </DetailList>
+          </section>
+        )
+      })}
+    </section>
   )
 }
-
-const ContainerStyled = styled.section`
-  width: 400px;
-`
 
 const Container = styled.section`
   background: #ffffff1a;
   height: 200px;
-  width: 400px;
+  width: 100%;
 `
 const Username = styled.h2`
   font-family: 'Poppins';
@@ -60,9 +56,12 @@ const DetailList = styled.ul`
   list-style-type: none;
   font-family: 'Poppins';
   font-weight: 300;
+  width: 100%;
 `
 const DetailItem = styled.li`
   margin: 10px 0;
+  position: relative;
+  left: 40px;
 `
 
 InfluencerList.propTypes = {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, findByText } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import renderer from 'react-test-renderer'
 import InfluencerList from './InfluencerList.js'
 import 'jest-styled-components'
@@ -9,28 +9,29 @@ describe('InfluencerList', () => {
     {
       id: 1,
       username: '@fitness4life',
-      categories: 'Fitness',
-      follower: '10k',
-      gender: 'female',
-      age: '25 years',
       location: 'Hamburg',
-      languages: 'German, ',
+      age: '25 years',
+    },
+    {
+      id: 2,
+      username: '@VeganPlace',
+      location: 'Munich',
+      age: '28 years',
     },
   ]
 
-  it('display the details about the influencer', () => {
-    const { findByText } = render(
+  it('display the username from a influencer', () => {
+    const { getByText } = render(
       <InfluencerList influencerData={influencerData} />
     )
-    expect(findByText(influencerData[0].username)).toBeInTheDocument()
-    // expect(findByText(influencerData.categories)).toBeInTheDocument()
-    // expect(findByText(influencerData.follower)).toBeInTheDocument()
-    // expect(findByText(influencerData.gender)).toBeInTheDocument()
-    // expect(findByText(influencerData.age)).toBeInTheDocument()
-    // expect(findByText(influencerData.location)).toBeInTheDocument()
-    // expect(findByText(influencerData.languages)).toBeInTheDocument()
+    influencerData.forEach(({ username, location, age }) => {
+      expect(getByText(username)).toBeInTheDocument()
+      expect(getByText(new RegExp(age, 'i'))).toBeInTheDocument()
+      expect(getByText(new RegExp(location, 'i'))).toBeInTheDocument()
+    })
   })
-  it('renders correctly', () => {
+
+  it('renders username correctly', () => {
     const tree = renderer.create(
       <InfluencerList influencerData={influencerData} />
     )

@@ -8,25 +8,27 @@ export default function InfluencerList({ influencerData }) {
       {influencerData.map((profile) => {
         return (
           <section key={profile.id}>
-            <Container>
-              <Username>{profile.username}</Username>
-              <Categories>{profile.categories}</Categories>
-            </Container>
-            <DetailList>
-              <DetailItem key={profile.username}>
+            <ContainerStyled>
+              <UsernameStyled>{profile.username}</UsernameStyled>
+              <CategoriesStyled>{profile.categories}</CategoriesStyled>
+            </ContainerStyled>
+            <DetailListStyled>
+              <DetailItemStyled key={profile.username}>
                 Follower: {profile.follower}
-              </DetailItem>
-              <DetailItem key={profile.gender}>
+              </DetailItemStyled>
+              <DetailItemStyled key={profile.gender}>
                 Gender: {profile.gender}
-              </DetailItem>
-              <DetailItem key={profile.age}>Age: {profile.age}</DetailItem>
-              <DetailItem key={profile.location}>
+              </DetailItemStyled>
+              <DetailItemStyled key={profile.age}>
+                Age: {profile.age}
+              </DetailItemStyled>
+              <DetailItemStyled key={profile.location}>
                 Location: {profile.location}
-              </DetailItem>
-              <DetailItem key={profile.languages}>
+              </DetailItemStyled>
+              <DetailItemStyled key={profile.languages}>
                 Languages: {profile.languages}{' '}
-              </DetailItem>
-            </DetailList>
+              </DetailItemStyled>
+            </DetailListStyled>
           </section>
         )
       })}
@@ -34,31 +36,31 @@ export default function InfluencerList({ influencerData }) {
   )
 }
 
-const Container = styled.section`
+const ContainerStyled = styled.section`
   background: #ffffff1a;
   height: 200px;
   width: 100%;
 `
-const Username = styled.h2`
+const UsernameStyled = styled.h2`
   font-family: 'Poppins';
   font-weight: 600;
   line-height: 100px;
   text-align: center;
 `
-const Categories = styled.h3`
+const CategoriesStyled = styled.h3`
   font-family: 'Poppins';
   font-weight: 300;
   text-align: center;
 `
 
-const DetailList = styled.ul`
+const DetailListStyled = styled.ul`
   text-align: left;
   list-style-type: none;
   font-family: 'Poppins';
   font-weight: 300;
   width: 100%;
 `
-const DetailItem = styled.li`
+const DetailItemStyled = styled.li`
   margin: 10px 0;
   position: relative;
   left: 40px;

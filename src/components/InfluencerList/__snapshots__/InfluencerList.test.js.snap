@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfluencerList renders username correctly 1`] = `
+.c0 {
+  background: #ffffff1a;
+  height: 200px;
+  width: 100%;
+}
+
+.c1 {
+  font-family: 'Poppins';
+  font-weight: 600;
+  line-height: 100px;
+  text-align: center;
+}
+
+.c2 {
+  font-family: 'Poppins';
+  font-weight: 300;
+  text-align: center;
+}
+
+.c3 {
+  text-align: left;
+  list-style-type: none;
+  font-family: 'Poppins';
+  font-weight: 300;
+  width: 100%;
+}
+
+.c4 {
+  margin: 10px 0;
+  position: relative;
+  left: 40px;
+}
+
+<section
+  className="profiles"
+>
+  <section>
+    <section
+      className="c0"
+    >
+      <h2
+        className="c1"
+      >
+        @fitness4life
+      </h2>
+      <h3
+        className="c2"
+      >
+        Fitness
+      </h3>
+    </section>
+    <ul
+      className="c3"
+    >
+      <li
+        className="c4"
+      >
+        Follower: 
+        10k
+      </li>
+      <li
+        className="c4"
+      >
+        Gender: 
+        female
+      </li>
+      <li
+        className="c4"
+      >
+        Age: 
+        25 years
+      </li>
+      <li
+        className="c4"
+      >
+        Location: 
+        Hamburg
+      </li>
+      <li
+        className="c4"
+      >
+        Languages: 
+        German, 
+        English
+         
+      </li>
+    </ul>
+  </section>
+  <section>
+    <section
+      className="c0"
+    >
+      <h2
+        className="c1"
+      >
+        @VeganPlace
+      </h2>
+      <h3
+        className="c2"
+      >
+        Food
+        Health
+      </h3>
+    </section>
+    <ul
+      className="c3"
+    >
+      <li
+        className="c4"
+      >
+        Follower: 
+        1.000
+      </li>
+      <li
+        className="c4"
+      >
+        Gender: 
+        female
+      </li>
+      <li
+        className="c4"
+      >
+        Age: 
+        28 years
+      </li>
+      <li
+        className="c4"
+      >
+        Location: 
+        Munich
+      </li>
+      <li
+        className="c4"
+      >
+        Languages: 
+        German, 
+        English
+         
+      </li>
+    </ul>
+  </section>
+</section>
+`;

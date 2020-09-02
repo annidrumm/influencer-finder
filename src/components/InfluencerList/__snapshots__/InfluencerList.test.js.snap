@@ -48,7 +48,9 @@ exports[`InfluencerList renders username correctly 1`] = `
       </h2>
       <h3
         className="c2"
-      />
+      >
+        Fitness
+      </h3>
     </section>
     <ul
       className="c3"
@@ -57,11 +59,13 @@ exports[`InfluencerList renders username correctly 1`] = `
         className="c4"
       >
         Follower: 
+        10k
       </li>
       <li
         className="c4"
       >
         Gender: 
+        female
       </li>
       <li
         className="c4"
@@ -79,6 +83,8 @@ exports[`InfluencerList renders username correctly 1`] = `
         className="c4"
       >
         Languages: 
+        German, 
+        English
          
       </li>
     </ul>
@@ -94,7 +100,10 @@ exports[`InfluencerList renders username correctly 1`] = `
       </h2>
       <h3
         className="c2"
-      />
+      >
+        Food
+        Health
+      </h3>
     </section>
     <ul
       className="c3"
@@ -103,11 +112,13 @@ exports[`InfluencerList renders username correctly 1`] = `
         className="c4"
       >
         Follower: 
+        1.000
       </li>
       <li
         className="c4"
       >
         Gender: 
+        female
       </li>
       <li
         className="c4"
@@ -125,6 +136,8 @@ exports[`InfluencerList renders username correctly 1`] = `
         className="c4"
       >
         Languages: 
+        German, 
+        English
          
       </li>
     </ul>

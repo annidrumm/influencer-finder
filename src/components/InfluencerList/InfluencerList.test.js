@@ -9,26 +9,52 @@ describe('InfluencerList', () => {
     {
       id: 1,
       username: '@fitness4life',
-      location: 'Hamburg',
+      categories: ['Fitness'],
+      follower: '10k',
+      gender: 'female',
       age: '25 years',
+      location: 'Hamburg',
+      languages: ['German, ', 'English'],
     },
     {
       id: 2,
       username: '@VeganPlace',
-      location: 'Munich',
+      categories: ['Food', 'Health'],
+      follower: '1.000',
+      gender: 'female',
       age: '28 years',
+      location: 'Munich',
+      languages: ['German, ', 'English'],
     },
   ]
 
   it('display the username from a influencer', () => {
-    const { getByText } = render(
+    const { getByText, getAllByText } = render(
       <InfluencerList influencerData={influencerData} />
     )
-    influencerData.forEach(({ username, location, age }) => {
-      expect(getByText(username)).toBeInTheDocument()
-      expect(getByText(new RegExp(age, 'i'))).toBeInTheDocument()
-      expect(getByText(new RegExp(location, 'i'))).toBeInTheDocument()
-    })
+    influencerData.forEach(
+      ({
+        username,
+        follower,
+        location,
+        age,
+        gender,
+        languages,
+        categories,
+      }) => {
+        expect(getByText(username)).toBeInTheDocument()
+        expect(getByText(new RegExp(follower, 'i'))).toBeInTheDocument()
+        expect(getByText(new RegExp(age, 'i'))).toBeInTheDocument()
+        expect(getByText(new RegExp(location, 'i'))).toBeInTheDocument()
+        expect(getAllByText(new RegExp(gender, 'i'))[0]).toBeInTheDocument()
+        expect(JSON.stringify(new RegExp(languages, 'i'))).toBe(
+          JSON.stringify(/languages/i)
+        )
+        expect(JSON.stringify(new RegExp(categories, 'i'))).toBe(
+          JSON.stringify(/categories/i)
+        )
+      }
+    )
   })
 
   it('renders username correctly', () => {

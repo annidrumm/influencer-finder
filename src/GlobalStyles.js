@@ -14,7 +14,6 @@ body {
 
 :root{
     --background-darkblue: #1c114e;
-    --font-color-white: #FFFFFF;
     --transparent-blue: #ffffff1a;
     --action-darkgreen: #51B6AB;
     --lightgreen: #52B7BC;
@@ -23,6 +22,7 @@ body {
     --lightpink:#F9D9DA;
     --darkyellow: #F7BF67;
 
+    --font-color-white: #FFFFFF;
     --font-weight-semibold: 600;
     --font-weight-regular: 400;
     --font-weight-light: 300;

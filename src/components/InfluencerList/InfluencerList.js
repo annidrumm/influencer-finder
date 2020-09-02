@@ -37,19 +37,19 @@ export default function InfluencerList({ influencerData }) {
 }
 
 const ContainerStyled = styled.section`
-  background: #ffffff1a;
+  background: var(--transparent-blue);
   height: 200px;
   width: 100%;
 `
 const UsernameStyled = styled.h2`
   font-family: 'Poppins';
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   line-height: 100px;
   text-align: center;
 `
 const CategoriesStyled = styled.h3`
   font-family: 'Poppins';
-  font-weight: 300;
+  font-weight: var(--font-weight-light);
   text-align: center;
 `
 
@@ -57,7 +57,7 @@ const DetailListStyled = styled.ul`
   text-align: left;
   list-style-type: none;
   font-family: 'Poppins';
-  font-weight: 300;
+  font-weight: var(--font-weight-light);
   width: 100%;
 `
 const DetailItemStyled = styled.li`

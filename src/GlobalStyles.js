@@ -15,7 +15,7 @@ body {
 :root{
     --background-darkblue: #1c114e;
     --transparent-blue: #ffffff1a;
-    --action-darkgreen: #51B6AB;
+    --darkgreen: #51B6AB;
     --lightgreen: #52B7BC;
     --lightblue: #66BAF7;
     --lightpurple: #66BAF7;

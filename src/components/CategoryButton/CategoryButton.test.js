@@ -8,8 +8,4 @@ describe('CategoryButton', () => {
     const tree = renderer.create(<CategoryButton />)
     expect(tree).toMatchSnapshot()
   })
-  it('renders subtractButton correctly', () => {
-    const tree = renderer.create(<CategoryButton />)
-    expect(tree).toMatchSnapshot()
-  })
 })

@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Categories renders correctly 1`] = `
+<section
+  className="CategoryPage__ContainerStyled-in08q7-0 bOtvHO"
+>
+  <section
+    className="sc-AxjAm cmCotq"
+  >
+    <img
+      alt="arrow left"
+      className="sc-AxiKw eHrRzm"
+      onClick={[Function]}
+      src="back.svg"
+    />
+    <h1
+      className="sc-AxirZ hykbjA"
+    >
+      What categories are you looking for?
+    </h1>
+  </section>
+  <section
+    className="CategoryPage__HeaderStyled-in08q7-1 eoARVy"
+  >
+    <section>
+      <button
+        className="CategoryPage__ButtonStyled-in08q7-2 jJNYvh"
+        onClick={[Function]}
+      >
+        <img
+          alt="fork and spoon"
+          className="CategoryPage__IconsStyled-in08q7-3 gAQA-do"
+          src="fork.svg"
+        />
+        <h2
+          className="CategoryPage__ButtonTextStyled-in08q7-4 iaknPu"
+        >
+          Food
+        </h2>
+      </button>
+      <button
+        className="CategoryPage__ButtonStyled-in08q7-2 gHimar"
+        onClick={[Function]}
+      >
+        <img
+          alt="dumbbell"
+          className="CategoryPage__IconsStyled-in08q7-3 gAQA-do"
+          src="gym.svg"
+        />
+        <h2
+          className="CategoryPage__ButtonTextStyled-in08q7-4 iaknPu"
+        >
+          Fitness
+        </h2>
+      </button>
+    </section>
+    <section>
+      <button
+        className="CategoryPage__ButtonStyled-in08q7-2 hlvJfI"
+        onClick={[Function]}
+      >
+        <img
+          alt="lipstick"
+          src="beauty.svg"
+        />
+        <h2
+          className="CategoryPage__ButtonTextStyled-in08q7-4 iaknPu"
+        >
+          Beauty
+        </h2>
+      </button>
+      <button
+        className="CategoryPage__ButtonStyled-in08q7-2 cnDitx"
+        onClick={[Function]}
+      >
+        <img
+          alt="fashion mannequin"
+          src="mannequin.svg"
+        />
+        <h2
+          className="CategoryPage__ButtonTextStyled-in08q7-4 iaknPu"
+        >
+          Fashion
+        </h2>
+      </button>
+    </section>
+    <section>
+      <button
+        className="CategoryPage__ButtonStyled-in08q7-2 dzBQet"
+        onClick={[Function]}
+      >
+        <img
+          alt="interior vase"
+          src="vase.svg"
+        />
+        <h2
+          className="CategoryPage__ButtonTextStyled-in08q7-4 iaknPu"
+        >
+          Interior
+        </h2>
+      </button>
+      <button
+        className="CategoryPage__ButtonStyled-in08q7-2 jJNYvh"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          src="plane.svg"
+        />
+        <h2
+          className="CategoryPage__ButtonTextStyled-in08q7-4 iaknPu"
+        >
+          Travel
+        </h2>
+      </button>
+    </section>
+  </section>
+</section>
+`;

@@ -47,36 +47,44 @@ export default function InfluencerList({ influencerData }) {
   )
 }
 
-const ContainerStyled = styled.section`
-  background: var(--transparent-blue);
-  height: 200px;
-  width: 100%;
-`
 const GoBackStyled = styled.img`
   position: absolute;
   left: 30px;
   margin-top: 10px;
   cursor: pointer;
 `
+const ContainerStyled = styled.section`
+  background: var(--transparent-blue);
+  height: 200px;
+  width: 100%;
+`
 
 const UsernameStyled = styled.h2`
   font-family: 'Poppins';
   font-weight: var(--font-weight-semibold);
-  line-height: 100px;
   text-align: center;
+  padding: 90px 0 0 0;
+  margin-top: 0;
+  margin-bottom: 0;
 `
 const CategoriesStyled = styled.h3`
   font-family: 'Poppins';
   font-weight: var(--font-weight-light);
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 `
 
 const DetailListStyled = styled.ul`
   text-align: left;
+  margin: 0;
   list-style-type: none;
   font-family: 'Poppins';
   font-weight: var(--font-weight-light);
-  margin: 50px;
+  margin: 50px 0 120px 0;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 `
 const DetailItemStyled = styled.li`
   letter-spacing: 1px;

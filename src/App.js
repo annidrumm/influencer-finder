@@ -10,7 +10,7 @@ export default function App() {
       <Route exact path="/">
         <CategoryPage />
       </Route>
-      <Route path="/InfluencerList" component={InfluencerList}>
+      <Route path="/influencerList" component={InfluencerList}>
         <InfluencerList influencerData={influencerData} />
       </Route>
     </Switch>

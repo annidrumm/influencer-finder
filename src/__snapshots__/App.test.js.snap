@@ -20,35 +20,35 @@ exports[`Categories renders correctly 1`] = `
     </h1>
   </section>
   <section
-    className="CategoryButton__ContainerStyled-sc-13mtfqc-0 fVaACJ"
+    className="CategoryButtons__ContainerStyled-fe33yf-0 kSPRRI"
   >
     <section>
       <button
-        className="CategoryButton__ButtonStyled-sc-13mtfqc-1 dwCUFk"
+        className="CategoryButtons__ButtonStyled-fe33yf-1 jdljUJ"
         onClick={[Function]}
       >
         <img
           alt="fork and spoon"
-          className="CategoryButton__IconsStyled-sc-13mtfqc-2 hEdiHb"
+          className="CategoryButtons__IconsStyled-fe33yf-2 gUDOhC"
           src="fork.svg"
         />
         <h2
-          className="CategoryButton__ButtonTextStyled-sc-13mtfqc-3 iBKuEP"
+          className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
         >
           Food
         </h2>
       </button>
       <button
-        className="CategoryButton__ButtonStyled-sc-13mtfqc-1 cTgMdW"
+        className="CategoryButtons__ButtonStyled-fe33yf-1 fSsSAP"
         onClick={[Function]}
       >
         <img
           alt="dumbbell"
-          className="CategoryButton__IconsStyled-sc-13mtfqc-2 hEdiHb"
+          className="CategoryButtons__IconsStyled-fe33yf-2 gUDOhC"
           src="gym.svg"
         />
         <h2
-          className="CategoryButton__ButtonTextStyled-sc-13mtfqc-3 iBKuEP"
+          className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
         >
           Fitness
         </h2>
@@ -56,7 +56,7 @@ exports[`Categories renders correctly 1`] = `
     </section>
     <section>
       <button
-        className="CategoryButton__ButtonStyled-sc-13mtfqc-1 ggLIMZ"
+        className="CategoryButtons__ButtonStyled-fe33yf-1 eFVMfs"
         onClick={[Function]}
       >
         <img
@@ -64,13 +64,13 @@ exports[`Categories renders correctly 1`] = `
           src="beauty.svg"
         />
         <h2
-          className="CategoryButton__ButtonTextStyled-sc-13mtfqc-3 iBKuEP"
+          className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
         >
           Beauty
         </h2>
       </button>
       <button
-        className="CategoryButton__ButtonStyled-sc-13mtfqc-1 ivTBog"
+        className="CategoryButtons__ButtonStyled-fe33yf-1 bklmwB"
         onClick={[Function]}
       >
         <img
@@ -78,7 +78,7 @@ exports[`Categories renders correctly 1`] = `
           src="mannequin.svg"
         />
         <h2
-          className="CategoryButton__ButtonTextStyled-sc-13mtfqc-3 iBKuEP"
+          className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
         >
           Fashion
         </h2>
@@ -86,21 +86,21 @@ exports[`Categories renders correctly 1`] = `
     </section>
     <section>
       <button
-        className="CategoryButton__ButtonStyled-sc-13mtfqc-1 gLpxBs"
+        className="CategoryButtons__ButtonStyled-fe33yf-1 bLieCZ"
         onClick={[Function]}
       >
         <img
-          alt="interior vase"
+          alt="vase"
           src="vase.svg"
         />
         <h2
-          className="CategoryButton__ButtonTextStyled-sc-13mtfqc-3 iBKuEP"
+          className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
         >
           Interior
         </h2>
       </button>
       <button
-        className="CategoryButton__ButtonStyled-sc-13mtfqc-1 dwCUFk"
+        className="CategoryButtons__ButtonStyled-fe33yf-1 jdljUJ"
         onClick={[Function]}
       >
         <img
@@ -108,7 +108,7 @@ exports[`Categories renders correctly 1`] = `
           src="plane.svg"
         />
         <h2
-          className="CategoryButton__ButtonTextStyled-sc-13mtfqc-3 iBKuEP"
+          className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
         >
           Travel
         </h2>

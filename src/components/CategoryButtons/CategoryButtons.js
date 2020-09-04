@@ -12,7 +12,7 @@ export default function CategoryButton() {
   const history = useHistory()
 
   const routeChange = () => {
-    let path = `InfluencerList`
+    let path = `influencerList`
     history.push(path)
   }
 

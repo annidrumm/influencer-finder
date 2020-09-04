@@ -2,10 +2,19 @@ import React from 'react'
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
 import Headline from '../../components/Headline/Headline'
+import backIcon from '../../icons/back.svg'
+import { useHistory } from 'react-router-dom'
 
 export default function InfluencerList({ influencerData }) {
+  const history = useHistory()
+  const routeChange = () => {
+    let path = `/`
+    history.push(path)
+  }
+
   return (
     <section className="profiles">
+      <GoBackStyled src={backIcon} alt="arrow left" onClick={routeChange} />
       <Headline headline="Search" />
       {influencerData.map((profile) => {
         return (
@@ -43,6 +52,13 @@ const ContainerStyled = styled.section`
   height: 200px;
   width: 100%;
 `
+const GoBackStyled = styled.img`
+  position: absolute;
+  left: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+`
+
 const UsernameStyled = styled.h2`
   font-family: 'Poppins';
   font-weight: var(--font-weight-semibold);

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import fork from '../../icons/fork.svg'
-import gym from '../../icons/gym.svg'
+import dumbbell from '../../icons/gym.svg'
 import lipsticks from '../../icons/beauty.svg'
 import mannequin from '../../icons/mannequin.svg'
 import vase from '../../icons/vase.svg'
@@ -24,7 +24,7 @@ export default function CategoryButton() {
           <H2Styled>Food</H2Styled>
         </ButtonStyled>
         <ButtonStyled category="fitness" onClick={routeChange}>
-          <IconsStyled src={gym} alt="dumbbell" />
+          <IconsStyled src={dumbbell} alt="dumbbell" />
           <H2Styled>Fitness</H2Styled>
         </ButtonStyled>
       </section>

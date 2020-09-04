@@ -76,7 +76,6 @@ const DetailListStyled = styled.ul`
   list-style-type: none;
   font-family: 'Poppins';
   font-weight: var(--font-weight-light);
-  width: 100%;
   margin: 50px;
 `
 const DetailItemStyled = styled.li`

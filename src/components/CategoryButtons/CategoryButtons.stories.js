@@ -1,14 +1,14 @@
 import React from 'react'
-import CategoryButton from './CategoryButton'
+import CategoryButtons from './CategoryButtons'
 import backIcon from '../../icons/back.svg'
 
 export default {
   title: 'Components/Button',
-  component: CategoryButton,
+  component: CategoryButtons,
 }
 
 export const allCategories = () => {
-  return <CategoryButton />
+  return <CategoryButtons />
 }
 
 export const goBack = () => {

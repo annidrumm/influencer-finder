@@ -2,85 +2,131 @@
 
 exports[`InfluencerList renders username correctly 1`] = `
 .c0 {
-  background: #ffffff1a;
-  height: 200px;
-  width: 100%;
-}
-
-.c1 {
-  font-family: 'Poppins';
-  font-weight: 600;
-  line-height: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-column: 1/3;
+  margin: 20px 0;
   text-align: center;
 }
 
 .c2 {
-  font-family: 'Poppins';
-  font-weight: 300;
-  text-align: center;
+  display: inline;
+  position: relative;
+  font: var(--font-weight-regular);
+  font-size: 25px;
+  padding-bottom: 5px;
+  margin: auto;
+  max-width: 300px;
+}
+
+.c1 {
+  position: absolute;
+  left: 30px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 .c3 {
-  text-align: left;
-  list-style-type: none;
-  font-family: 'Poppins';
-  font-weight: 300;
+  background: var(--transparent-blue);
+  height: 200px;
   width: 100%;
 }
 
 .c4 {
+  font-family: 'Poppins';
+  font-weight: var(--font-weight-semibold);
+  line-height: 100px;
+  text-align: center;
+}
+
+.c5 {
+  font-family: 'Poppins';
+  font-weight: var(--font-weight-light);
+  text-align: center;
+}
+
+.c6 {
+  text-align: left;
+  list-style-type: none;
+  font-family: 'Poppins';
+  font-weight: var(--font-weight-light);
+  width: 100%;
+  margin: 50px;
+}
+
+.c7 {
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
   margin: 10px 0;
   position: relative;
-  left: 40px;
 }
 
 <section
   className="profiles"
 >
+  <section
+    className="c0"
+  >
+    <img
+      alt="arrow left"
+      className="c1"
+      onClick={[Function]}
+      src="back.svg"
+    />
+    <h1
+      className="c2"
+    >
+      Search
+    </h1>
+  </section>
   <section>
     <section
-      className="c0"
+      className="c3"
     >
       <h2
-        className="c1"
+        className="c4"
       >
         @fitness4life
       </h2>
       <h3
-        className="c2"
+        className="c5"
       >
         Fitness
       </h3>
     </section>
     <ul
-      className="c3"
+      className="c6"
     >
       <li
-        className="c4"
+        className="c7"
       >
         Follower: 
         10k
       </li>
       <li
-        className="c4"
+        className="c7"
       >
         Gender: 
         female
       </li>
       <li
-        className="c4"
+        className="c7"
       >
         Age: 
         25 years
       </li>
       <li
-        className="c4"
+        className="c7"
       >
         Location: 
         Hamburg
       </li>
       <li
-        className="c4"
+        className="c7"
       >
         Languages: 
         German, 
@@ -91,49 +137,49 @@ exports[`InfluencerList renders username correctly 1`] = `
   </section>
   <section>
     <section
-      className="c0"
+      className="c3"
     >
       <h2
-        className="c1"
+        className="c4"
       >
         @VeganPlace
       </h2>
       <h3
-        className="c2"
+        className="c5"
       >
         Food
         Health
       </h3>
     </section>
     <ul
-      className="c3"
+      className="c6"
     >
       <li
-        className="c4"
+        className="c7"
       >
         Follower: 
         1.000
       </li>
       <li
-        className="c4"
+        className="c7"
       >
         Gender: 
         female
       </li>
       <li
-        className="c4"
+        className="c7"
       >
         Age: 
         28 years
       </li>
       <li
-        className="c4"
+        className="c7"
       >
         Location: 
         Munich
       </li>
       <li
-        className="c4"
+        className="c7"
       >
         Languages: 
         German, 

@@ -3,10 +3,10 @@ import InfluencerList from './InfluencerList'
 import influencerData from '../../mocks/influencer.json'
 
 export default {
-  title: 'Example/InfluencerList',
+  title: 'Pages/InfluencerList',
   component: InfluencerList,
 }
 
-export const Influencer = () => {
+export const fullList = () => {
   return <InfluencerList influencerData={influencerData} />
 }

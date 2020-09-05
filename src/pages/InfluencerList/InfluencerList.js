@@ -28,7 +28,7 @@ export default function InfluencerList({ influencerData, image }) {
             </ContainerStyled>
             <DetailListStyled>
               <DetailItemStyled key={profile.username}>
-                Follower: {profile.follower}
+                Follower: {profile.follower.toLocaleString('en-US')}
               </DetailItemStyled>
               <DetailItemStyled key={profile.gender}>
                 Gender: {profile.gender}
@@ -39,8 +39,8 @@ export default function InfluencerList({ influencerData, image }) {
               <DetailItemStyled key={profile.location}>
                 Location: {profile.location}
               </DetailItemStyled>
-              <DetailItemStyled key={profile.languages.join(', ')}>
-                Languages: {profile.languages}{' '}
+              <DetailItemStyled key={profile.languages}>
+                Languages: {profile.languages.join(', ')}
               </DetailItemStyled>
             </DetailListStyled>
           </section>

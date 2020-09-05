@@ -7,19 +7,19 @@
     "gender": "female",
     "age": "25 years",
     "location": "Hamburg",
-    "languages": ["German, ", "English"],
+    "languages": ["German", "English"],
     "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/profile-pictures/src/pictures/wesley-tingey-y86wGUa1Ly8-unsplash.jpg"
   },
 
   {
     "id": 2,
     "username": "@VeganPlace",
-    "categories": ["Food ", "Health"],
+    "categories": ["Food", "Health"],
     "follower": "1.000",
     "gender": "female",
     "age": "28 years",
     "location": "Munich",
-    "languages": ["German, ", "English"],
+    "languages": ["German", "English"],
     "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/profile-pictures/src/pictures/gisela-carolina-ALogxO1WJk0-unsplash.jpg"
   },
 
@@ -31,14 +31,14 @@
     "gender": "female",
     "age": "24 years",
     "location": "Munich",
-    "languages": ["German, ", "English"],
+    "languages": ["German", "English"],
     "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/profile-pictures/src/pictures/sonnie-hiles-jS9ZsQOQGIA-unsplash.jpg"
   },
 
   {
     "id": 4,
     "username": "@WorldTraveller",
-    "categories": ["Travel ", "Food"],
+    "categories": ["Travel", "Food"],
     "follower": "5.000",
     "gender": "male",
     "age": "32 years",
@@ -55,7 +55,7 @@
     "gender": "female",
     "age": "26 years",
     "location": "Munich",
-    "languages": ["German, ", "English"],
+    "languages": ["German", "English"],
     "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/profile-pictures/src/pictures/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg"
   },
 

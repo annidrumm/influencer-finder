@@ -22,7 +22,9 @@ export default function InfluencerList({ influencerData, image }) {
             <ContainerStyled>
               <ImageStyled src={profile.image} />
               <UsernameStyled>{profile.username}</UsernameStyled>
-              <CategoriesStyled>{profile.categories}</CategoriesStyled>
+              <CategoriesStyled>
+                {profile.categories.join(', ')}
+              </CategoriesStyled>
             </ContainerStyled>
             <DetailListStyled>
               <DetailItemStyled key={profile.username}>
@@ -37,7 +39,7 @@ export default function InfluencerList({ influencerData, image }) {
               <DetailItemStyled key={profile.location}>
                 Location: {profile.location}
               </DetailItemStyled>
-              <DetailItemStyled key={profile.languages}>
+              <DetailItemStyled key={profile.languages.join(', ')}>
                 Languages: {profile.languages}{' '}
               </DetailItemStyled>
             </DetailListStyled>

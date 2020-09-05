@@ -5,7 +5,7 @@ import Headline from '../../components/Headline/Headline'
 import backIcon from '../../icons/back.svg'
 import { useHistory } from 'react-router-dom'
 
-export default function InfluencerList({ influencerData }) {
+export default function InfluencerList({ influencerData, image }) {
   const history = useHistory()
   const routeChange = () => {
     let path = `/`
@@ -20,6 +20,7 @@ export default function InfluencerList({ influencerData }) {
         return (
           <section key={profile.id}>
             <ContainerStyled>
+              <ImageStyled src={profile.image} />
               <UsernameStyled>{profile.username}</UsernameStyled>
               <CategoriesStyled>{profile.categories}</CategoriesStyled>
             </ContainerStyled>
@@ -55,15 +56,23 @@ const GoBackStyled = styled.img`
 `
 const ContainerStyled = styled.section`
   background: var(--transparent-blue);
-  height: 200px;
-  width: 100%;
+  height: 350px;
+`
+const ImageStyled = styled.img`
+  width: 150px;
+  height: 220px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0 0 0;
+  border-radius: 50%;
 `
 
 const UsernameStyled = styled.h2`
   font-family: 'Poppins';
   font-weight: var(--font-weight-semibold);
   text-align: center;
-  padding: 90px 0 0 0;
+  padding: 10px 0 0 0;
   margin-top: 0;
   margin-bottom: 0;
 `
@@ -82,7 +91,7 @@ const DetailListStyled = styled.ul`
   font-family: 'Poppins';
   font-weight: var(--font-weight-light);
   margin: 50px 0 120px 0;
-  width: 400px;
+  width: 300px;
   margin-left: auto;
   margin-right: auto;
 `

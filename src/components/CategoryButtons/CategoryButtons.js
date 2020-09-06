@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components/macro'
 import fork from '../../icons/fork.svg'
 import dumbbell from '../../icons/gym.svg'
@@ -6,49 +6,74 @@ import lipsticks from '../../icons/beauty.svg'
 import mannequin from '../../icons/mannequin.svg'
 import vase from '../../icons/vase.svg'
 import plane from '../../icons/plane.svg'
-import { useHistory } from 'react-router-dom'
+import InfluencerList from '../../pages/InfluencerList/InfluencerList'
+import influencerData from '../../mocks/influencer.json'
 
 export default function CategoryButton() {
-  const history = useHistory()
+  const [list, setList] = useState(influencerData)
 
-  const routeChange = () => {
-    let path = `influencerList`
-    history.push(path)
+  function filterCategories(category) {
+    setList(
+      influencerData.filter(function (profile) {
+        return profile.categories.includes(category)
+      })
+    )
   }
 
   return (
-    <ContainerStyled>
-      <section>
-        <ButtonStyled category="food" onClick={routeChange}>
-          <IconsStyled src={fork} alt="fork and spoon" />
-          <H2Styled>Food</H2Styled>
-        </ButtonStyled>
-        <ButtonStyled category="fitness" onClick={routeChange}>
-          <IconsStyled src={dumbbell} alt="dumbbell" />
-          <H2Styled>Fitness</H2Styled>
-        </ButtonStyled>
-      </section>
-      <section>
-        <ButtonStyled category="beauty" onClick={routeChange}>
-          <img src={lipsticks} alt="lipsticks" />
-          <H2Styled>Beauty</H2Styled>
-        </ButtonStyled>
-        <ButtonStyled category="fashion" onClick={routeChange}>
-          <img src={mannequin} alt="fashion mannequin" />
-          <H2Styled>Fashion</H2Styled>
-        </ButtonStyled>
-      </section>
-      <section>
-        <ButtonStyled category="interior" onClick={routeChange}>
-          <img src={vase} alt="vase" />
-          <H2Styled>Interior</H2Styled>
-        </ButtonStyled>
-        <ButtonStyled category="travel" onClick={routeChange}>
-          <img src={plane} alt="plane" />
-          <H2Styled>Travel</H2Styled>
-        </ButtonStyled>
-      </section>
-    </ContainerStyled>
+    <>
+      <ContainerStyled>
+        <section>
+          <ButtonStyled
+            category="food"
+            onClick={() => filterCategories('Food')}
+          >
+            <IconsStyled src={fork} alt="fork and spoon" />
+            <H2Styled>Food</H2Styled>
+          </ButtonStyled>
+          <ButtonStyled
+            category="fitness"
+            onClick={() => filterCategories('Fitness')}
+          >
+            <IconsStyled src={dumbbell} alt="dumbbell" />
+            <H2Styled>Fitness</H2Styled>
+          </ButtonStyled>
+        </section>
+        <section>
+          <ButtonStyled
+            category="beauty"
+            onClick={() => filterCategories('Beauty')}
+          >
+            <img src={lipsticks} alt="lipsticks" />
+            <H2Styled>Beauty</H2Styled>
+          </ButtonStyled>
+          <ButtonStyled
+            category="fashion"
+            onClick={() => filterCategories('Fashion')}
+          >
+            <img src={mannequin} alt="fashion mannequin" />
+            <H2Styled>Fashion</H2Styled>
+          </ButtonStyled>
+        </section>
+        <section>
+          <ButtonStyled
+            category="interior"
+            onClick={() => filterCategories('Interior')}
+          >
+            <img src={vase} alt="vase" />
+            <H2Styled>Interior</H2Styled>
+          </ButtonStyled>
+          <ButtonStyled
+            category="travel"
+            onClick={() => filterCategories('Travel')}
+          >
+            <img src={plane} alt="plane" />
+            <H2Styled>Travel</H2Styled>
+          </ButtonStyled>
+        </section>
+      </ContainerStyled>
+      <InfluencerList influencerData={list} />
+    </>
   )
 }
 

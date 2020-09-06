@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components/macro'
 import fork from '../../icons/fork.svg'
 import dumbbell from '../../icons/gym.svg'
@@ -6,73 +6,83 @@ import lipsticks from '../../icons/beauty.svg'
 import mannequin from '../../icons/mannequin.svg'
 import vase from '../../icons/vase.svg'
 import plane from '../../icons/plane.svg'
-import InfluencerList from '../../pages/InfluencerList/InfluencerList'
-import influencerData from '../../mocks/influencer.json'
+// import influencerData from '../../mocks/influencer.json'
 
-export default function CategoryButton() {
-  const [list, setList] = useState(influencerData)
-
-  function filterCategories(category) {
-    setList(
-      influencerData.filter(function (profile) {
-        return profile.categories.includes(category)
-      })
-    )
-  }
+export default function CategoryButtons() {
+  // I tried to use react hooks but ran in the problem how to change url, routes and to display the filtered array on different pages.
+  // const [list, setList] = useState(influencerData)
+  // function filterCategories(category) {
+  //   setList(
+  //     influencerData.filter(function (profile) {
+  //       return profile.categories.includes(category)
+  //     })
+  //   )
+  // }
 
   return (
     <>
       <ContainerStyled>
         <section>
-          <ButtonStyled
-            category="food"
-            onClick={() => filterCategories('Food')}
-          >
-            <IconsStyled src={fork} alt="fork and spoon" />
-            <H2Styled>Food</H2Styled>
-          </ButtonStyled>
-          <ButtonStyled
-            category="fitness"
-            onClick={() => filterCategories('Fitness')}
-          >
-            <IconsStyled src={dumbbell} alt="dumbbell" />
-            <H2Styled>Fitness</H2Styled>
-          </ButtonStyled>
+          <a href="/food">
+            <ButtonStyled
+              category="food"
+              // onClick={() => filterCategories('Food')}
+            >
+              <IconsStyled src={fork} alt="fork and spoon" />
+              <H2Styled>Food</H2Styled>
+            </ButtonStyled>
+          </a>
+          <a href="/fitness">
+            <ButtonStyled
+              category="fitness"
+              // onClick={() => filterCategories('Fitness')}
+            >
+              <IconsStyled src={dumbbell} alt="dumbbell" />
+              <H2Styled>Fitness</H2Styled>
+            </ButtonStyled>
+          </a>
         </section>
         <section>
-          <ButtonStyled
-            category="beauty"
-            onClick={() => filterCategories('Beauty')}
-          >
-            <img src={lipsticks} alt="lipsticks" />
-            <H2Styled>Beauty</H2Styled>
-          </ButtonStyled>
-          <ButtonStyled
-            category="fashion"
-            onClick={() => filterCategories('Fashion')}
-          >
-            <img src={mannequin} alt="fashion mannequin" />
-            <H2Styled>Fashion</H2Styled>
-          </ButtonStyled>
+          <a href="/beauty">
+            <ButtonStyled
+              category="beauty"
+              // onClick={() => filterCategories('Beauty')}
+            >
+              <img src={lipsticks} alt="lipsticks" />
+              <H2Styled>Beauty</H2Styled>
+            </ButtonStyled>
+          </a>
+          <a href="/fashion">
+            <ButtonStyled
+              category="fashion"
+              // onClick={() => filterCategories('Fashion')}
+            >
+              <img src={mannequin} alt="fashion mannequin" />
+              <H2Styled>Fashion</H2Styled>
+            </ButtonStyled>
+          </a>
         </section>
         <section>
-          <ButtonStyled
-            category="interior"
-            onClick={() => filterCategories('Interior')}
-          >
-            <img src={vase} alt="vase" />
-            <H2Styled>Interior</H2Styled>
-          </ButtonStyled>
-          <ButtonStyled
-            category="travel"
-            onClick={() => filterCategories('Travel')}
-          >
-            <img src={plane} alt="plane" />
-            <H2Styled>Travel</H2Styled>
-          </ButtonStyled>
+          <a href="/interior">
+            <ButtonStyled
+              category="interior"
+              // onClick={() => filterCategories('Interior')}
+            >
+              <img src={vase} alt="vase" />
+              <H2Styled>Interior</H2Styled>
+            </ButtonStyled>
+          </a>
+          <a href="/travel">
+            <ButtonStyled
+              category="travel"
+              // onClick={() => filterCategories('Travel')}
+            >
+              <img src={plane} alt="plane" />
+              <H2Styled>Travel</H2Styled>
+            </ButtonStyled>
+          </a>
         </section>
       </ContainerStyled>
-      <InfluencerList influencerData={list} />
     </>
   )
 }

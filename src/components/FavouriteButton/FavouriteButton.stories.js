@@ -2,7 +2,7 @@ import React from 'react'
 import FavouriteButton from './FavouriteButton'
 
 export default {
-  title: 'Components/FavouriteButton',
+  title: 'Components/Button',
   component: FavouriteButton,
   argTypes: {
     headline: { control: 'text' },
@@ -11,7 +11,5 @@ export default {
 
 const Template = (args) => <FavouriteButton {...args} />
 
-export const category = Template.bind({})
-category.args = {
-  headline: 'What categories are you looking for?',
-}
+export const favourites = Template.bind({})
+favourites.args = {}

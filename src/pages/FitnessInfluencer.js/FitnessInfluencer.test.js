@@ -20,7 +20,7 @@ describe('InfluencerList', () => {
     },
   ]
 
-  it('display the username from a influencer', () => {
+  it('displays the information details of an influencer', () => {
     const { getByText, getAllByText } = render(<FitnessInfluencer />)
     influencerData.forEach(
       ({
@@ -46,7 +46,7 @@ describe('InfluencerList', () => {
     )
   })
 
-  it('renders username correctly', () => {
+  it('renders influencer details correctly', () => {
     const tree = renderer.create(<FitnessInfluencer />)
     expect(tree).toMatchSnapshot()
   })

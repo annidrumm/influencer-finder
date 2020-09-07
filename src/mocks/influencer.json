@@ -8,7 +8,7 @@
     "age": "25 years",
     "location": "Hamburg",
     "languages": ["German", "English"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/profile-pictures/src/pictures/wesley-tingey-y86wGUa1Ly8-unsplash.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/filter-categories/src/images/wesley-tingey-min.jpg"
   },
 
   {
@@ -20,7 +20,7 @@
     "age": "28 years",
     "location": "Munich",
     "languages": ["German", "English"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/profile-pictures/src/pictures/gisela-carolina-ALogxO1WJk0-unsplash.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/filter-categories/src/images/gisela-carolina-min.jpg"
   },
 
   {
@@ -32,7 +32,7 @@
     "age": "24 years",
     "location": "Munich",
     "languages": ["German", "English"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/profile-pictures/src/pictures/sonnie-hiles-jS9ZsQOQGIA-unsplash.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/filter-categories/src/images/sonnie-hiles-min.jpg"
   },
 
   {
@@ -44,7 +44,7 @@
     "age": "32 years",
     "location": "Cologne",
     "languages": ["English"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/profile-pictures/src/pictures/sayo-garcia-RW32Rt7K5zI-unsplash.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/filter-categories/src/images/sayo-garcia-min.jpg"
   },
 
   {
@@ -56,7 +56,7 @@
     "age": "26 years",
     "location": "Munich",
     "languages": ["German", "English"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/profile-pictures/src/pictures/gabriel-silverio-u3WmDyKGsrY-unsplash.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/filter-categories/src/images/gabriel-silverio-min.jpg"
   },
 
   {
@@ -68,6 +68,6 @@
     "age": "35 years",
     "location": "Hamburg",
     "languages": ["English"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/profile-pictures/src/pictures/nico-marks-25gAg2MOXxQ-unsplash.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/filter-categories/src/images/nico-marks-min.jpg"
   }
 ]

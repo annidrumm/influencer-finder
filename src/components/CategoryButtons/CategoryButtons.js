@@ -6,49 +6,55 @@ import lipsticks from '../../icons/beauty.svg'
 import mannequin from '../../icons/mannequin.svg'
 import vase from '../../icons/vase.svg'
 import plane from '../../icons/plane.svg'
-import { useHistory } from 'react-router-dom'
 
-export default function CategoryButton() {
-  const history = useHistory()
-
-  const routeChange = () => {
-    let path = `influencerList`
-    history.push(path)
-  }
-
+export default function CategoryButtons() {
   return (
-    <ContainerStyled>
-      <section>
-        <ButtonStyled category="food" onClick={routeChange}>
-          <IconsStyled src={fork} alt="fork and spoon" />
-          <H2Styled>Food</H2Styled>
-        </ButtonStyled>
-        <ButtonStyled category="fitness" onClick={routeChange}>
-          <IconsStyled src={dumbbell} alt="dumbbell" />
-          <H2Styled>Fitness</H2Styled>
-        </ButtonStyled>
-      </section>
-      <section>
-        <ButtonStyled category="beauty" onClick={routeChange}>
-          <img src={lipsticks} alt="lipsticks" />
-          <H2Styled>Beauty</H2Styled>
-        </ButtonStyled>
-        <ButtonStyled category="fashion" onClick={routeChange}>
-          <img src={mannequin} alt="fashion mannequin" />
-          <H2Styled>Fashion</H2Styled>
-        </ButtonStyled>
-      </section>
-      <section>
-        <ButtonStyled category="interior" onClick={routeChange}>
-          <img src={vase} alt="vase" />
-          <H2Styled>Interior</H2Styled>
-        </ButtonStyled>
-        <ButtonStyled category="travel" onClick={routeChange}>
-          <img src={plane} alt="plane" />
-          <H2Styled>Travel</H2Styled>
-        </ButtonStyled>
-      </section>
-    </ContainerStyled>
+    <>
+      <ContainerStyled>
+        <section>
+          <a href="/food">
+            <ButtonStyled category="food">
+              <IconsStyled src={fork} alt="fork and spoon" />
+              <H2Styled>Food</H2Styled>
+            </ButtonStyled>
+          </a>
+          <a href="/fitness">
+            <ButtonStyled category="fitness">
+              <IconsStyled src={dumbbell} alt="dumbbell" />
+              <H2Styled>Fitness</H2Styled>
+            </ButtonStyled>
+          </a>
+        </section>
+        <section>
+          <a href="/beauty">
+            <ButtonStyled category="beauty">
+              <img src={lipsticks} alt="lipsticks" />
+              <H2Styled>Beauty</H2Styled>
+            </ButtonStyled>
+          </a>
+          <a href="/fashion">
+            <ButtonStyled category="fashion">
+              <img src={mannequin} alt="fashion mannequin" />
+              <H2Styled>Fashion</H2Styled>
+            </ButtonStyled>
+          </a>
+        </section>
+        <section>
+          <a href="/interior">
+            <ButtonStyled category="interior">
+              <img src={vase} alt="vase" />
+              <H2Styled>Interior</H2Styled>
+            </ButtonStyled>
+          </a>
+          <a href="/travel">
+            <ButtonStyled category="travel">
+              <img src={plane} alt="plane" />
+              <H2Styled>Travel</H2Styled>
+            </ButtonStyled>
+          </a>
+        </section>
+      </ContainerStyled>
+    </>
   )
 }
 

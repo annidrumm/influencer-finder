@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Headline from '../../components/Headline/Headline'
 import backIcon from '../../icons/back.svg'
 import { useHistory } from 'react-router-dom'
-import FavouriteButton from '../../components/FavouriteButton/FavouriteButton.js'
+import LikeButton from '../../components/LikeButton/LikeButton.js'
 
 export default function InfluencerList({ influencerData, image }) {
   const history = useHistory()
@@ -26,7 +26,7 @@ export default function InfluencerList({ influencerData, image }) {
               <CategoriesStyled>
                 {profile.categories.join(', ')}
               </CategoriesStyled>
-              <FavouriteButton />
+              <LikeButton />
             </ContainerStyled>
             <DetailListStyled>
               <DetailItemStyled key={profile.username}>

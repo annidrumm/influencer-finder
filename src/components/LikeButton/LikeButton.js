@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import { ReactComponent as HeartIcon } from '../../icons/heart.svg'
 import styled from 'styled-components'
 
-FavouriteButton.propTypes = {
+LikeButton.propTypes = {
   headline: PropTypes.string,
 }
 
-export default function FavouriteButton({ onHeartClick, isClicked }) {
+export default function LikeButton({ onHeartClick, isClicked }) {
   return (
     <section>
       <ButtonStyled>

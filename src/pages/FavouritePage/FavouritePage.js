@@ -1,10 +1,12 @@
 import React from 'react'
-import InfluencerList from '../InfluencerList/InfluencerList'
+import Headline from '../../components/Headline/Headline'
+import GoBackArrow from '../../components/GoBackArrow/GoBackArrow'
 
-export default function FoodPage() {
+export default function LikedPage() {
   return (
-    <>
-      <InfluencerList />
-    </>
+    <section>
+      <GoBackArrow />
+      <Headline headline="Favourites" />
+    </section>
   )
 }

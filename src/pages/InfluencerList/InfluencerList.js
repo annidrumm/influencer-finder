@@ -1,15 +1,20 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
-import Headline from '../../components/Headline/Headline'
-import LikeButton from '../../components/LikeButton/LikeButton.js'
+import LikeButton from '../../components/FavouriteButton/FavouriteButton.js'
 import GoBackArrow from '../../components/GoBackArrow/GoBackArrow'
+import { ReactComponent as HeartIcon } from '../../icons/heart.svg'
 
 export default function InfluencerList({ influencerData }) {
+  saveLocally('profiles', influencerData)
   return (
     <section className="profiles">
       <GoBackArrow />
-      <Headline headline="Search" />
+      <a href="/favourites">
+        <ButtonStyled>
+          <HeartIcon fill="var(--darkpink)" stroke="var(--darkpink)" />
+        </ButtonStyled>
+      </a>
       {influencerData.map((profile) => {
         return (
           <section key={profile.id}>
@@ -19,10 +24,7 @@ export default function InfluencerList({ influencerData }) {
               <CategoriesStyled>
                 {profile.categories.join(', ')}
               </CategoriesStyled>
-              <LikeButton
-                likedKey={influencerData.key}
-                isLiked={influencerData.isLiked}
-              />
+              <LikeButton isLiked={influencerData.isLiked} />
             </ContainerStyled>
             <DetailListStyled>
               <DetailItemStyled key={profile.username}>
@@ -46,12 +48,29 @@ export default function InfluencerList({ influencerData }) {
       })}
     </section>
   )
+
+  function saveLocally(key, arrayOfObjects) {
+    localStorage.setItem(key, JSON.stringify(arrayOfObjects))
+  }
 }
 
 const ContainerStyled = styled.section`
   background: var(--transparent-blue);
   height: 350px;
 `
+const ButtonStyled = styled.button`
+  background: transparent;
+  border-radius: 50%;
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  border: none;
+  cursor: pointer;
+`
+
 const ImageStyled = styled.img`
   width: 150px;
   height: 220px;

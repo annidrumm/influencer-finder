@@ -20,3 +20,8 @@ export const search = Template.bind({})
 search.args = {
   headline: 'Search',
 }
+
+export const favourite = Template.bind({})
+favourite.args = {
+  headline: 'Favourite',
+}

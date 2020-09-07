@@ -9,6 +9,7 @@ import BeautyInfluencer from './pages/BeautyInfluencer.js/BeautyInfluencer.js'
 import FashionInfluencer from './pages/FashionInfluencer.js/FashionInfluencer.js'
 import InteriorInfluencer from './pages/InteriorInfluencer/InteriorInfluencer.js'
 import TravelInfluencer from './pages/TravelInfluencer/TravelInfluencer.js'
+import FavouritePage from './pages/FavouritePage/FavouritePage.js'
 
 export default function App() {
   return (
@@ -36,6 +37,9 @@ export default function App() {
       </Route>
       <Route path="/travel" component={InfluencerList}>
         <TravelInfluencer />
+      </Route>
+      <Route path="/favourites" component={FavouritePage}>
+        <FavouritePage />
       </Route>
     </Switch>
   )

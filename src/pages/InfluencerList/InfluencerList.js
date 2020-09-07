@@ -2,20 +2,13 @@ import React from 'react'
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
 import Headline from '../../components/Headline/Headline'
-import backIcon from '../../icons/back.svg'
-import { useHistory } from 'react-router-dom'
 import LikeButton from '../../components/LikeButton/LikeButton.js'
+import GoBackArrow from '../../components/GoBackArrow/GoBackArrow'
 
-export default function InfluencerList({ influencerData, image }) {
-  const history = useHistory()
-  const routeChange = () => {
-    let path = `/`
-    history.push(path)
-  }
-
+export default function InfluencerList({ influencerData }) {
   return (
     <section className="profiles">
-      <GoBackStyled src={backIcon} alt="arrow left" onClick={routeChange} />
+      <GoBackArrow />
       <Headline headline="Search" />
       {influencerData.map((profile) => {
         return (
@@ -26,7 +19,10 @@ export default function InfluencerList({ influencerData, image }) {
               <CategoriesStyled>
                 {profile.categories.join(', ')}
               </CategoriesStyled>
-              <LikeButton />
+              <LikeButton
+                likedKey={influencerData.key}
+                isLiked={influencerData.isLiked}
+              />
             </ContainerStyled>
             <DetailListStyled>
               <DetailItemStyled key={profile.username}>
@@ -52,12 +48,6 @@ export default function InfluencerList({ influencerData, image }) {
   )
 }
 
-const GoBackStyled = styled.img`
-  position: absolute;
-  left: 30px;
-  margin-top: 10px;
-  cursor: pointer;
-`
 const ContainerStyled = styled.section`
   background: var(--transparent-blue);
   height: 350px;

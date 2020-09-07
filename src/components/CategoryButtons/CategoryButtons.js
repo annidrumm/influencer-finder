@@ -6,37 +6,20 @@ import lipsticks from '../../icons/beauty.svg'
 import mannequin from '../../icons/mannequin.svg'
 import vase from '../../icons/vase.svg'
 import plane from '../../icons/plane.svg'
-// import influencerData from '../../mocks/influencer.json'
 
 export default function CategoryButtons() {
-  // I tried to use react hooks but ran in the problem how to change url, routes and to display the filtered array on different pages.
-  // const [list, setList] = useState(influencerData)
-  // function filterCategories(category) {
-  //   setList(
-  //     influencerData.filter(function (profile) {
-  //       return profile.categories.includes(category)
-  //     })
-  //   )
-  // }
-
   return (
     <>
       <ContainerStyled>
         <section>
           <a href="/food">
-            <ButtonStyled
-              category="food"
-              // onClick={() => filterCategories('Food')}
-            >
+            <ButtonStyled category="food">
               <IconsStyled src={fork} alt="fork and spoon" />
               <H2Styled>Food</H2Styled>
             </ButtonStyled>
           </a>
           <a href="/fitness">
-            <ButtonStyled
-              category="fitness"
-              // onClick={() => filterCategories('Fitness')}
-            >
+            <ButtonStyled category="fitness">
               <IconsStyled src={dumbbell} alt="dumbbell" />
               <H2Styled>Fitness</H2Styled>
             </ButtonStyled>
@@ -44,19 +27,13 @@ export default function CategoryButtons() {
         </section>
         <section>
           <a href="/beauty">
-            <ButtonStyled
-              category="beauty"
-              // onClick={() => filterCategories('Beauty')}
-            >
+            <ButtonStyled category="beauty">
               <img src={lipsticks} alt="lipsticks" />
               <H2Styled>Beauty</H2Styled>
             </ButtonStyled>
           </a>
           <a href="/fashion">
-            <ButtonStyled
-              category="fashion"
-              // onClick={() => filterCategories('Fashion')}
-            >
+            <ButtonStyled category="fashion">
               <img src={mannequin} alt="fashion mannequin" />
               <H2Styled>Fashion</H2Styled>
             </ButtonStyled>
@@ -64,19 +41,13 @@ export default function CategoryButtons() {
         </section>
         <section>
           <a href="/interior">
-            <ButtonStyled
-              category="interior"
-              // onClick={() => filterCategories('Interior')}
-            >
+            <ButtonStyled category="interior">
               <img src={vase} alt="vase" />
               <H2Styled>Interior</H2Styled>
             </ButtonStyled>
           </a>
           <a href="/travel">
-            <ButtonStyled
-              category="travel"
-              // onClick={() => filterCategories('Travel')}
-            >
+            <ButtonStyled category="travel">
               <img src={plane} alt="plane" />
               <H2Styled>Travel</H2Styled>
             </ButtonStyled>

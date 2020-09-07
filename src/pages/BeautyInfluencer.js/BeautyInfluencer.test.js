@@ -20,7 +20,7 @@ describe('InfluencerList', () => {
     },
   ]
 
-  it('displays the information details of an influencer, () => {
+  it('displays the information details of an influencer', () => {
     const { getByText, getAllByText } = render(<BeautyInfluencer />)
     influencerData.forEach(
       ({

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav renders Nav correctly 1`] = `
+Array [
+  <img
+    alt="arrow left"
+    className="GoBackArrow__GoBackStyled-m93ye8-0 kcjJZM"
+    onClick={[Function]}
+    src="back.svg"
+  />,
+  <a
+    href="/favourites"
+    onClick={[Function]}
+  >
+    <button
+      className="Nav__ButtonStyled-sc-8pthb9-0 jVkSCe"
+    >
+      <svg
+        fill="var(--darkpink)"
+        stroke="var(--darkpink)"
+      >
+        heart.svg
+      </svg>
+    </button>
+  </a>,
+]
+`;

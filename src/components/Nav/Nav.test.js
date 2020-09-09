@@ -1,14 +1,14 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import CategoryButtons from './CategoryButtons'
+import Nav from './Nav'
 import '@testing-library/jest-dom/extend-expect'
 import { MemoryRouter } from 'react-router-dom'
 
-describe('CategoryButtons', () => {
-  it('renders CategoryButtons correctly', () => {
+describe('Nav', () => {
+  it('renders Nav correctly', () => {
     const tree = renderer.create(
       <MemoryRouter>
-        <CategoryButtons />
+        <Nav />
       </MemoryRouter>
     )
     expect(tree).toMatchSnapshot()

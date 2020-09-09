@@ -1,62 +1,63 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InfluencerList renders username correctly 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  grid-column: 1/3;
-  margin: 20px 0;
+exports[`InfluencerList renders influencer details correctly 1`] = `
+.c4 {
+  background: var(--lightpink);
+  border-radius: 50%;
   text-align: center;
+  height: 60px;
+  width: 60px;
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  border: none;
 }
 
-.c2 {
-  display: inline;
-  position: relative;
-  font: var(--font-weight-regular);
-  font-size: 25px;
-  padding-bottom: 5px;
-  margin: auto;
-  max-width: 300px;
+.c0 {
+  background: var(--transparent-blue);
+  height: 350px;
 }
 
 .c1 {
-  position: absolute;
-  left: 30px;
-  margin-top: 10px;
-  cursor: pointer;
+  width: 150px;
+  height: 220px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0 0 0;
+  border-radius: 50%;
+}
+
+.c2 {
+  font-family: 'Poppins';
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+  padding: 10px 0 0 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .c3 {
-  background: var(--transparent-blue);
-  height: 200px;
-  width: 100%;
-}
-
-.c4 {
   font-family: 'Poppins';
-  font-weight: var(--font-weight-semibold);
-  line-height: 100px;
+  font-weight: var(--font-weight-light);
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .c5 {
-  font-family: 'Poppins';
-  font-weight: var(--font-weight-light);
-  text-align: center;
-}
-
-.c6 {
   text-align: left;
+  margin: 0;
   list-style-type: none;
   font-family: 'Poppins';
   font-weight: var(--font-weight-light);
-  width: 100%;
-  margin: 50px;
+  margin: 50px 0 120px 0;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.c7 {
+.c6 {
   -webkit-letter-spacing: 1px;
   -moz-letter-spacing: 1px;
   -ms-letter-spacing: 1px;
@@ -68,123 +69,133 @@ exports[`InfluencerList renders username correctly 1`] = `
 <section
   className="profiles"
 >
-  <section
-    className="c0"
-  >
-    <img
-      alt="arrow left"
-      className="c1"
-      onClick={[Function]}
-      src="back.svg"
-    />
-    <h1
-      className="c2"
-    >
-      Search
-    </h1>
-  </section>
   <section>
     <section
-      className="c3"
+      className="c0"
     >
+      <img
+        className="c1"
+      />
       <h2
-        className="c4"
+        className="c2"
       >
         @fitness4life
       </h2>
       <h3
-        className="c5"
+        className="c3"
       >
         Fitness
       </h3>
+      <section>
+        <button
+          className="c4"
+          onClick={[Function]}
+        >
+          <svg
+            fill="var(--lightpink)"
+          >
+            heart.svg
+          </svg>
+        </button>
+      </section>
     </section>
     <ul
-      className="c6"
+      className="c5"
     >
       <li
-        className="c7"
+        className="c6"
       >
         Follower: 
         10k
       </li>
       <li
-        className="c7"
+        className="c6"
       >
         Gender: 
         female
       </li>
       <li
-        className="c7"
+        className="c6"
       >
         Age: 
         25 years
       </li>
       <li
-        className="c7"
+        className="c6"
       >
         Location: 
         Hamburg
       </li>
       <li
-        className="c7"
+        className="c6"
       >
         Languages: 
-        German, 
-        English
-         
+        German, , English
       </li>
     </ul>
   </section>
   <section>
     <section
-      className="c3"
+      className="c0"
     >
+      <img
+        className="c1"
+      />
       <h2
-        className="c4"
+        className="c2"
       >
         @VeganPlace
       </h2>
       <h3
-        className="c5"
+        className="c3"
       >
-        Food
-        Health
+        Food, Health
       </h3>
+      <section>
+        <button
+          className="c4"
+          onClick={[Function]}
+        >
+          <svg
+            fill="var(--lightpink)"
+          >
+            heart.svg
+          </svg>
+        </button>
+      </section>
     </section>
     <ul
-      className="c6"
+      className="c5"
     >
       <li
-        className="c7"
+        className="c6"
       >
         Follower: 
         1.000
       </li>
       <li
-        className="c7"
+        className="c6"
       >
         Gender: 
         female
       </li>
       <li
-        className="c7"
+        className="c6"
       >
         Age: 
         28 years
       </li>
       <li
-        className="c7"
+        className="c6"
       >
         Location: 
         Munich
       </li>
       <li
-        className="c7"
+        className="c6"
       >
         Languages: 
-        German, 
-        English
-         
+        German, , English
       </li>
     </ul>
   </section>

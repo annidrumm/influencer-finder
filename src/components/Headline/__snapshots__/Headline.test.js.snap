@@ -4,12 +4,6 @@ exports[`Headline renders correctly 1`] = `
 <section
   className="sc-AxjAm cmCotq"
 >
-  <img
-    alt="arrow left"
-    className="sc-AxiKw eHrRzm"
-    onClick={[Function]}
-    src="back.svg"
-  />
   <h1
     className="sc-AxirZ hykbjA"
   />

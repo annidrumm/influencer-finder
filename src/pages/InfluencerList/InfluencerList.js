@@ -6,7 +6,7 @@ import FavouriteButton from '../../components/FavouriteButton/FavouriteButton.js
 export default function InfluencerList({ influencerData, onFavouriteClick }) {
   return (
     <section className="profiles">
-      {influencerData.map((profile) => {
+      {influencerData?.map((profile) => {
         return (
           <section key={profile.id}>
             <ContainerStyled>

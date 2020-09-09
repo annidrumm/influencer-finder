@@ -1,29 +1,22 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { ReactComponent as HeartIcon } from '../../icons/heart.svg'
 import styled from 'styled-components'
 
-LikeButton.propTypes = {
+FavouriteButton.propTypes = {
   headline: PropTypes.string,
 }
 
-export default function LikeButton({ isLiked }) {
-  const [liked, setliked] = useState(isLiked)
-
+export default function FavouriteButton({ onClick, isFavourite }) {
   return (
     <section>
-      <ButtonStyled onClick={handleLikes}>
-        <HeartIcon fill={liked ? 'var(--darkpink)' : 'var(--lightpink)'} />
+      <ButtonStyled onClick={onClick}>
+        <HeartIcon
+          fill={isFavourite ? 'var(--darkpink)' : 'var(--lightpink)'}
+        />
       </ButtonStyled>
     </section>
   )
-
-  function handleLikes() {
-    setliked(!liked)
-    const likedProfile = JSON.parse(localStorage.getItem('profiles'))
-    likedProfile.isLiked = !likedProfile.isLiked
-    localStorage.setItem('profiles', JSON.stringify(likedProfile))
-  }
 }
 
 const ButtonStyled = styled.button`

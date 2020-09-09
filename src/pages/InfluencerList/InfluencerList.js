@@ -1,20 +1,11 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
-import LikeButton from '../../components/FavouriteButton/FavouriteButton.js'
-import GoBackArrow from '../../components/GoBackArrow/GoBackArrow'
-import { ReactComponent as HeartIcon } from '../../icons/heart.svg'
+import FavouriteButton from '../../components/FavouriteButton/FavouriteButton.js'
 
-export default function InfluencerList({ influencerData }) {
-  saveLocally('profiles', influencerData)
+export default function InfluencerList({ influencerData, onFavouriteClick }) {
   return (
     <section className="profiles">
-      <GoBackArrow />
-      <a href="/favourites">
-        <ButtonStyled>
-          <HeartIcon fill="var(--darkpink)" stroke="var(--darkpink)" />
-        </ButtonStyled>
-      </a>
       {influencerData.map((profile) => {
         return (
           <section key={profile.id}>
@@ -24,7 +15,10 @@ export default function InfluencerList({ influencerData }) {
               <CategoriesStyled>
                 {profile.categories.join(', ')}
               </CategoriesStyled>
-              <LikeButton isLiked={influencerData.isLiked} />
+              <FavouriteButton
+                onClick={() => onFavouriteClick(profile)}
+                isFavourite={profile.isFavourite}
+              />
             </ContainerStyled>
             <DetailListStyled>
               <DetailItemStyled key={profile.username}>
@@ -48,27 +42,11 @@ export default function InfluencerList({ influencerData }) {
       })}
     </section>
   )
-
-  function saveLocally(key, arrayOfObjects) {
-    localStorage.setItem(key, JSON.stringify(arrayOfObjects))
-  }
 }
 
 const ContainerStyled = styled.section`
   background: var(--transparent-blue);
   height: 350px;
-`
-const ButtonStyled = styled.button`
-  background: transparent;
-  border-radius: 50%;
-  text-align: center;
-  height: 60px;
-  width: 60px;
-  display: block;
-  margin: auto;
-  margin-top: 15px;
-  border: none;
-  cursor: pointer;
 `
 
 const ImageStyled = styled.img`

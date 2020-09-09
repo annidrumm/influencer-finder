@@ -5,11 +5,10 @@ import { useHistory } from 'react-router-dom'
 
 export default function GoBackArrow() {
   const history = useHistory()
-  const routeChange = () => {
-    let path = `/`
-    history.push(path)
+  const goBack = () => {
+    history.goBack()
   }
-  return <GoBackStyled src={backIcon} alt="arrow left" onClick={routeChange} />
+  return <GoBackStyled src={backIcon} alt="arrow left" onClick={goBack} />
 }
 
 const GoBackStyled = styled.img`

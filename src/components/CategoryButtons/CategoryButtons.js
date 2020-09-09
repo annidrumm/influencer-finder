@@ -6,55 +6,68 @@ import lipsticks from '../../icons/beauty.svg'
 import mannequin from '../../icons/mannequin.svg'
 import vase from '../../icons/vase.svg'
 import plane from '../../icons/plane.svg'
+import { Switch, Route, Link } from 'react-router-dom'
 
 export default function CategoryButtons() {
   return (
-    <>
+    <Switch>
       <ContainerStyled>
         <section>
-          <a href="/food">
-            <ButtonStyled category="food">
-              <IconsStyled src={fork} alt="fork and spoon" />
-              <H2Styled>Food</H2Styled>
-            </ButtonStyled>
-          </a>
-          <a href="/fitness">
-            <ButtonStyled category="fitness">
-              <IconsStyled src={dumbbell} alt="dumbbell" />
-              <H2Styled>Fitness</H2Styled>
-            </ButtonStyled>
-          </a>
+          <Route>
+            <Link to="/food">
+              <ButtonStyled category="food">
+                <IconsStyled src={fork} alt="fork and spoon" />
+                <H2Styled>Food</H2Styled>
+              </ButtonStyled>
+            </Link>
+          </Route>
+          <Route>
+            <Link to="/fitness">
+              <ButtonStyled category="fitness">
+                <IconsStyled src={dumbbell} alt="dumbbell" />
+                <H2Styled>Fitness</H2Styled>
+              </ButtonStyled>
+            </Link>
+          </Route>
         </section>
         <section>
-          <a href="/beauty">
-            <ButtonStyled category="beauty">
-              <img src={lipsticks} alt="lipsticks" />
-              <H2Styled>Beauty</H2Styled>
-            </ButtonStyled>
-          </a>
-          <a href="/fashion">
-            <ButtonStyled category="fashion">
-              <img src={mannequin} alt="fashion mannequin" />
-              <H2Styled>Fashion</H2Styled>
-            </ButtonStyled>
-          </a>
+          <Route>
+            <Link to="/beauty">
+              <ButtonStyled category="beauty">
+                <img src={lipsticks} alt="lipsticks" />
+                <H2Styled>Beauty</H2Styled>
+              </ButtonStyled>
+            </Link>
+          </Route>
+          <Route>
+            <Link to="/fashion">
+              <ButtonStyled category="fashion">
+                <img src={mannequin} alt="fashion mannequin" />
+                <H2Styled>Fashion</H2Styled>
+              </ButtonStyled>
+            </Link>
+          </Route>
         </section>
         <section>
-          <a href="/interior">
-            <ButtonStyled category="interior">
-              <img src={vase} alt="vase" />
-              <H2Styled>Interior</H2Styled>
-            </ButtonStyled>
-          </a>
-          <a href="/travel">
-            <ButtonStyled category="travel">
-              <img src={plane} alt="plane" />
-              <H2Styled>Travel</H2Styled>
-            </ButtonStyled>
-          </a>
+          <Route>
+            <Link to="/interior">
+              <ButtonStyled category="interior">
+                <img src={vase} alt="vase" />
+                <H2Styled>Interior</H2Styled>
+              </ButtonStyled>
+            </Link>
+          </Route>
+          <Route>
+            <Link to="/travel">
+              <ButtonStyled category="travel">
+                <img src={plane} alt="plane" />
+                <H2Styled>Travel</H2Styled>
+              </ButtonStyled>
+            </Link>
+          </Route>
         </section>
       </ContainerStyled>
-    </>
+    </Switch>
   )
 }
 

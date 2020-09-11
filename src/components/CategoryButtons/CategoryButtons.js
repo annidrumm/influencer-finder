@@ -72,7 +72,7 @@ export default function CategoryButtons() {
 }
 
 const ContainerStyled = styled.section`
-  margin-top: 70px;
+  margin-top: 40px;
 `
 
 const ButtonStyled = styled.button`
@@ -96,7 +96,7 @@ const ButtonStyled = styled.button`
       : 'var(--darkyellow)'};
 `
 const IconsStyled = styled.img`
-  margin-top: 15px;
+  margin-top: 10px;
   vertical-align: top;
 `
 

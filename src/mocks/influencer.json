@@ -8,7 +8,7 @@
     "age": "25 years",
     "location": "Hamburg",
     "languages": ["German", "English"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/filter-categories/src/images/wesley-tingey-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/wesley-tingey-min.jpg"
   },
   {
     "id": 2,
@@ -52,7 +52,7 @@
     "age": "28 years",
     "location": "Munich",
     "languages": ["German", "English"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/filter-categories/src/images/gisela-carolina-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/gisela-carolina-min.jpg"
   },
   {
     "id": 6,
@@ -63,19 +63,19 @@
     "age": "32 years",
     "location": "Cologne",
     "languages": ["English"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/filter-categories/src/images/sayo-garcia-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/sayo-garcia-min.jpg"
   },
 
   {
     "id": 7,
-    "username": "@LeaSilverio",
+    "username": "@Lea",
     "categories": ["Beauty"],
     "follower": 800,
     "gender": "female",
     "age": "26 years",
     "location": "Munich",
     "languages": ["German", "English"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/filter-categories/src/images/gabriel-silverio-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/gabriel-silverio-min.jpg"
   },
   {
     "id": 8,
@@ -97,7 +97,7 @@
     "age": "35 years",
     "location": "Hamburg",
     "languages": ["English"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/filter-categories/src/images/nico-marks-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/nico-marks-min.jpg"
   },
   {
     "id": 10,

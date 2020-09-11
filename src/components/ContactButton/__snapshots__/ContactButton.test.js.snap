@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactButton renders ContactButton correctly 1`] = `
+<a
+  href="mailto:influencer@gmail.com"
+  style={
+    Object {
+      "textDecoration": "none",
+    }
+  }
+>
+  <button
+    className="ContactButton__ContactButtonStyled-sc-1kv6ekb-0 beJosE"
+  >
+    Contact
+  </button>
+</a>
+`;

@@ -5,10 +5,10 @@ exports[`CategoryPage renders CategoryPage correctly 1`] = `
   className="CategoryPage__ContainerStyled-inp28z-0 gAaNNM"
 >
   <section
-    className="sc-AxjAm cmCotq"
+    className="Headline__HeaderStyled-sc-1c10d6o-0 kDyOXz"
   >
     <h1
-      className="sc-AxirZ hykbjA"
+      className="Headline__HeadlineStyled-sc-1c10d6o-1 kBRUQI"
     >
       What categories are you looking for?
     </h1>

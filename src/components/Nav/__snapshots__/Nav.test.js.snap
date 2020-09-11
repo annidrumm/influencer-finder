@@ -8,12 +8,12 @@ Array [
     onClick={[Function]}
     src="back.svg"
   />,
-  <a
-    href="/favourites"
-    onClick={[Function]}
+  <button
+    className="Nav__ButtonStyled-sc-8pthb9-0 jVkSCe"
   >
-    <button
-      className="Nav__ButtonStyled-sc-8pthb9-0 jVkSCe"
+    <a
+      href="/favourites"
+      onClick={[Function]}
     >
       <svg
         fill="var(--darkpink)"
@@ -21,7 +21,7 @@ Array [
       >
         heart.svg
       </svg>
-    </button>
-  </a>,
+    </a>
+  </button>,
 ]
 `;

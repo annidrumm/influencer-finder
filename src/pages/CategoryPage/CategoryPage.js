@@ -32,7 +32,7 @@ const ContainerStyled = styled.section`
 
 const SlideStyled = styled.section`
   background: var(--transparent-blue);
-  height: 100px;
+  height: 110px;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -45,8 +45,8 @@ const SlideStyled = styled.section`
   }
 `
 const ImageStyled = styled.img`
-  width: 90px;
-  height: 110px;
+  width: 80px;
+  height: 100px;
   padding: 15px;
   border-radius: 50%;
   margin: 0 10px 10px 10px;

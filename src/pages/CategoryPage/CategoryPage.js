@@ -44,6 +44,29 @@ const SlideStyled = styled.section`
 const ImageStyled = styled.img`
   width: 90px;
   height: 110px;
-  padding: 10px;
+  padding: 15px;
   border-radius: 50%;
+  margin: 0 10px 10px 10px;
+
+  @media (min-width: 400px) {
+    width: 90px;
+    height: 110px;
+
+    border-radius: 50%;
+    margin: 0 10px 10px 30px;
+  }
+  @media (min-width: 650px) {
+    width: 90px;
+    height: 110px;
+
+    border-radius: 50%;
+    margin: 0 10px 10px 50px;
+  }
+  @media (min-width: 800px) {
+    width: 90px;
+    height: 110px;
+
+    border-radius: 50%;
+    margin: 0 10px 10px 100px;
+  }
 `

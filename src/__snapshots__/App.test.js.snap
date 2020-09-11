@@ -6,16 +6,16 @@ Array [
     className="CategoryPage__ContainerStyled-inp28z-0 gAaNNM"
   >
     <section
-      className="sc-AxjAm cmCotq"
+      className="Headline__HeaderStyled-sc-1c10d6o-0 kDyOXz"
     >
       <h1
-        className="sc-AxirZ hykbjA"
+        className="Headline__HeadlineStyled-sc-1c10d6o-1 kBRUQI"
       >
         What categories are you looking for?
       </h1>
     </section>
     <section
-      className="CategoryButtons__ContainerStyled-fe33yf-0 kSPRRI"
+      className="CategoryButtons__ContainerStyled-fe33yf-0 fUTTAv"
     >
       <section>
         <a
@@ -27,7 +27,7 @@ Array [
           >
             <img
               alt="fork and spoon"
-              className="CategoryButtons__IconsStyled-fe33yf-2 gUDOhC"
+              className="CategoryButtons__IconsStyled-fe33yf-2 ftVVUf"
               src="fork.svg"
             />
             <h2
@@ -46,7 +46,7 @@ Array [
           >
             <img
               alt="dumbbell"
-              className="CategoryButtons__IconsStyled-fe33yf-2 gUDOhC"
+              className="CategoryButtons__IconsStyled-fe33yf-2 ftVVUf"
               src="gym.svg"
             />
             <h2
@@ -135,18 +135,42 @@ Array [
       </section>
     </section>
   </section>,
+  <section
+    className="CategoryPage__SlideStyled-inp28z-1 dCXIay"
+  >
+    <img
+      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
+      src="nico-marks-min.jpg"
+    />
+    <img
+      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
+      src="fezbot2000-min.jpg"
+    />
+    <img
+      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
+      src="any-haust-min.jpg"
+    />
+    <img
+      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
+      src="ian-dooleyw-min.jpg"
+    />
+    <img
+      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
+      src="svyatoslav-romanov-min.jpg"
+    />
+  </section>,
   <img
     alt="arrow left"
     className="GoBackArrow__GoBackStyled-m93ye8-0 kcjJZM"
     onClick={[Function]}
     src="back.svg"
   />,
-  <a
-    href="/favourites"
-    onClick={[Function]}
+  <button
+    className="Nav__ButtonStyled-sc-8pthb9-0 jVkSCe"
   >
-    <button
-      className="Nav__ButtonStyled-sc-8pthb9-0 jVkSCe"
+    <a
+      href="/favourites"
+      onClick={[Function]}
     >
       <svg
         fill="var(--darkpink)"
@@ -154,7 +178,7 @@ Array [
       >
         heart.svg
       </svg>
-    </button>
-  </a>,
+    </a>
+  </button>,
 ]
 `;

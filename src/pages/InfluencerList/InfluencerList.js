@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
 import FavouriteButton from '../../components/FavouriteButton/FavouriteButton.js'
+import ContactButton from '../../components/ContactButton/ContactButton.js'
 
 export default function InfluencerList({ influencerData, onFavouriteClick }) {
   return (
@@ -37,6 +38,7 @@ export default function InfluencerList({ influencerData, onFavouriteClick }) {
                 Languages: {profile.languages.join(', ')}
               </DetailItemStyled>
             </DetailListStyled>
+            <ContactButton />
           </section>
         )
       })}
@@ -83,7 +85,7 @@ const DetailListStyled = styled.ul`
   list-style-type: none;
   font-family: 'Poppins';
   font-weight: var(--font-weight-light);
-  margin: 50px 0 120px 0;
+  margin: 50px 0 40px 0;
   width: 300px;
   margin-left: auto;
   margin-right: auto;

@@ -3,7 +3,7 @@
 exports[`FavouriteButton renders FavouriteButton correctly 1`] = `
 <section>
   <button
-    className="sc-AxjAm dvYICO"
+    className="FavouriteButton__ButtonStyled-sc-1d9fn40-0 fnlWbX"
   >
     <svg
       fill="var(--lightpink)"

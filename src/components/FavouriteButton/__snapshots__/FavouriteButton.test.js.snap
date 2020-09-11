@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FavouriteButton renders FavouriteButton correctly 1`] = `
+<section>
+  <button
+    className="sc-AxjAm dvYICO"
+  >
+    <svg
+      fill="var(--lightpink)"
+    >
+      heart.svg
+    </svg>
+  </button>
+</section>
+`;

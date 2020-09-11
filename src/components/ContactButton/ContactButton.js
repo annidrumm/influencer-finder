@@ -3,9 +3,9 @@ import styled from 'styled-components/macro'
 
 export default function ContactButton() {
   return (
-    <a style={{ textDecoration: 'none' }} href="mailto:influencer@gmail.com">
+    <AnchorStyled href="mailto:influencer@gmail.com">
       <ContactButtonStyled>Contact</ContactButtonStyled>
-    </a>
+    </AnchorStyled>
   )
 }
 
@@ -24,4 +24,7 @@ const ContactButtonStyled = styled.button`
   border: none;
   margin-bottom: 40px;
   cursor: pointer;
+`
+const AnchorStyled = styled.a`
+  text-decoration: none;
 `

@@ -40,6 +40,9 @@ const SlideStyled = styled.section`
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
+  @media (min-width: 1170px) {
+    height: 100px;
+  }
 `
 const ImageStyled = styled.img`
   width: 90px;
@@ -49,24 +52,33 @@ const ImageStyled = styled.img`
   margin: 0 10px 10px 10px;
 
   @media (min-width: 400px) {
-    width: 90px;
-    height: 110px;
-
+    width: 100px;
+    height: 120px;
     border-radius: 50%;
     margin: 0 10px 10px 30px;
   }
   @media (min-width: 650px) {
-    width: 90px;
-    height: 110px;
-
+    width: 100px;
+    height: 120px;
     border-radius: 50%;
-    margin: 0 10px 10px 50px;
+    margin: 0 10px 20px 50px;
   }
   @media (min-width: 800px) {
-    width: 90px;
-    height: 110px;
-
+    width: 100px;
+    height: 120px;
     border-radius: 50%;
-    margin: 0 10px 10px 100px;
+    margin: 0 10px 20px 100px;
+  }
+  @media (min-width: 800px) {
+    width: 100px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 10px 20px 100px;
+  }
+  @media (min-width: 1170px) {
+    width: 110px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 0 100px 100px 100px;
   }
 `

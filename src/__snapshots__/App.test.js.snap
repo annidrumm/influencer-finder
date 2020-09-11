@@ -15,7 +15,7 @@ Array [
       </h1>
     </section>
     <section
-      className="CategoryButtons__ContainerStyled-fe33yf-0 kSPRRI"
+      className="CategoryButtons__ContainerStyled-fe33yf-0 fUTTAv"
     >
       <section>
         <a
@@ -27,7 +27,7 @@ Array [
           >
             <img
               alt="fork and spoon"
-              className="CategoryButtons__IconsStyled-fe33yf-2 gUDOhC"
+              className="CategoryButtons__IconsStyled-fe33yf-2 ftVVUf"
               src="fork.svg"
             />
             <h2
@@ -46,7 +46,7 @@ Array [
           >
             <img
               alt="dumbbell"
-              className="CategoryButtons__IconsStyled-fe33yf-2 gUDOhC"
+              className="CategoryButtons__IconsStyled-fe33yf-2 ftVVUf"
               src="gym.svg"
             />
             <h2
@@ -134,6 +134,30 @@ Array [
         </a>
       </section>
     </section>
+  </section>,
+  <section
+    className="CategoryPage__SlideStyled-inp28z-1 dCXIay"
+  >
+    <img
+      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
+      src="nico-marks-min.jpg"
+    />
+    <img
+      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
+      src="fezbot2000-min.jpg"
+    />
+    <img
+      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
+      src="any-haust-min.jpg"
+    />
+    <img
+      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
+      src="ian-dooleyw-min.jpg"
+    />
+    <img
+      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
+      src="svyatoslav-romanov-min.jpg"
+    />
   </section>,
   <img
     alt="arrow left"

@@ -1,137 +1,163 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CategoryPage renders CategoryPage correctly 1`] = `
-<section
-  className="CategoryPage__ContainerStyled-inp28z-0 gAaNNM"
->
+Array [
   <section
-    className="Headline__HeaderStyled-sc-1c10d6o-0 kDyOXz"
+    className="CategoryPage__ContainerStyled-inp28z-0 gAaNNM"
   >
-    <h1
-      className="Headline__HeadlineStyled-sc-1c10d6o-1 kBRUQI"
+    <section
+      className="Headline__HeaderStyled-sc-1c10d6o-0 kDyOXz"
     >
-      What categories are you looking for?
-    </h1>
-  </section>
+      <h1
+        className="Headline__HeadlineStyled-sc-1c10d6o-1 kBRUQI"
+      >
+        What categories are you looking for?
+      </h1>
+    </section>
+    <section
+      className="CategoryButtons__ContainerStyled-fe33yf-0 fUTTAv"
+    >
+      <section>
+        <a
+          href="/food"
+          onClick={[Function]}
+        >
+          <button
+            className="CategoryButtons__ButtonStyled-fe33yf-1 jdljUJ"
+          >
+            <img
+              alt="fork and spoon"
+              className="CategoryButtons__IconsStyled-fe33yf-2 ftVVUf"
+              src="fork.svg"
+            />
+            <h2
+              className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
+            >
+              Food
+            </h2>
+          </button>
+        </a>
+        <a
+          href="/fitness"
+          onClick={[Function]}
+        >
+          <button
+            className="CategoryButtons__ButtonStyled-fe33yf-1 fSsSAP"
+          >
+            <img
+              alt="dumbbell"
+              className="CategoryButtons__IconsStyled-fe33yf-2 ftVVUf"
+              src="gym.svg"
+            />
+            <h2
+              className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
+            >
+              Fitness
+            </h2>
+          </button>
+        </a>
+      </section>
+      <section>
+        <a
+          href="/beauty"
+          onClick={[Function]}
+        >
+          <button
+            className="CategoryButtons__ButtonStyled-fe33yf-1 eFVMfs"
+          >
+            <img
+              alt="lipsticks"
+              src="beauty.svg"
+            />
+            <h2
+              className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
+            >
+              Beauty
+            </h2>
+          </button>
+        </a>
+        <a
+          href="/fashion"
+          onClick={[Function]}
+        >
+          <button
+            className="CategoryButtons__ButtonStyled-fe33yf-1 bklmwB"
+          >
+            <img
+              alt="fashion mannequin"
+              src="mannequin.svg"
+            />
+            <h2
+              className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
+            >
+              Fashion
+            </h2>
+          </button>
+        </a>
+      </section>
+      <section>
+        <a
+          href="/interior"
+          onClick={[Function]}
+        >
+          <button
+            className="CategoryButtons__ButtonStyled-fe33yf-1 bLieCZ"
+          >
+            <img
+              alt="vase"
+              src="vase.svg"
+            />
+            <h2
+              className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
+            >
+              Interior
+            </h2>
+          </button>
+        </a>
+        <a
+          href="/travel"
+          onClick={[Function]}
+        >
+          <button
+            className="CategoryButtons__ButtonStyled-fe33yf-1 jdljUJ"
+          >
+            <img
+              alt="plane"
+              src="plane.svg"
+            />
+            <h2
+              className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
+            >
+              Travel
+            </h2>
+          </button>
+        </a>
+      </section>
+    </section>
+  </section>,
   <section
-    className="CategoryButtons__ContainerStyled-fe33yf-0 kSPRRI"
+    className="CategoryPage__SlideStyled-inp28z-1 dCXIay"
   >
-    <section>
-      <a
-        href="/food"
-        onClick={[Function]}
-      >
-        <button
-          className="CategoryButtons__ButtonStyled-fe33yf-1 jdljUJ"
-        >
-          <img
-            alt="fork and spoon"
-            className="CategoryButtons__IconsStyled-fe33yf-2 gUDOhC"
-            src="fork.svg"
-          />
-          <h2
-            className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
-          >
-            Food
-          </h2>
-        </button>
-      </a>
-      <a
-        href="/fitness"
-        onClick={[Function]}
-      >
-        <button
-          className="CategoryButtons__ButtonStyled-fe33yf-1 fSsSAP"
-        >
-          <img
-            alt="dumbbell"
-            className="CategoryButtons__IconsStyled-fe33yf-2 gUDOhC"
-            src="gym.svg"
-          />
-          <h2
-            className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
-          >
-            Fitness
-          </h2>
-        </button>
-      </a>
-    </section>
-    <section>
-      <a
-        href="/beauty"
-        onClick={[Function]}
-      >
-        <button
-          className="CategoryButtons__ButtonStyled-fe33yf-1 eFVMfs"
-        >
-          <img
-            alt="lipsticks"
-            src="beauty.svg"
-          />
-          <h2
-            className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
-          >
-            Beauty
-          </h2>
-        </button>
-      </a>
-      <a
-        href="/fashion"
-        onClick={[Function]}
-      >
-        <button
-          className="CategoryButtons__ButtonStyled-fe33yf-1 bklmwB"
-        >
-          <img
-            alt="fashion mannequin"
-            src="mannequin.svg"
-          />
-          <h2
-            className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
-          >
-            Fashion
-          </h2>
-        </button>
-      </a>
-    </section>
-    <section>
-      <a
-        href="/interior"
-        onClick={[Function]}
-      >
-        <button
-          className="CategoryButtons__ButtonStyled-fe33yf-1 bLieCZ"
-        >
-          <img
-            alt="vase"
-            src="vase.svg"
-          />
-          <h2
-            className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
-          >
-            Interior
-          </h2>
-        </button>
-      </a>
-      <a
-        href="/travel"
-        onClick={[Function]}
-      >
-        <button
-          className="CategoryButtons__ButtonStyled-fe33yf-1 jdljUJ"
-        >
-          <img
-            alt="plane"
-            src="plane.svg"
-          />
-          <h2
-            className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
-          >
-            Travel
-          </h2>
-        </button>
-      </a>
-    </section>
-  </section>
-</section>
+    <img
+      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
+      src="nico-marks-min.jpg"
+    />
+    <img
+      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
+      src="fezbot2000-min.jpg"
+    />
+    <img
+      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
+      src="any-haust-min.jpg"
+    />
+    <img
+      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
+      src="ian-dooleyw-min.jpg"
+    />
+    <img
+      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
+      src="svyatoslav-romanov-min.jpg"
+    />
+  </section>,
+]
 `;

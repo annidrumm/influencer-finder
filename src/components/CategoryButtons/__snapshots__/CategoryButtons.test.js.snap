@@ -2,7 +2,7 @@
 
 exports[`CategoryButtons renders CategoryButtons correctly 1`] = `
 <section
-  className="CategoryButtons__ContainerStyled-fe33yf-0 kSPRRI"
+  className="CategoryButtons__ContainerStyled-fe33yf-0 fUTTAv"
 >
   <section>
     <a
@@ -14,7 +14,7 @@ exports[`CategoryButtons renders CategoryButtons correctly 1`] = `
       >
         <img
           alt="fork and spoon"
-          className="CategoryButtons__IconsStyled-fe33yf-2 gUDOhC"
+          className="CategoryButtons__IconsStyled-fe33yf-2 ftVVUf"
           src="fork.svg"
         />
         <h2
@@ -33,7 +33,7 @@ exports[`CategoryButtons renders CategoryButtons correctly 1`] = `
       >
         <img
           alt="dumbbell"
-          className="CategoryButtons__IconsStyled-fe33yf-2 gUDOhC"
+          className="CategoryButtons__IconsStyled-fe33yf-2 ftVVUf"
           src="gym.svg"
         />
         <h2

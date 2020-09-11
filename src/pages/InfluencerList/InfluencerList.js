@@ -46,12 +46,12 @@ export default function InfluencerList({ influencerData, onFavouriteClick }) {
 
 const ContainerStyled = styled.section`
   background: var(--transparent-blue);
-  height: 350px;
+  height: 300px;
 `
 
 const ImageStyled = styled.img`
-  width: 150px;
-  height: 220px;
+  width: 120px;
+  height: 190px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -62,6 +62,7 @@ const ImageStyled = styled.img`
 const UsernameStyled = styled.h2`
   font-family: 'Poppins';
   font-weight: var(--font-weight-semibold);
+  font-size: 20px;
   text-align: center;
   padding: 10px 0 0 0;
   margin-top: 0;
@@ -70,6 +71,7 @@ const UsernameStyled = styled.h2`
 const CategoriesStyled = styled.h3`
   font-family: 'Poppins';
   font-weight: var(--font-weight-light);
+  font-size: 18px;
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;

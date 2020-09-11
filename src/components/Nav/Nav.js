@@ -10,11 +10,11 @@ export default function NavHeader() {
       <GoBackArrow />
       <Switch>
         <Route>
-          <Link to="/favourites">
-            <ButtonStyled>
+          <ButtonStyled>
+            <Link to="/favourites">
               <HeartIcon fill="var(--darkpink)" stroke="var(--darkpink)" />
-            </ButtonStyled>
-          </Link>
+            </Link>
+          </ButtonStyled>
         </Route>
       </Switch>
     </>

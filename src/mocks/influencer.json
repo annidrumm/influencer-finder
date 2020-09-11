@@ -81,5 +81,192 @@
     "location": "Hamburg",
     "languages": ["English"],
     "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/albert-dera-min.jpg"
+  },
+  {
+    "id": 8,
+    "username": "@Joanna",
+    "categories": ["Fashion", "Travel"],
+    "follower": 1900,
+    "gender": "female",
+    "age": "32 years",
+    "location": "Frankfurt",
+    "languages": ["German"],
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/joanna-nix-min.jpg"
+  },
+  {
+    "id": 9,
+    "username": "@WanderLisa",
+    "categories": ["Travel"],
+    "follower": 123000,
+    "gender": "female",
+    "age": "35 years",
+    "location": "Stuttgart",
+    "languages": ["German"],
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/svyatoslav-romanov-min.jpg"
+  },
+  {
+    "id": 10,
+    "username": "@Sorin",
+    "categories": ["Interior"],
+    "follower": 45000,
+    "gender": "male",
+    "age": "29 years",
+    "location": "Stuttgart",
+    "languages": ["German", "English"],
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/sorin-sirbu-min.jpg"
+  },
+  {
+    "id": 11,
+    "username": "@AkachiDesign",
+    "categories": ["Interior", "Beauty"],
+    "follower": 3900,
+    "gender": "female",
+    "age": "29 years",
+    "location": "Stuttgart",
+    "languages": ["English"],
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/prince-akachi-min.jpg"
+  },
+  {
+    "id": 12,
+    "username": "@JustJosh",
+    "categories": ["Interior"],
+    "follower": 82900,
+    "gender": "male",
+    "age": "26 years",
+    "location": "Berlin",
+    "languages": ["English"],
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/joanna-min.jpg"
+  },
+  {
+    "id": 13,
+    "username": "@marie",
+    "categories": ["Fitness"],
+    "follower": 22900,
+    "gender": "female",
+    "age": "21 years",
+    "location": "Berlin",
+    "languages": ["English"],
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/ian-dooley-min.jpg"
+  },
+  {
+    "id": 14,
+    "username": "@LinnCescon",
+    "categories": ["Food", "Travel"],
+    "follower": 2900,
+    "gender": "female",
+    "age": "23 years",
+    "location": "Cologne",
+    "languages": ["English", "German"],
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/gian-cescon-min.jpg"
+  },
+  {
+    "id": 15,
+    "username": "@FitWithFilip",
+    "categories": ["Food", "Fitness"],
+    "follower": 52900,
+    "gender": "male",
+    "age": "28 years",
+    "location": "Cologne",
+    "languages": ["English"],
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/filip-mroz-min.jpg"
+  },
+  {
+    "id": 16,
+    "username": "@Cara",
+    "categories": ["Travel"],
+    "follower": 590,
+    "gender": "female",
+    "age": "26 years",
+    "location": "Stuttgart",
+    "languages": ["English", "German"],
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/collins-lesulie-min.jpg"
+  },
+  {
+    "id": 17,
+    "username": "@CarlaVaz",
+    "categories": ["Fashion"],
+    "follower": 28590,
+    "gender": "female",
+    "age": "26 years",
+    "location": "Berlin",
+    "languages": ["English", "German"],
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/carlos-vaz-min.jpg"
+  },
+  {
+    "id": 18,
+    "username": "@Luise",
+    "categories": ["Fashion"],
+    "follower": 28590,
+    "gender": "female",
+    "age": "26 years",
+    "location": "Berlin",
+    "languages": ["English", "German"],
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/brooke-cagle-min.jpg"
+  },
+  {
+    "id": 19,
+    "username": "@LouLou",
+    "categories": ["Fashion", "Beauty"],
+    "follower": 128590,
+    "gender": "female",
+    "age": "28 years",
+    "location": "Berlin",
+    "languages": ["English", "German"],
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/any-haust-min.jpg"
+  },
+  {
+    "id": 20,
+    "username": "@AmirsWorld",
+    "categories": ["Travel"],
+    "follower": 2890,
+    "gender": "male",
+    "age": "26 years",
+    "location": "Hamburg",
+    "languages": ["English", "German"],
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/amir-riazipour-min.jpg"
+  },
+  {
+    "id": 21,
+    "username": "@Alex",
+    "categories": ["Fashion", "Beauty"],
+    "follower": 92890,
+    "gender": "female",
+    "age": "25 years",
+    "location": "Hamburg",
+    "languages": ["English"],
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/alex-hddife-min.jpg"
+  },
+  {
+    "id": 22,
+    "username": "@Maria",
+    "categories": ["Interior"],
+    "follower": 980,
+    "gender": "female",
+    "age": "20 years",
+    "location": "Hamburg",
+    "languages": ["English"],
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/aiony-min.jpg"
+  },
+  {
+    "id": 23,
+    "username": "@SimpleMe",
+    "categories": ["Beauty"],
+    "follower": 36980,
+    "gender": "female",
+    "age": "23 years",
+    "location": "Hamburg",
+    "languages": ["English"],
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/fezbot2000-min.jpg"
+  },
+  {
+    "id": 24,
+    "username": "@Ian",
+    "categories": ["Beauty"],
+    "follower": 380,
+    "gender": "male",
+    "age": "23 years",
+    "location": "Cologne",
+    "languages": ["German"],
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/ian-dooleyw-min.jpg"
   }
 ]

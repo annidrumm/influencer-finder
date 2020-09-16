@@ -25,3 +25,8 @@ export const favourite = Template.bind({})
 favourite.args = {
   headline: 'Favourite',
 }
+
+export const profile = Template.bind({})
+profile.args = {
+  headline: 'Create your profile',
+}

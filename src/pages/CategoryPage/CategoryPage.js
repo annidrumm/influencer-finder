@@ -7,10 +7,12 @@ import profile2 from '../../images/fezbot2000-min.jpg'
 import profile3 from '../../images/any-haust-min.jpg'
 import profile4 from '../../images/ian-dooleyw-min.jpg'
 import profile5 from '../../images/svyatoslav-romanov-min.jpg'
+import GoBackArrow from '../../components/GoBackArrow/GoBackArrow'
 
 export default function CategoryPage() {
   return (
     <>
+      <GoBackArrow />
       <ContainerStyled>
         <Headline headline="What categories are you looking for?" />
         <CategoryButtons />

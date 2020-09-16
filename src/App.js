@@ -6,6 +6,10 @@ import { Switch, Route } from 'react-router-dom'
 import NavHeader from './components/Nav/Nav.js'
 import Headline from './components/Headline/Headline.js'
 import GoBackArrow from './components/GoBackArrow/GoBackArrow.js'
+import SecondPage from './pages/SecondPage/SecondPage.js'
+import CreateProfile from './components/CreateProfile/CreateProfile.js'
+import Profile from './components/Profile/Profile.js'
+import { saveLocally, loadLocally } from './lib/localStorage'
 
 export default function App() {
   const [influencers, setInfluencers] = useState(
@@ -16,9 +20,49 @@ export default function App() {
     saveLocally('influencers', influencers)
   }, [influencers])
 
+  const [createProfile, setcreateProfile] = useState(
+    loadLocally('createProfile') ?? []
+  )
+  useEffect(() => saveLocally('createProfile', createProfile), [createProfile])
+
   return (
     <Switch>
       <Route exact path="/">
+        <SecondPage />
+      </Route>
+      <Route path="/create">
+        <CreateProfile
+          onCreateProfile={(profile) =>
+            setcreateProfile([...createProfile, profile])
+          }
+        />
+        {createProfile.map(
+          (
+            {
+              username,
+              categories,
+              follower,
+              gender,
+              age,
+              location,
+              languages,
+            },
+            index
+          ) => (
+            <Profile
+              key={username}
+              username={username}
+              categories={categories}
+              follower={follower}
+              gender={gender}
+              age={age}
+              location={location}
+              languages={languages}
+            />
+          )
+        )}
+      </Route>
+      <Route exact path="/categories">
         <CategoryPage />
       </Route>
       <Route path="/influencerList">
@@ -92,19 +136,6 @@ export default function App() {
       </Route>
     </Switch>
   )
-
-  function saveLocally(key, arrayOfObjects) {
-    localStorage.setItem(key, JSON.stringify(arrayOfObjects))
-  }
-
-  function loadLocally(key) {
-    try {
-      const jsonString = localStorage.getItem(key)
-      return JSON.parse(jsonString)
-    } catch (error) {
-      console.log(error)
-    }
-  }
 
   function toggleFavourite(influencer) {
     const index = influencers.indexOf(influencer)

@@ -8,8 +8,8 @@ import Headline from './components/Headline/Headline.js'
 import GoBackArrow from './components/GoBackArrow/GoBackArrow.js'
 import SecondPage from './pages/SecondPage/SecondPage.js'
 import CreateProfile from './components/CreateProfile/CreateProfile.js'
-import Profile from './components/Profile/Profile.js'
 import { saveLocally, loadLocally } from './lib/localStorage'
+import Profile from './components/Profile/Profile.js'
 
 export default function App() {
   const [influencers, setInfluencers] = useState(
@@ -20,10 +20,10 @@ export default function App() {
     saveLocally('influencers', influencers)
   }, [influencers])
 
-  const [createProfile, setcreateProfile] = useState(
-    loadLocally('createProfile') ?? []
+  const [userProfile, setUserProfile] = useState(
+    loadLocally('userProfile') ?? []
   )
-  useEffect(() => saveLocally('createProfile', createProfile), [createProfile])
+  useEffect(() => saveLocally('userProfile', userProfile), [userProfile])
 
   return (
     <Switch>
@@ -33,10 +33,14 @@ export default function App() {
       <Route path="/create">
         <CreateProfile
           onCreateProfile={(profile) =>
-            setcreateProfile([...createProfile, profile])
+            setUserProfile([...userProfile, profile])
           }
         />
-        {createProfile.map(
+      </Route>
+      <Route path="/profile">
+        <GoBackArrow />
+        <Headline headline="Your profile" />
+        {userProfile?.map(
           (
             {
               username,

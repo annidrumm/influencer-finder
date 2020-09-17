@@ -2,6 +2,12 @@
 
 exports[`CategoryPage renders CategoryPage correctly 1`] = `
 Array [
+  <img
+    alt="arrow left"
+    className="GoBackArrow__GoBackStyled-m93ye8-0 kcjJZM"
+    onClick={[Function]}
+    src="back.svg"
+  />,
   <section
     className="CategoryPage__ContainerStyled-inp28z-0 gAaNNM"
   >
@@ -136,26 +142,26 @@ Array [
     </section>
   </section>,
   <section
-    className="CategoryPage__SlideStyled-inp28z-1 dCXIay"
+    className="CategoryPage__SlideStyled-inp28z-1 fkwTAb"
   >
     <img
-      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
+      className="CategoryPage__ImageStyled-inp28z-2 fcToNj"
       src="nico-marks-min.jpg"
     />
     <img
-      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
+      className="CategoryPage__ImageStyled-inp28z-2 fcToNj"
       src="fezbot2000-min.jpg"
     />
     <img
-      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
+      className="CategoryPage__ImageStyled-inp28z-2 fcToNj"
       src="any-haust-min.jpg"
     />
     <img
-      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
+      className="CategoryPage__ImageStyled-inp28z-2 fcToNj"
       src="ian-dooleyw-min.jpg"
     />
     <img
-      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
+      className="CategoryPage__ImageStyled-inp28z-2 fcToNj"
       src="svyatoslav-romanov-min.jpg"
     />
   </section>,

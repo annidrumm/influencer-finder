@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import Headline from '../Headline/Headline'
 
 export default function Profile({
   username,
@@ -13,7 +12,6 @@ export default function Profile({
 }) {
   return (
     <section>
-      <Headline headline="Your profile" />
       <ContainerStyled>
         <UsernameStyled>{username}</UsernameStyled>
         <CategoriesStyled>{categories}</CategoriesStyled>

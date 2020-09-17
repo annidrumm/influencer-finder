@@ -2,13 +2,13 @@ import React from 'react'
 import styled from 'styled-components/macro'
 import GoBackArrow from '../GoBackArrow/GoBackArrow'
 import Headline from '../Headline/Headline'
-// import { useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 export default function CreateProfile({ onCreateProfile }) {
-  // const history = useHistory()
-  // const routeChange = () => {
-  //   history.push('/profile')
-  // }
+  const history = useHistory()
+  const routeChange = () => {
+    history.push('/profile')
+  }
   return (
     <ContainerStyled>
       <GoBackArrow />
@@ -38,7 +38,7 @@ export default function CreateProfile({ onCreateProfile }) {
           <InputStyled
             type="number"
             name="follower"
-            placeholder="1,000"
+            placeholder="1000"
             min="0"
             required
           />
@@ -85,7 +85,6 @@ export default function CreateProfile({ onCreateProfile }) {
             required
           />
         </div>
-
         <SubmitButtonStyled type="submit">Create</SubmitButtonStyled>
       </FormStyled>
     </ContainerStyled>
@@ -113,7 +112,7 @@ export default function CreateProfile({ onCreateProfile }) {
       languages: languagesInput.value,
     })
     form.reset()
-    usernameInput.focus()
+    routeChange()
   }
 }
 

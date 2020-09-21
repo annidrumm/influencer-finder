@@ -5,8 +5,10 @@ Array [
   <img
     alt="arrow left"
     className="GoBackArrow__GoBackStyled-m93ye8-0 kcjJZM"
+    id="goBack"
     onClick={[Function]}
     src="back.svg"
+    value="goBack"
   />,
   <button
     className="Nav__ButtonStyled-sc-8pthb9-0 jVkSCe"

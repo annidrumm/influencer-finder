@@ -20,7 +20,7 @@ export default function SecondPage() {
         <Route>
           <Link style={{ textDecoration: 'none' }} to="/categories">
             <H2Styled>Companies</H2Styled>
-            <ButtonStyled category="company">
+            <ButtonStyled category="userCompany">
               <ImageStyled src={company} alt="office" />
             </ButtonStyled>
             <Subheadline>I want to find an influencer</Subheadline>

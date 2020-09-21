@@ -19,6 +19,7 @@ export default function CreateProfile({ onCreateProfile }) {
           <InputStyled
             type="text"
             name="username"
+            id="username"
             placeholder="@fitness4life"
             required
           />
@@ -28,6 +29,7 @@ export default function CreateProfile({ onCreateProfile }) {
           <InputStyled
             type="text"
             name="categories"
+            id="categories"
             placeholder="Food, Fitness"
             required
           />
@@ -38,6 +40,7 @@ export default function CreateProfile({ onCreateProfile }) {
           <InputStyled
             type="number"
             name="follower"
+            id="follower"
             placeholder="1000"
             min="0"
             required
@@ -49,6 +52,7 @@ export default function CreateProfile({ onCreateProfile }) {
           <InputStyled
             type="text"
             name="gender"
+            id="gender"
             placeholder="female"
             required
           />
@@ -61,6 +65,7 @@ export default function CreateProfile({ onCreateProfile }) {
             min="0"
             max="100"
             name="age"
+            id="age"
             placeholder="26"
             required
           />
@@ -71,6 +76,7 @@ export default function CreateProfile({ onCreateProfile }) {
           <InputStyled
             type="text"
             name="location"
+            id="location"
             placeholder="Berlin"
             required
           />
@@ -81,11 +87,14 @@ export default function CreateProfile({ onCreateProfile }) {
           <InputStyled
             type="text"
             name="languages"
+            id="languages"
             placeholder="German, English"
             required
           />
         </div>
-        <SubmitButtonStyled type="submit">Create</SubmitButtonStyled>
+        <SubmitButtonStyled value="Create profile" type="submit">
+          Create
+        </SubmitButtonStyled>
       </FormStyled>
     </ContainerStyled>
   )

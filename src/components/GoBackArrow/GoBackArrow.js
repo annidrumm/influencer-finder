@@ -8,7 +8,15 @@ export default function GoBackArrow() {
   function goBack() {
     history.goBack()
   }
-  return <GoBackStyled src={backIcon} alt="arrow left" onClick={goBack} />
+  return (
+    <GoBackStyled
+      id="goBack"
+      value="goBack"
+      src={backIcon}
+      alt="arrow left"
+      onClick={goBack}
+    />
+  )
 }
 
 const GoBackStyled = styled.img`

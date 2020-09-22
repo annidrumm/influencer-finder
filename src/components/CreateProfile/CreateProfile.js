@@ -51,8 +51,8 @@ export default function CreateProfile({ onCreateProfile }) {
           required
         />
 
-        <LabelStyled htmlFor="age">Age:</LabelStyled>
-        <InputStyled type="date" name="age" id="age" required />
+        <LabelStyled htmlFor="age">Birthday:</LabelStyled>
+        <InputStyled type="date" name="birthday" id="birthday" required />
 
         <LabelStyled htmlFor="location">Location:</LabelStyled>
         <InputStyled
@@ -87,7 +87,7 @@ export default function CreateProfile({ onCreateProfile }) {
       categories: categoriesInput,
       follower: followerInput,
       gender: genderInput,
-      age: ageInput,
+      birthday: birthdayInput,
       location: locationInput,
       languages: languagesInput,
     } = form
@@ -96,7 +96,7 @@ export default function CreateProfile({ onCreateProfile }) {
       categories: categoriesInput.value,
       follower: followerInput.value,
       gender: genderInput.value,
-      age: ageInput.value,
+      birthday: birthdayInput.value,
       location: locationInput.value,
       languages: languagesInput.value,
     })

@@ -31,12 +31,9 @@ export default function Profile({
   function AgeCalculator(birthday) {
     const dob = new Date(birthday)
     console.log(dob)
-    //   const formattedDob = birthday.replace('-', ', ')
-    //   const dob = new Date(formattedDob)
-    //   var diff_ms = Date.now() - dob.getTime()
-    //   var age_dt = new Date(diff_ms)
-    //   return Math.abs(age_dt.getUTCFullYear() - 1970)
-    // }
+    var diff_ms = Date.now() - dob.getTime()
+    var age_dt = new Date(diff_ms)
+    return Math.abs(age_dt.getUTCFullYear() - 1970)
   }
 }
 

@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 
-describe('SecondPage', () => {
-  it('should load SecondPage', () => {
+describe('DecisionPage', () => {
+  it('should load DecisionPage', () => {
     cy.visit('http://localhost:3000/')
   })
   it('should go to CategoryPage', () => {

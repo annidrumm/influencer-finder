@@ -6,7 +6,7 @@ import { Switch, Route } from 'react-router-dom'
 import NavHeader from './components/Nav/Nav.js'
 import Headline from './components/Headline/Headline.js'
 import GoBackArrow from './components/GoBackArrow/GoBackArrow.js'
-import SecondPage from './pages/SecondPage/SecondPage.js'
+import DecisionPage from './pages/DecisionPage/DecisionPage.js'
 import CreateProfile from './components/CreateProfile/CreateProfile.js'
 import { saveLocally, loadLocally } from './lib/localStorage'
 import Profile from './components/Profile/Profile.js'
@@ -28,7 +28,7 @@ export default function App() {
   return (
     <Switch>
       <Route exact path="/">
-        <SecondPage />
+        <DecisionPage />
       </Route>
       <Route path="/create">
         <CreateProfile

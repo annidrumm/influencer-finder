@@ -14,84 +14,72 @@ export default function CreateProfile({ onCreateProfile }) {
       <GoBackArrow />
       <Headline headline="Create your profile" />
       <FormStyled onSubmit={handleSubmit}>
-        <div>
-          <LabelStyled htmlFor="username">Username:</LabelStyled>
-          <InputStyled
-            type="text"
-            name="username"
-            id="username"
-            placeholder="@fitness4life"
-            required
-          />
-        </div>
-        <div>
-          <LabelStyled htmlFor="categories">Categories: </LabelStyled>
-          <InputStyled
-            type="text"
-            name="categories"
-            id="categories"
-            placeholder="Food, Fitness"
-            required
-          />
-        </div>
+        <LabelStyled htmlFor="username">Username:</LabelStyled>
+        <InputStyled
+          type="text"
+          name="username"
+          id="username"
+          placeholder="@fitness4life"
+          required
+        />
 
-        <div>
-          <LabelStyled htmlFor="follower">Follower:</LabelStyled>
-          <InputStyled
-            type="number"
-            name="follower"
-            id="follower"
-            placeholder="1000"
-            min="0"
-            required
-          />
-        </div>
+        <LabelStyled htmlFor="categories">Categories: </LabelStyled>
+        <InputStyled
+          type="text"
+          name="categories"
+          id="categories"
+          placeholder="Food, Fitness"
+          required
+        />
 
-        <div>
-          <LabelStyled htmlFor="gender">Gender:</LabelStyled>
-          <InputStyled
-            type="text"
-            name="gender"
-            id="gender"
-            placeholder="female"
-            required
-          />
-        </div>
+        <LabelStyled htmlFor="follower">Follower:</LabelStyled>
+        <InputStyled
+          type="number"
+          name="follower"
+          id="follower"
+          placeholder="1000"
+          min="0"
+          required
+        />
 
-        <div>
-          <LabelStyled htmlFor="age">Age:</LabelStyled>
-          <InputStyled
-            type="number"
-            min="0"
-            max="100"
-            name="age"
-            id="age"
-            placeholder="26"
-            required
-          />
-        </div>
+        <LabelStyled htmlFor="gender">Gender:</LabelStyled>
+        <InputStyled
+          type="text"
+          name="gender"
+          id="gender"
+          placeholder="female"
+          required
+        />
 
-        <div>
-          <LabelStyled htmlFor="location">Location:</LabelStyled>
-          <InputStyled
-            type="text"
-            name="location"
-            id="location"
-            placeholder="Berlin"
-            required
-          />
-        </div>
+        <LabelStyled htmlFor="age">Age:</LabelStyled>
+        <InputStyled
+          type="number"
+          min="0"
+          max="100"
+          name="age"
+          id="age"
+          placeholder="26"
+          required
+        />
 
-        <div>
-          <LabelStyled htmlFor="languages">Languages:</LabelStyled>
-          <InputStyled
-            type="text"
-            name="languages"
-            id="languages"
-            placeholder="German, English"
-            required
-          />
-        </div>
+        <LabelStyled htmlFor="location">Location:</LabelStyled>
+        <InputStyled
+          type="text"
+          name="location"
+          id="location"
+          placeholder="Berlin"
+          required
+        />
+
+        <LabelStyled htmlFor="languages">Languages:</LabelStyled>
+        <InputStyled
+          type="text"
+          name="languages"
+          id="languages"
+          placeholder="German, English"
+          required
+        />
+
         <SubmitButtonStyled value="Create profile" type="submit">
           Create
         </SubmitButtonStyled>
@@ -128,7 +116,6 @@ export default function CreateProfile({ onCreateProfile }) {
 const ContainerStyled = styled.section`
   width: 80%;
   margin: auto;
-  align-items: center;
 `
 
 const SubmitButtonStyled = styled.button`
@@ -138,12 +125,12 @@ const SubmitButtonStyled = styled.button`
   background: var(--darkgreen);
   border: var(--darkgreen);
   border-radius: 30px;
-  box-shadow: 0 3px 10px #0000008b;
+  box-shadow: 0 3px 10px var(--boxshadow-color);
   padding: 20px;
   text-align: center;
   display: block;
   border: none;
-  margin: 30px 0 30px 0;
+  margin: 30px 0;
   margin-right: auto;
   margin-left: auto;
   cursor: pointer;
@@ -159,7 +146,7 @@ const LabelStyled = styled.label`
   font-size: 18px;
   letter-spacing: 0.1rem;
   display: block;
-  margin: 10px 0 10px 0;
+  margin: 10px 0;
 `
 
 const InputStyled = styled.input`

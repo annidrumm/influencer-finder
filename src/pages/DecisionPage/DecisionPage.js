@@ -4,7 +4,7 @@ import styled from 'styled-components/macro'
 import Influencer from '../../images/influencer-min.jpg'
 import company from '../../images/company-min.jpg'
 
-export default function SecondPage() {
+export default function DecisionPage() {
   return (
     <Switch>
       <ContainerStyled>

@@ -22,6 +22,7 @@ body {
     --lightpink:#F9D9DA;
     --darkyellow: #F7BF67;
     --darkpink: #E693B5;
+    --boxshadow-color: #0000008b;
 
     --font-color-white: #FFFFFF;
     --font-weight-semibold: 600;

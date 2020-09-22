@@ -47,7 +47,7 @@ export default function App() {
               categories,
               follower,
               gender,
-              age,
+              birthday,
               location,
               languages,
             },
@@ -59,7 +59,7 @@ export default function App() {
               categories={categories}
               follower={follower}
               gender={gender}
-              age={age}
+              birthday={birthday}
               location={location}
               languages={languages}
             />

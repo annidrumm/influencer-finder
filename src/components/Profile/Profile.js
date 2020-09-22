@@ -6,10 +6,11 @@ export default function Profile({
   categories,
   follower,
   gender,
-  age,
+  birthday,
   location,
   languages,
 }) {
+  console.log(birthday)
   return (
     <section>
       <ContainerStyled>
@@ -19,12 +20,24 @@ export default function Profile({
       <DetailListStyled>
         <DetailItemStyled>Follower: {follower}</DetailItemStyled>
         <DetailItemStyled>Gender: {gender}</DetailItemStyled>
-        <DetailItemStyled>Age: {age}</DetailItemStyled>
+        <DetailItemStyled id="age">
+          Age: {birthday} {AgeCalculator()}
+        </DetailItemStyled>
         <DetailItemStyled>Location: {location}</DetailItemStyled>
         <DetailItemStyled>Languages: {languages}</DetailItemStyled>
       </DetailListStyled>
     </section>
   )
+  function AgeCalculator(birthday) {
+    const dob = new Date(birthday)
+    console.log(dob)
+    //   const formattedDob = birthday.replace('-', ', ')
+    //   const dob = new Date(formattedDob)
+    //   var diff_ms = Date.now() - dob.getTime()
+    //   var age_dt = new Date(diff_ms)
+    //   return Math.abs(age_dt.getUTCFullYear() - 1970)
+    // }
+  }
 }
 
 const ContainerStyled = styled.section`

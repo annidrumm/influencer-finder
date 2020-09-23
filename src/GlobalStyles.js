@@ -18,7 +18,7 @@ body {
     --darkgreen: #51B6AB;
     --lightgreen: #52B7BC;
     --lightblue: #66BAF7;
-    --lightpurple: #66BAF7;
+    --lightpurple: #A6A1F9;
     --lightpink:#F9D9DA;
     --darkyellow: #F7BF67;
     --darkpink: #E693B5;

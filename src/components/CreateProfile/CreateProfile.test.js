@@ -1,12 +1,20 @@
 import React from 'react'
 import 'jest-styled-components'
-import CreateProfile from './CreateProfile'
-import { render, fireEvent } from '@testing-library/react'
 import '@testing-library/jest-dom'
+import { render, fireEvent } from '@testing-library/react'
+import CreateProfile from './CreateProfile'
+import HeaderCreateProfile from '../Header/HeaderCreateProfile'
+import { MemoryRouter } from 'react-router-dom'
 
 describe('CreateProfile', () => {
   it('should watch input correctly', () => {
-    const { container } = render(<CreateProfile />)
+    const { container } = render(
+      <MemoryRouter>
+        <HeaderCreateProfile headline="Create profile" />
+        <CreateProfile />
+      </MemoryRouter>
+    )
+
     const username = container.querySelector("input[name='username']")
     const categories = container.querySelector("input[name='categories']")
     const follower = container.querySelector("input[name='follower']")

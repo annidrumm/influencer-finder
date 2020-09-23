@@ -27,6 +27,7 @@ exports[`Profile display your profile 1`] = `
     </li>
     <li
       className="Profile__DetailItemStyled-sc-1vgne1u-4 eSiUTR"
+      id="age"
     >
       Age: 
     </li>

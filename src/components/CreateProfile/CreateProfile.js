@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import GoBackArrow from '../GoBackArrow/GoBackArrow'
-import Headline from '../Headline/Headline'
 import { useHistory } from 'react-router-dom'
+import HeaderCreateProfile from '../Header/HeaderCreateProfile'
 
 export default function CreateProfile({ onCreateProfile }) {
   const history = useHistory()
@@ -11,8 +10,7 @@ export default function CreateProfile({ onCreateProfile }) {
   }
   return (
     <ContainerStyled>
-      <GoBackArrow />
-      <Headline headline="Create your profile" />
+      <HeaderCreateProfile headline="Create profile" />
       <FormStyled onSubmit={handleSubmit}>
         <LabelStyled htmlFor="username">Username:</LabelStyled>
         <InputStyled

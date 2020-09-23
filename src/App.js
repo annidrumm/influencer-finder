@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react'
-import InfluencerList from './pages/InfluencerList/InfluencerList.js'
-import CategoryPage from './pages/CategoryPage/CategoryPage.js'
-import influencerData from './mocks/influencer.json'
-import { Switch, Route } from 'react-router-dom'
-import NavHeader from './components/Nav/Nav.js'
-import Headline from './components/Headline/Headline.js'
-import GoBackArrow from './components/GoBackArrow/GoBackArrow.js'
-import DecisionPage from './pages/DecisionPage/DecisionPage.js'
-import CreateProfile from './components/CreateProfile/CreateProfile.js'
 import { saveLocally, loadLocally } from './lib/localStorage'
+import { Switch, Route } from 'react-router-dom'
+import NavigationPage from './pages/NavigationPage/NavigationPage.js'
+import CreateProfile from './components/CreateProfile/CreateProfile.js'
 import Profile from './components/Profile/Profile.js'
+import CategoryPage from './pages/CategoryPage/CategoryPage.js'
+import InfluencerList from './pages/InfluencerList/InfluencerList.js'
+import influencerData from './mocks/influencer.json'
+import HeaderInfluencerList from './components/Header/HeaderInfluencerList'
+import HeaderFavourites from './components/Header/HeaderFavourites'
+import HeaderCreateProfile from './components/Header/HeaderCreateProfile'
 
 export default function App() {
   const [influencers, setInfluencers] = useState(
@@ -28,7 +28,7 @@ export default function App() {
   return (
     <Switch>
       <Route exact path="/">
-        <DecisionPage />
+        <NavigationPage />
       </Route>
       <Route path="/create">
         <CreateProfile
@@ -38,8 +38,7 @@ export default function App() {
         />
       </Route>
       <Route path="/profile">
-        <GoBackArrow />
-        <Headline headline="Your profile" />
+        <HeaderCreateProfile headline="Your profile" />
         {userProfile?.map(
           (
             {
@@ -70,14 +69,14 @@ export default function App() {
         <CategoryPage />
       </Route>
       <Route path="/influencerList">
-        <NavHeader />
+        <HeaderInfluencerList headline="Browse" />
         <InfluencerList
           influencerData={influencers}
           onFavouriteClick={toggleFavourite}
         />
       </Route>
       <Route path="/food">
-        <NavHeader />
+        <HeaderInfluencerList headline="Browse" />
         <InfluencerList
           influencerData={influencers.filter((profile) =>
             profile.categories.includes('Food')
@@ -86,7 +85,7 @@ export default function App() {
         />
       </Route>
       <Route path="/fitness">
-        <NavHeader />
+        <HeaderInfluencerList headline="Browse" />
         <InfluencerList
           influencerData={influencers.filter((profile) =>
             profile.categories.includes('Fitness')
@@ -95,7 +94,7 @@ export default function App() {
         />
       </Route>
       <Route path="/beauty">
-        <NavHeader />
+        <HeaderInfluencerList headline="Browse" />
         <InfluencerList
           influencerData={influencers.filter((profile) =>
             profile.categories.includes('Beauty')
@@ -104,7 +103,7 @@ export default function App() {
         />
       </Route>
       <Route path="/fashion">
-        <NavHeader />
+        <HeaderInfluencerList headline="Browse" />
         <InfluencerList
           influencerData={influencers.filter((profile) =>
             profile.categories.includes('Fashion')
@@ -113,7 +112,7 @@ export default function App() {
         />
       </Route>
       <Route path="/interior">
-        <NavHeader />
+        <HeaderInfluencerList headline="Browse" />
         <InfluencerList
           influencerData={influencers.filter((profile) =>
             profile.categories.includes('Interior')
@@ -122,7 +121,7 @@ export default function App() {
         />
       </Route>
       <Route path="/travel">
-        <NavHeader />
+        <HeaderInfluencerList headline="Browse" />
         <InfluencerList
           influencerData={influencers.filter((profile) =>
             profile.categories.includes('Travel')
@@ -131,8 +130,7 @@ export default function App() {
         />
       </Route>
       <Route path="/favourites">
-        <GoBackArrow />
-        <Headline headline="Favourites" />
+        <HeaderFavourites headline="Favourites" />
         <InfluencerList
           onFavouriteClick={toggleFavourite}
           influencerData={influencers.filter((profile) => profile.isFavourite)}

@@ -2,28 +2,26 @@ import React from 'react'
 import { Switch, Route, Link } from 'react-router-dom'
 import styled from 'styled-components/macro'
 import Influencer from '../../images/influencer-min.jpg'
-import company from '../../images/company-min.jpg'
+import browse from '../../images/browse.jpg'
 
-export default function DecisionPage() {
+export default function NavigationPage() {
   return (
     <Switch>
       <ContainerStyled>
         <Route>
           <Link style={{ textDecoration: 'none' }} to="/create">
-            <H2Styled>Influencer</H2Styled>
+            <H2Styled>Set up a profile</H2Styled>
             <ButtonStyled category="influencer">
               <ImageStyled src={Influencer} alt="instagram influencer" />
             </ButtonStyled>
-            <Subheadline>I want to set up a profile</Subheadline>
           </Link>
         </Route>
         <Route>
           <Link style={{ textDecoration: 'none' }} to="/categories">
-            <H2Styled>Companies</H2Styled>
+            <H2Styled>Browse through profiles</H2Styled>
             <ButtonStyled category="userCompany">
-              <ImageStyled src={company} alt="office" />
+              <ImageStyled src={browse} alt="office" />
             </ButtonStyled>
-            <Subheadline>I want to find an influencer</Subheadline>
           </Link>
         </Route>
       </ContainerStyled>
@@ -33,36 +31,24 @@ export default function DecisionPage() {
 
 const ButtonStyled = styled.button`
   background: transparent;
-  border-radius: 10%;
   cursor: pointer;
   border: none;
-  padding: 30px;
+  margin: 10px auto 10px auto;
+  display: block;
 `
 const ContainerStyled = styled.section`
-  padding: 10px;
+  padding: 30px 0 30px 0;
 `
 
 const ImageStyled = styled.img`
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  display: block;
-  height: 150px;
+  height: 180px;
+  opacity: 70%;
   border-radius: 15%;
 `
 
 const H2Styled = styled.h2`
   color: var(--font-color-white);
   font-weight: var(--font-weight-light);
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
-  margin: 70px 0 0 0;
-`
-const Subheadline = styled.h3`
-  color: var(--font-color-white);
-  font-weight: var(--font-weight-light);
-  font-size: 17px;
-  text-align: center;
-  margin: 130px 0 0 0;
 `

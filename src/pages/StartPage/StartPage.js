@@ -1,159 +1,141 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Switch, Route, Link } from 'react-router-dom'
+import MaleImage from '../../images/albert-dera-min.jpg'
+import FemaleImage from '../../images/wesley-tingey-min.jpg'
+import OtherMaleImage from '../../images/nico-marks-min.jpg'
+import OtherFemaleImage from '../../images/gisela-carolina-min.jpg'
 
 export default function StartPage() {
   return (
     <>
-      <Box1Styled></Box1Styled>
-      <Box2Styled></Box2Styled>
-      <Box3Styled></Box3Styled>
-      <Box4Styled></Box4Styled>
-      <Box5Styled></Box5Styled>
-      <Box6Styled></Box6Styled>
-      <Box7Styled></Box7Styled>
-      <Box8Styled></Box8Styled>
-      <Box9Styled></Box9Styled>
-      <TextStyled>
-        Browse through<br></br> thousands of<br></br> influencers and<br></br>{' '}
-        find the one<br></br> that will fit just right.
-      </TextStyled>
-      <StartButtonStyled>Start</StartButtonStyled>
+      <ContainerStyled>
+        <Box1Styled></Box1Styled>
+        <Image2Styled src={MaleImage}></Image2Styled>
+        <Box3Styled></Box3Styled>
+        <Image4Styled src={FemaleImage}></Image4Styled>
+        <Box5Styled></Box5Styled>
+        <Image6Styled src={OtherFemaleImage}></Image6Styled>
+        <Box7Styled></Box7Styled>
+        <Image8Styled src={OtherMaleImage}></Image8Styled>
+        <Box9Styled></Box9Styled>
+      </ContainerStyled>
+      <TextContainerStyled>
+        <TextStyled>
+          <strong>Browse</strong> through<br></br> thousands of<br></br>{' '}
+          <strong>influencers</strong> and<br></br> find the one<br></br> that
+          will fit just right.
+        </TextStyled>
+      </TextContainerStyled>
+      <Switch>
+        <Route>
+          <Link style={{ textDecoration: 'none' }} to="/categories">
+            <StartButtonStyled>Start</StartButtonStyled>
+          </Link>
+        </Route>
+      </Switch>
     </>
   )
 }
+
+const ContainerStyled = styled.section`
+  display: flexbox;
+  flex-flow: row wrap;
+`
 
 const Box1Styled = styled.div`
   display: flex;
   border: 2px solid var(--darkgreen);
   background-color: var(--darkgreen);
   border-radius: 10px;
-  width: 35vw;
+  width: 33vw;
   height: 13vh;
-  margin: 1vh 0 1vh 1vh;
-  padding: 25px 0;
-  flex-direction: column;
-  justify-content: space-evenly;
+  margin: 5px;
 `
 
-const Box2Styled = styled.div`
-  /* display: flex; */
-  border: 2px solid var(--lightpink);
-  background-color: var(--lightpink);
+const Image2Styled = styled.img`
   border-radius: 50px;
   width: 23vw;
   height: 13vh;
-  margin: 1vh 0 1vh 1vh;
-  padding: 25px 0;
-  /* flex-direction: column;
-  justify-content: space-evenly; */
+  margin: 5px;
+  justify-content: space-evenly;
 `
 const Box3Styled = styled.div`
-  /* display: flex; */
+  border: 2px solid var(--lightblue);
+  background-color: var(--lightblue);
+  border-radius: 10px;
+  width: 35vw;
+  height: 13vh;
+  margin: 5px;
+`
+
+const Image4Styled = styled.img`
+  border-radius: 50px;
+  width: 23vw;
+  height: 13vh;
+  margin: 5px;
+`
+const Box5Styled = styled.div`
+  border: 2px solid var(--font-color-white);
+  background-color: var(--font-color-white);
+  border-radius: 10px;
+  width: 45vw;
+  height: 13vh;
+  margin: 5px;
+`
+const Image6Styled = styled.img`
+  border-radius: 50px;
+  width: 23vw;
+  height: 13vh;
+  margin: 5px;
+`
+const Box7Styled = styled.div`
   border: 2px solid var(--darkyellow);
   background-color: var(--darkyellow);
   border-radius: 10px;
   width: 35vw;
   height: 13vh;
-  margin: 1vh 0 1vh 1vh;
-  padding: 25px 0;
-  /* flex-direction: column;
-  justify-content: space-evenly; */
+  margin: 5px;
 `
 
-const Box4Styled = styled.div`
-  /* display: flex; */
-  border: 2px solid var(--lightblue);
-  background-color: var(--lightblue);
+const Image8Styled = styled.img`
   border-radius: 50px;
   width: 23vw;
   height: 13vh;
-  margin: -42vh 0 0 25vh;
-  padding: 25px 0;
-  /* flex-direction: column;
-  justify-content: space-evenly; */
-`
-const Box5Styled = styled.div`
-  /* display: flex; */
-  border: 2px solid var(--font-color-white);
-  background-color: var(--font-color-white);
-  border-radius: 10px;
-  width: 35vw;
-  height: 13vh;
-  margin: -13vh 0 0 42vh;
-  padding: 25px 0;
-  /* flex-direction: column;
-  justify-content: space-evenly; */
-`
-const Box6Styled = styled.div`
-  /* display: flex; */
-  border: 2px solid var(--lightpurple);
-  background-color: var(--lightpurple);
-  border-radius: 10px;
-  width: 35vw;
-  height: 13vh;
-  margin: 1vh 0 1vh 18vh;
-  padding: 25px 0px;
-  /* flex-direction: column;
-  justify-content: space-evenly; */
-`
-const Box7Styled = styled.div`
-  /* display: flex; */
-  border: 2px solid var(--lightpink);
-  background-color: var(--lightpink);
-  border-radius: 50px;
-  width: 23vw;
-  height: 13vh;
-  margin: -14vh 0 1vh 42vh;
-  padding: 25px 0;
-  /* flex-direction: column;
-  justify-content: space-evenly; */
-`
-
-const Box8Styled = styled.div`
-  /* display: flex; */
-  border: 2px solid var(--lightpink);
-  background-color: var(--lightpink);
-  border-radius: 50px;
-  width: 23vw;
-  height: 13vh;
-  margin: 1vh 0 1vh 25vh;
-  padding: 25px 0;
-  /* flex-direction: column;
-  justify-content: space-evenly; */
+  margin: 5px;
 `
 const Box9Styled = styled.div`
-  /* display: flex; */
-  border: 2px solid var(--lightpurple);
-  background-color: var(--lightpurple);
+  border: 2px solid var(--lightpink);
+  background-color: var(--lightpink);
   border-radius: 10px;
-  width: 35vw;
+  width: 30vw;
   height: 13vh;
-  margin: -14vh 0 1vh 43vh;
-  padding: 25px 0px;
-  /* flex-direction: column;
-  justify-content: space-evenly; */
+  margin: 5px;
 `
 
 const StartButtonStyled = styled.button`
   color: var(--font-color-white);
   font-family: var(--font-weight-light);
+  font-size: 15px;
   background: var(--darkgreen);
   border: var(--darkgreen);
-  box-shadow: 0 3px 10px #0000008b;
   border-radius: 30px;
-  font-size: 15px;
-  padding: 25px 35px;
+  box-shadow: 0 3px 10px #0000008b;
+  padding: 20px;
   text-align: center;
   display: block;
   margin: auto;
   border: none;
-  margin: 10vh 0 1vh 20vh;
+  margin-bottom: 40px;
   cursor: pointer;
 `
-
 const TextStyled = styled.p`
   color: var(--font-color-white);
-  font-family: var(--font-weight-regular);
-  font-size: 25px;
-  text-align: center;
+  font-family: var(--font-weight-light);
+  font-size: 24px;
+  text-align: left;
+`
+const TextContainerStyled = styled.section`
+  margin-left: 60px;
+  letter-spacing: 0.1em;
 `

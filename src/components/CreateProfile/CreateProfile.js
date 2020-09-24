@@ -97,9 +97,7 @@ export default function CreateProfile({ onCreateProfile }) {
     onCreateProfile({
       username: usernameInput.value,
       categories: categoriesInput.value.toUpperCase(),
-      follower: followerInput.value
-        .toString()
-        .replace(/\B(?=(\d{3})+(?!\d))/g, '.'),
+      follower: followerInput.value,
       gender: genderInput.value.toLowerCase(),
       birthday: birthdayInput.value,
       location: locationInput.value,

@@ -17,16 +17,17 @@ export default function CreateProfile({ onCreateProfile }) {
           type="text"
           name="username"
           id="username"
-          placeholder="@fitness4life"
+          placeholder="fitness4life"
           required
         />
 
         <LabelStyled htmlFor="categories">Categories: </LabelStyled>
         <InputStyled
           type="text"
+          pattern="[a-zA-Z, ]*"
           name="categories"
           id="categories"
-          placeholder="Food, Fitness"
+          placeholder="Food, Travel, Fitness, Beauty"
           required
         />
 
@@ -35,17 +36,18 @@ export default function CreateProfile({ onCreateProfile }) {
           type="number"
           name="follower"
           id="follower"
-          placeholder="1000"
-          min="0"
+          placeholder="1200"
+          min="1"
           required
         />
 
         <LabelStyled htmlFor="gender">Gender:</LabelStyled>
         <InputStyled
           type="text"
+          pattern="[a-zA-Z, ]*"
           name="gender"
           id="gender"
-          placeholder="female"
+          placeholder="female, male, diverse"
           required
         />
 
@@ -55,6 +57,7 @@ export default function CreateProfile({ onCreateProfile }) {
         <LabelStyled htmlFor="location">Location:</LabelStyled>
         <InputStyled
           type="text"
+          pattern="[a-zA-Z, ]*"
           name="location"
           id="location"
           placeholder="Berlin"
@@ -64,6 +67,7 @@ export default function CreateProfile({ onCreateProfile }) {
         <LabelStyled htmlFor="languages">Languages:</LabelStyled>
         <InputStyled
           type="text"
+          pattern="[a-zA-Z, ]*"
           name="languages"
           id="languages"
           placeholder="German, English"
@@ -91,12 +95,12 @@ export default function CreateProfile({ onCreateProfile }) {
     } = form
     onCreateProfile({
       username: usernameInput.value,
-      categories: categoriesInput.value,
+      categories: categoriesInput.value.toUpperCase(),
       follower: followerInput.value,
-      gender: genderInput.value,
+      gender: genderInput.value.toLowerCase(),
       birthday: birthdayInput.value,
       location: locationInput.value,
-      languages: languagesInput.value,
+      languages: languagesInput.value.split(','),
     })
     form.reset()
     routeChange()

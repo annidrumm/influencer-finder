@@ -119,9 +119,10 @@ const SubmitButtonStyled = styled.button`
   font-size: 15px;
   background: var(--darkgreen);
   border: var(--darkgreen);
-  border-radius: 30px;
+  border-radius: 35px;
   box-shadow: 0 3px 10px var(--boxshadow-color);
-  padding: 20px;
+  width: 140px;
+  height: 75px;
   text-align: center;
   display: block;
   border: none;

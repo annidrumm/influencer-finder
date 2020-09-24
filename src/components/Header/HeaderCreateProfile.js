@@ -23,7 +23,7 @@ export default function HeaderCreateProfile({ headline }) {
       <HeadlineStyled>{headline}</HeadlineStyled>
       <Switch>
         <Route>
-          <Link to="/">
+          <Link to="/navigate">
             <NavigateStyled />
           </Link>
         </Route>

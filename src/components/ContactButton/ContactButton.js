@@ -12,12 +12,13 @@ export default function ContactButton() {
 const ContactButtonStyled = styled.button`
   color: var(--font-color-white);
   font-family: var(--font-weight-light);
-  font-size: 15px;
+  font-size: 20px;
   background: var(--darkgreen);
   border: var(--darkgreen);
-  border-radius: 30px;
+  border-radius: 35px;
   box-shadow: 0 3px 10px #0000008b;
-  padding: 20px;
+  width: 140px;
+  height: 75px;
   text-align: center;
   display: block;
   margin: auto;

@@ -29,7 +29,7 @@ export default function StartPage() {
       </TextContainerStyled>
       <Switch>
         <Route>
-          <Link style={{ textDecoration: 'none' }} to="/categories">
+          <Link style={{ textDecoration: 'none' }} to="/navigate">
             <StartButtonStyled>Start</StartButtonStyled>
           </Link>
         </Route>
@@ -108,7 +108,7 @@ const Box9Styled = styled.div`
   border: 2px solid var(--lightpink);
   background-color: var(--lightpink);
   border-radius: 10px;
-  width: 30vw;
+  width: 32vw;
   height: 13vh;
   margin: 5px;
 `
@@ -116,12 +116,13 @@ const Box9Styled = styled.div`
 const StartButtonStyled = styled.button`
   color: var(--font-color-white);
   font-family: var(--font-weight-light);
-  font-size: 15px;
+  font-size: 20px;
   background: var(--darkgreen);
   border: var(--darkgreen);
-  border-radius: 30px;
+  border-radius: 35px;
   box-shadow: 0 3px 10px #0000008b;
-  padding: 20px;
+  width: 140px;
+  height: 75px;
   text-align: center;
   display: block;
   margin: auto;

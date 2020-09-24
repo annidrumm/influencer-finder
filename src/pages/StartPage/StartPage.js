@@ -48,15 +48,15 @@ const Box1Styled = styled.div`
   border: 2px solid var(--darkgreen);
   background-color: var(--darkgreen);
   border-radius: 10px;
-  width: 33vw;
+  width: 30vw;
   height: 13vh;
   margin: 5px;
 `
 
 const Image2Styled = styled.img`
   border-radius: 50px;
-  width: 23vw;
-  height: 13vh;
+  width: 25vw;
+  height: 15vh;
   margin: 5px;
   justify-content: space-evenly;
 `
@@ -71,22 +71,22 @@ const Box3Styled = styled.div`
 
 const Image4Styled = styled.img`
   border-radius: 50px;
-  width: 23vw;
-  height: 13vh;
+  width: 25vw;
+  height: 15vh;
   margin: 5px;
 `
 const Box5Styled = styled.div`
   border: 2px solid var(--font-color-white);
   background-color: var(--font-color-white);
   border-radius: 10px;
-  width: 45vw;
+  width: 40vw;
   height: 13vh;
   margin: 5px;
 `
 const Image6Styled = styled.img`
   border-radius: 50px;
-  width: 23vw;
-  height: 13vh;
+  width: 25vw;
+  height: 15vh;
   margin: 5px;
 `
 const Box7Styled = styled.div`
@@ -100,15 +100,15 @@ const Box7Styled = styled.div`
 
 const Image8Styled = styled.img`
   border-radius: 50px;
-  width: 23vw;
-  height: 13vh;
+  width: 25vw;
+  height: 15vh;
   margin: 5px;
 `
 const Box9Styled = styled.div`
   border: 2px solid var(--lightpink);
   background-color: var(--lightpink);
   border-radius: 10px;
-  width: 32vw;
+  width: 30vw;
   height: 13vh;
   margin: 5px;
 `
@@ -127,16 +127,17 @@ const StartButtonStyled = styled.button`
   display: block;
   margin: auto;
   border: none;
-  margin-bottom: 40px;
   cursor: pointer;
 `
 const TextStyled = styled.p`
   color: var(--font-color-white);
   font-family: var(--font-weight-light);
-  font-size: 24px;
+  font-size: 20px;
   text-align: left;
+  letter-spacing: 0.1em;
+  word-spacing: 0.2em;
 `
 const TextContainerStyled = styled.section`
   margin-left: 60px;
-  letter-spacing: 0.1em;
+  margin-bottom: 35px;
 `

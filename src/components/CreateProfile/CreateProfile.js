@@ -34,6 +34,7 @@ export default function CreateProfile({ onCreateProfile }) {
         <LabelStyled htmlFor="follower">Follower:</LabelStyled>
         <InputStyled
           type="number"
+          pattern="[0-9k]*"
           name="follower"
           id="follower"
           placeholder="1200"
@@ -100,7 +101,7 @@ export default function CreateProfile({ onCreateProfile }) {
       gender: genderInput.value.toLowerCase(),
       birthday: birthdayInput.value,
       location: locationInput.value,
-      languages: languagesInput.value.split(','),
+      languages: languagesInput.value,
     })
     form.reset()
     routeChange()

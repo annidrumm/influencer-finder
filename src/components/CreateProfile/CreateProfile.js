@@ -98,7 +98,7 @@ export default function CreateProfile({ onCreateProfile }) {
     } = form
     onCreateProfile({
       username: usernameInput.value,
-      categories: categoriesInput.value.toUpperCase(),
+      categories: categoriesInput.value,
       follower: followerInput.value,
       gender: genderInput.value.toLowerCase(),
       birthday: birthdayInput.value,
@@ -139,7 +139,6 @@ const SubmitButtonStyled = styled.button`
 `
 
 const FormStyled = styled.form`
-  width: 100%;
   padding: 10px;
 `
 
@@ -147,10 +146,10 @@ const LabelStyled = styled.label`
   font-family: var(--font-weight-light);
   font-size: 18px;
   letter-spacing: 0.1rem;
-  display: block;
   margin: 10px 0;
+  display: block;
   text-align: left;
-  margin-left: 20px;
+  margin-left: 5%;
 `
 
 const InputStyled = styled.input`

@@ -36,8 +36,6 @@ const Header = styled.section`
   display: flex;
   grid-column: 1/3;
   margin: 20px 0;
-  max-width: 375px;
-  height: 100%;
 `
 
 const HeadlineStyled = styled.h2`

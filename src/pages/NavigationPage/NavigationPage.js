@@ -32,7 +32,6 @@ export default function NavigationPage() {
 const ContainerStyled = styled.section`
   padding: 30px 0 30px 0;
   margin: 30px auto;
-  height: 100vh;
 `
 const ButtonStyled = styled.button`
   background: transparent;
@@ -50,7 +49,7 @@ const ImageStyled = styled.img`
 const H2Styled = styled.h2`
   color: var(--font-color-white);
   font-weight: var(--font-weight-light);
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
   margin-bottom: 10px;
 `

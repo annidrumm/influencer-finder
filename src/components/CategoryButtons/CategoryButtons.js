@@ -104,7 +104,7 @@ const ButtonStyled = styled.button`
       : 'var(--darkyellow)'};
 `
 const IconsStyled = styled.img`
-  margin-top: 10px;
+  margin: 10px 0;
   vertical-align: top;
 `
 

@@ -9,5 +9,5 @@ export const decorators = [
       <Story />
     </>
   ),
-  (CategoryButtons) => <MemoryRouter>{CategoryButtons()}</MemoryRouter>,
+  (StartPage) => <MemoryRouter>{StartPage()}</MemoryRouter>,
 ]

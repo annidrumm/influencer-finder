@@ -1,11 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { ReactComponent as HeartIcon } from '../../icons/heart.svg'
 import styled from 'styled-components/macro'
-
-FavouriteButton.propTypes = {
-  headline: PropTypes.string,
-}
 
 export default function FavouriteButton({ onClick, isFavourite }) {
   return (
@@ -29,4 +24,5 @@ const ButtonStyled = styled.button`
   margin: auto;
   margin-top: 15px;
   border: none;
+  stroke: #e693b5;
 `

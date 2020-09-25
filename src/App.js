@@ -20,6 +20,9 @@ export default function App() {
     <main>
       <Switch>
         <Route exact path="/">
+          <StartPage />
+        </Route>
+        <Route exact path="/navigate">
           <NavigationPage />
         </Route>
         <Route path="/create">

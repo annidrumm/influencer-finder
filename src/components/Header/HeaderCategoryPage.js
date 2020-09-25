@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { ReactComponent as Arrow } from '../../icons/back.svg'
-import { ReactComponent as Navigate } from '../../icons/navigate.svg'
-import { Switch, Route, Link } from 'react-router-dom'
 import { useHistory } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
@@ -47,11 +45,4 @@ const ArrowStyled = styled(Arrow)`
   left: 10%;
   margin-top: 10px;
   cursor: pointer;
-`
-const NavigateStyled = styled(Navigate)`
-  position: absolute;
-  right: 40px;
-  margin-top: 10px;
-  cursor: pointer;
-  fill: var(--darkgreen);
 `

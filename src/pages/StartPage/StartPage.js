@@ -8,7 +8,7 @@ import OtherFemaleImage from '../../images/gisela-carolina-min.jpg'
 
 export default function StartPage() {
   return (
-    <>
+    <WrapperStyled>
       <ContainerStyled>
         <Box1Styled></Box1Styled>
         <Image2Styled src={MaleImage}></Image2Styled>
@@ -34,9 +34,14 @@ export default function StartPage() {
           </Link>
         </Route>
       </Switch>
-    </>
+    </WrapperStyled>
   )
 }
+
+const WrapperStyled = styled.section`
+  margin: 0px auto;
+  max-width: 375px;
+`
 
 const ContainerStyled = styled.section`
   display: flexbox;
@@ -48,68 +53,68 @@ const Box1Styled = styled.div`
   border: 2px solid var(--darkgreen);
   background-color: var(--darkgreen);
   border-radius: 10px;
-  width: 30vw;
-  height: 13vh;
   margin: 5px;
+  width: 130px;
+  height: 90px;
 `
 
 const Image2Styled = styled.img`
   border-radius: 50px;
-  width: 25vw;
-  height: 15vh;
-  margin: 5px;
+  width: 100px;
+  height: 100px;
+  margin: 6px;
   justify-content: space-evenly;
 `
 const Box3Styled = styled.div`
   border: 2px solid var(--lightblue);
   background-color: var(--lightblue);
   border-radius: 10px;
-  width: 35vw;
-  height: 13vh;
   margin: 5px;
+  width: 100px;
+  height: 90px;
 `
 
 const Image4Styled = styled.img`
   border-radius: 50px;
-  width: 25vw;
-  height: 15vh;
-  margin: 5px;
+  width: 100px;
+  height: 100px;
+  margin: 6px;
 `
 const Box5Styled = styled.div`
   border: 2px solid var(--font-color-white);
   background-color: var(--font-color-white);
   border-radius: 10px;
-  width: 40vw;
-  height: 13vh;
+  width: 130px;
+  height: 90px;
   margin: 5px;
 `
 const Image6Styled = styled.img`
   border-radius: 50px;
-  width: 25vw;
-  height: 15vh;
-  margin: 5px;
+  width: 100px;
+  height: 100px;
+  margin: 6px;
 `
 const Box7Styled = styled.div`
   border: 2px solid var(--darkyellow);
   background-color: var(--darkyellow);
   border-radius: 10px;
-  width: 35vw;
-  height: 13vh;
+  width: 110px;
+  height: 90px;
   margin: 5px;
 `
 
 const Image8Styled = styled.img`
   border-radius: 50px;
-  width: 25vw;
-  height: 15vh;
-  margin: 5px;
+  width: 100px;
+  height: 100px;
+  margin: 6px;
 `
 const Box9Styled = styled.div`
   border: 2px solid var(--lightpink);
   background-color: var(--lightpink);
   border-radius: 10px;
-  width: 30vw;
-  height: 13vh;
+  width: 120px;
+  height: 90px;
   margin: 5px;
 `
 

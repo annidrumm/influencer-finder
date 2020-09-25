@@ -53,8 +53,15 @@ export default function CreateProfile({ onCreateProfile }) {
             required
           />
 
-          <LabelStyled htmlFor="age">Birthday:</LabelStyled>
-          <InputStyled type="date" name="birthday" id="birthday" required />
+          <LabelStyled htmlFor="age">Age:</LabelStyled>
+          <InputStyled
+            type="number"
+            pattern="[0-9]*"
+            name="birthday"
+            id="birthday"
+            max="100"
+            required
+          />
 
           <LabelStyled htmlFor="location">Location:</LabelStyled>
           <InputStyled

@@ -31,7 +31,7 @@ export default function Profile({
           <strong>Gender:</strong> {gender}
         </DetailItemStyled>
         <DetailItemStyled id="age">
-          <strong>Age:</strong> {birthday}
+          <strong>Age:</strong> {birthday} years
         </DetailItemStyled>
         <DetailItemStyled>
           <strong>Location:</strong> {location}

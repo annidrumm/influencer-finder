@@ -29,26 +29,28 @@ export default function NavigationPage() {
   )
 }
 
+const ContainerStyled = styled.section`
+  padding: 30px 0 30px 0;
+  margin: 30px auto;
+  height: 100vh;
+`
 const ButtonStyled = styled.button`
   background: transparent;
   cursor: pointer;
   border: none;
-  margin: 10px auto 10px auto;
+  margin: auto;
   display: block;
+  margin-bottom: 50px;
 `
-const ContainerStyled = styled.section`
-  padding: 30px 0 30px 0;
-`
-
 const ImageStyled = styled.img`
   height: 180px;
   opacity: 70%;
   border-radius: 15%;
 `
-
 const H2Styled = styled.h2`
   color: var(--font-color-white);
   font-weight: var(--font-weight-light);
   font-size: 20px;
   text-align: center;
+  margin-bottom: 10px;
 `

@@ -75,16 +75,17 @@ export default function CategoryButtons() {
 
 const ContainerStyled = styled.section`
   margin-top: 80px;
+  height: 100vh;
 `
 
 const SectionStyled = styled.section`
   text-align: center;
-  margin: 30px;
+  margin: 20px;
 `
 
 const ButtonStyled = styled.button`
-  width: 128px;
-  height: 101px;
+  width: 130px;
+  height: 130px;
   background: transparent;
   margin: 10px;
   border-radius: 10%;

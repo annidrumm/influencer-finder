@@ -61,6 +61,7 @@ export default function CreateProfile({ onCreateProfile }) {
             id="birthday"
             placeholder="28"
             max="100"
+            min="18"
             required
           />
 

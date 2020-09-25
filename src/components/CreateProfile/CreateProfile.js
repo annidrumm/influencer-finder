@@ -9,77 +9,88 @@ export default function CreateProfile({ onCreateProfile }) {
     history.push('/profile')
   }
   return (
-    <ContainerStyled>
-      <HeaderCreateProfile headline="Create profile" />
-      <FormStyled onSubmit={handleSubmit}>
-        <LabelStyled htmlFor="username">Username:</LabelStyled>
-        <InputStyled
-          type="text"
-          name="username"
-          id="username"
-          placeholder="fitness4life"
-          required
-        />
+    <main>
+      <ContainerStyled>
+        <HeaderCreateProfile headline="Create profile" />
+        <FormStyled onSubmit={handleSubmit}>
+          <LabelStyled htmlFor="username">Username:</LabelStyled>
+          <InputStyled
+            type="text"
+            name="username"
+            id="username"
+            placeholder="fitness4life"
+            required
+          />
 
-        <LabelStyled htmlFor="categories">Categories: </LabelStyled>
-        <InputStyled
-          type="text"
-          pattern="[a-zA-Z, ]*"
-          name="categories"
-          id="categories"
-          placeholder="Food, Travel, Fitness, Beauty"
-          required
-        />
+          <LabelStyled htmlFor="categories">Categories: </LabelStyled>
+          <InputStyled
+            type="text"
+            pattern="[a-zA-Z, ]*"
+            name="categories"
+            id="categories"
+            placeholder="Food, Travel, Fitness, Beauty"
+            required
+          />
 
-        <LabelStyled htmlFor="follower">Follower:</LabelStyled>
-        <InputStyled
-          type="number"
-          pattern="[0-9k]*"
-          name="follower"
-          id="follower"
-          placeholder="1200"
-          min="1"
-          required
-        />
+          <LabelStyled htmlFor="follower">Follower:</LabelStyled>
+          <InputStyled
+            type="number"
+            pattern="[0-9k]*"
+            name="follower"
+            id="follower"
+            placeholder="1200"
+            min="1"
+            required
+          />
 
-        <LabelStyled htmlFor="gender">Gender:</LabelStyled>
-        <InputStyled
-          type="text"
-          pattern="[a-zA-Z, ]*"
-          name="gender"
-          id="gender"
-          placeholder="female, male, diverse"
-          required
-        />
+          <LabelStyled htmlFor="gender">Gender:</LabelStyled>
+          <InputStyled
+            type="text"
+            pattern="[a-zA-Z, ]*"
+            name="gender"
+            id="gender"
+            placeholder="female, male, diverse"
+            required
+          />
 
-        <LabelStyled htmlFor="age">Birthday:</LabelStyled>
-        <InputStyled type="date" name="birthday" id="birthday" required />
+          <LabelStyled htmlFor="age">Age:</LabelStyled>
+          <InputStyled
+            type="number"
+            pattern="[0-9]*"
+            name="birthday"
+            id="birthday"
+            placeholder="28"
+            max="100"
+            min="18"
+            required
+          />
 
-        <LabelStyled htmlFor="location">Location:</LabelStyled>
-        <InputStyled
-          type="text"
-          pattern="[a-zA-Z, ]*"
-          name="location"
-          id="location"
-          placeholder="Berlin"
-          required
-        />
+          <LabelStyled htmlFor="location">Location:</LabelStyled>
+          <InputStyled
+            type="text"
+            pattern="[a-zA-Z, ]*"
+            name="location"
+            id="location"
+            placeholder="Berlin"
+            required
+          />
 
-        <LabelStyled htmlFor="languages">Languages:</LabelStyled>
-        <InputStyled
-          type="text"
-          pattern="[a-zA-Z, ]*"
-          name="languages"
-          id="languages"
-          placeholder="German, English"
-          required
-        />
+          <LabelStyled htmlFor="languages">Languages:</LabelStyled>
+          <InputStyled
+            type="text"
+            pattern="[a-zA-Z, ]*"
+            name="languages"
+            id="languages"
+            placeholder="German, English"
+            required
+          />
 
-        <SubmitButtonStyled value="Create profile" type="submit">
-          Create
-        </SubmitButtonStyled>
-      </FormStyled>
-    </ContainerStyled>
+          <SubmitButtonStyled value="Create profile" type="submit">
+            Submit
+          </SubmitButtonStyled>
+        </FormStyled>
+      </ContainerStyled>
+    </main>
   )
 
   function handleSubmit(event) {
@@ -96,7 +107,7 @@ export default function CreateProfile({ onCreateProfile }) {
     } = form
     onCreateProfile({
       username: usernameInput.value,
-      categories: categoriesInput.value.toUpperCase(),
+      categories: categoriesInput.value,
       follower: followerInput.value,
       gender: genderInput.value.toLowerCase(),
       birthday: birthdayInput.value,
@@ -109,19 +120,23 @@ export default function CreateProfile({ onCreateProfile }) {
 }
 
 const ContainerStyled = styled.section`
-  width: 80%;
   margin: auto;
+  display: block;
+  margin: 30px 0;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 `
 
 const SubmitButtonStyled = styled.button`
   color: var(--font-color-white);
   font-family: var(--font-weight-light);
-  font-size: 15px;
+  font-size: 18px;
   background: var(--darkgreen);
   border: var(--darkgreen);
-  border-radius: 35px;
   box-shadow: 0 3px 10px var(--boxshadow-color);
-  width: 140px;
+  border-radius: 40px;
+  width: 130px;
   height: 75px;
   text-align: center;
   display: block;
@@ -133,7 +148,6 @@ const SubmitButtonStyled = styled.button`
 `
 
 const FormStyled = styled.form`
-  width: 100%;
   padding: 10px;
 `
 
@@ -141,8 +155,10 @@ const LabelStyled = styled.label`
   font-family: var(--font-weight-light);
   font-size: 18px;
   letter-spacing: 0.1rem;
-  display: block;
   margin: 10px 0;
+  display: block;
+  text-align: left;
+  margin-left: 5%;
 `
 
 const InputStyled = styled.input`

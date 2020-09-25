@@ -12,18 +12,20 @@ export default function ContactButton() {
 const ContactButtonStyled = styled.button`
   color: var(--font-color-white);
   font-family: var(--font-weight-light);
-  font-size: 20px;
+  font-size: 18px;
   background: var(--darkgreen);
   border: var(--darkgreen);
-  border-radius: 35px;
-  box-shadow: 0 3px 10px #0000008b;
-  width: 140px;
+  box-shadow: 0 3px 10px var(--boxshadow-color);
+  border-radius: 40px;
+  width: 130px;
   height: 75px;
   text-align: center;
   display: block;
-  margin: auto;
   border: none;
-  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+  /* margin: auto; */
   cursor: pointer;
 `
 const AnchorStyled = styled.a`

@@ -18,17 +18,12 @@ export default function HeaderCategoryPage({ headline }) {
   }
 
   return (
-    <Header>
-      <ArrowStyled onClick={handleClick} />
-      <HeadlineStyled>{headline}</HeadlineStyled>
-      <Switch>
-        <Route>
-          <Link to="/navigate">
-            <NavigateStyled />
-          </Link>
-        </Route>
-      </Switch>
-    </Header>
+    <main>
+      <Header>
+        <ArrowStyled onClick={handleClick} />
+        <HeadlineStyled>{headline}</HeadlineStyled>
+      </Header>
+    </main>
   )
 }
 
@@ -45,7 +40,6 @@ const HeadlineStyled = styled.h2`
   border-bottom: 1px solid var(--darkgreen);
   padding-bottom: 5px;
   margin: 0 auto;
-  max-width: 300px;
 `
 const ArrowStyled = styled(Arrow)`
   fill: var(--darkgreen);

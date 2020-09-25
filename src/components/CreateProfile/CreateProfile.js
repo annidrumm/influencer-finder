@@ -59,6 +59,7 @@ export default function CreateProfile({ onCreateProfile }) {
             pattern="[0-9]*"
             name="birthday"
             id="birthday"
+            placeholder="28"
             max="100"
             required
           />

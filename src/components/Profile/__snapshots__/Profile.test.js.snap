@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile display your profile 1`] = `
+<section>
+  <section
+    className="Profile__ContainerStyled-sc-1vgne1u-0 csLHlM"
+  >
+    <h2
+      className="Profile__UsernameStyled-sc-1vgne1u-1 hPkWuw"
+    />
+    <h3
+      className="Profile__CategoriesStyled-sc-1vgne1u-2 dMxBJB"
+    />
+  </section>
+  <ul
+    className="Profile__DetailListStyled-sc-1vgne1u-3 fvTNMu"
+  >
+    <li
+      className="Profile__DetailItemStyled-sc-1vgne1u-4 eSiUTR"
+    >
+      Follower: 
+    </li>
+    <li
+      className="Profile__DetailItemStyled-sc-1vgne1u-4 eSiUTR"
+    >
+      Gender: 
+    </li>
+    <li
+      className="Profile__DetailItemStyled-sc-1vgne1u-4 eSiUTR"
+      id="age"
+    >
+      Age: 
+    </li>
+    <li
+      className="Profile__DetailItemStyled-sc-1vgne1u-4 eSiUTR"
+    >
+      Location: 
+    </li>
+    <li
+      className="Profile__DetailItemStyled-sc-1vgne1u-4 eSiUTR"
+    >
+      Languages: 
+    </li>
+  </ul>
+</section>
+`;

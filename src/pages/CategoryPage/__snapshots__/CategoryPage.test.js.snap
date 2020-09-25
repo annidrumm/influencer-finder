@@ -1,21 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CategoryPage renders CategoryPage correctly 1`] = `
-Array [
+<section
+  className="CategoryPage__ContainerStyled-inp28z-0 brhHgo"
+>
   <section
-    className="CategoryPage__ContainerStyled-inp28z-0 gAaNNM"
+    className="sc-AxjAm ljJdnD"
+  >
+    <svg
+      className="sc-AxiKw iRsRKy"
+      onClick={[Function]}
+    >
+      back.svg
+    </svg>
+    <h2
+      className="sc-AxirZ iJYoHj"
+    >
+      Categories
+    </h2>
+  </section>
+  <section
+    className="CategoryButtons__SectionStyled-fe33yf-1 eUTwsm"
   >
     <section
-      className="Headline__HeaderStyled-sc-1c10d6o-0 kDyOXz"
-    >
-      <h1
-        className="Headline__HeadlineStyled-sc-1c10d6o-1 kBRUQI"
-      >
-        What categories are you looking for?
-      </h1>
-    </section>
-    <section
-      className="CategoryButtons__ContainerStyled-fe33yf-0 fUTTAv"
+      className="CategoryButtons__ContainerStyled-fe33yf-0 ggAkgj"
     >
       <section>
         <a
@@ -23,15 +31,15 @@ Array [
           onClick={[Function]}
         >
           <button
-            className="CategoryButtons__ButtonStyled-fe33yf-1 jdljUJ"
+            className="CategoryButtons__ButtonStyled-fe33yf-2 eEhnNm"
           >
             <img
               alt="fork and spoon"
-              className="CategoryButtons__IconsStyled-fe33yf-2 ftVVUf"
+              className="CategoryButtons__IconsStyled-fe33yf-3 gHSayS"
               src="fork.svg"
             />
             <h2
-              className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
+              className="CategoryButtons__H2Styled-fe33yf-4 fWGdzg"
             >
               Food
             </h2>
@@ -42,15 +50,15 @@ Array [
           onClick={[Function]}
         >
           <button
-            className="CategoryButtons__ButtonStyled-fe33yf-1 fSsSAP"
+            className="CategoryButtons__ButtonStyled-fe33yf-2 jLejSs"
           >
             <img
               alt="dumbbell"
-              className="CategoryButtons__IconsStyled-fe33yf-2 ftVVUf"
+              className="CategoryButtons__IconsStyled-fe33yf-3 gHSayS"
               src="gym.svg"
             />
             <h2
-              className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
+              className="CategoryButtons__H2Styled-fe33yf-4 fWGdzg"
             >
               Fitness
             </h2>
@@ -63,14 +71,14 @@ Array [
           onClick={[Function]}
         >
           <button
-            className="CategoryButtons__ButtonStyled-fe33yf-1 eFVMfs"
+            className="CategoryButtons__ButtonStyled-fe33yf-2 YSSmf"
           >
             <img
               alt="lipsticks"
               src="beauty.svg"
             />
             <h2
-              className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
+              className="CategoryButtons__H2Styled-fe33yf-4 fWGdzg"
             >
               Beauty
             </h2>
@@ -81,14 +89,14 @@ Array [
           onClick={[Function]}
         >
           <button
-            className="CategoryButtons__ButtonStyled-fe33yf-1 bklmwB"
+            className="CategoryButtons__ButtonStyled-fe33yf-2 jVhgki"
           >
             <img
               alt="fashion mannequin"
               src="mannequin.svg"
             />
             <h2
-              className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
+              className="CategoryButtons__H2Styled-fe33yf-4 fWGdzg"
             >
               Fashion
             </h2>
@@ -101,14 +109,14 @@ Array [
           onClick={[Function]}
         >
           <button
-            className="CategoryButtons__ButtonStyled-fe33yf-1 bLieCZ"
+            className="CategoryButtons__ButtonStyled-fe33yf-2 jCiqwi"
           >
             <img
               alt="vase"
               src="vase.svg"
             />
             <h2
-              className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
+              className="CategoryButtons__H2Styled-fe33yf-4 fWGdzg"
             >
               Interior
             </h2>
@@ -119,14 +127,14 @@ Array [
           onClick={[Function]}
         >
           <button
-            className="CategoryButtons__ButtonStyled-fe33yf-1 jdljUJ"
+            className="CategoryButtons__ButtonStyled-fe33yf-2 eEhnNm"
           >
             <img
               alt="plane"
               src="plane.svg"
             />
             <h2
-              className="CategoryButtons__H2Styled-fe33yf-3 gDPoMv"
+              className="CategoryButtons__H2Styled-fe33yf-4 fWGdzg"
             >
               Travel
             </h2>
@@ -134,30 +142,6 @@ Array [
         </a>
       </section>
     </section>
-  </section>,
-  <section
-    className="CategoryPage__SlideStyled-inp28z-1 dCXIay"
-  >
-    <img
-      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
-      src="nico-marks-min.jpg"
-    />
-    <img
-      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
-      src="fezbot2000-min.jpg"
-    />
-    <img
-      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
-      src="any-haust-min.jpg"
-    />
-    <img
-      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
-      src="ian-dooleyw-min.jpg"
-    />
-    <img
-      className="CategoryPage__ImageStyled-inp28z-2 PVPlP"
-      src="svyatoslav-romanov-min.jpg"
-    />
-  </section>,
-]
+  </section>
+</section>
 `;

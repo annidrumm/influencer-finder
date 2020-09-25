@@ -13,7 +13,7 @@ exports[`InfluencerList renders influencer details correctly 1`] = `
   border: none;
 }
 
-.c7 {
+.c8 {
   color: var(--font-color-white);
   font-family: var(--font-weight-light);
   font-size: 15px;
@@ -28,6 +28,11 @@ exports[`InfluencerList renders influencer details correctly 1`] = `
   border: none;
   margin-bottom: 40px;
   cursor: pointer;
+}
+
+.c7 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0 {
@@ -153,15 +158,11 @@ exports[`InfluencerList renders influencer details correctly 1`] = `
       </li>
     </ul>
     <a
+      className="c7"
       href="mailto:influencer@gmail.com"
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
     >
       <button
-        className="c7"
+        className="c8"
       >
         Contact
       </button>
@@ -232,15 +233,11 @@ exports[`InfluencerList renders influencer details correctly 1`] = `
       </li>
     </ul>
     <a
+      className="c7"
       href="mailto:influencer@gmail.com"
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
     >
       <button
-        className="c7"
+        className="c8"
       >
         Contact
       </button>

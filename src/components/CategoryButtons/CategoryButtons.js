@@ -10,74 +10,82 @@ import { Switch, Route, Link } from 'react-router-dom'
 
 export default function CategoryButtons() {
   return (
-    <Switch>
-      <ContainerStyled>
-        <section>
-          <Route>
-            <Link to="/food">
-              <ButtonStyled category="food">
-                <IconsStyled src={fork} alt="fork and spoon" />
-                <H2Styled>Food</H2Styled>
-              </ButtonStyled>
-            </Link>
-          </Route>
-          <Route>
-            <Link to="/fitness">
-              <ButtonStyled category="fitness">
-                <IconsStyled src={dumbbell} alt="dumbbell" />
-                <H2Styled>Fitness</H2Styled>
-              </ButtonStyled>
-            </Link>
-          </Route>
-        </section>
-        <section>
-          <Route>
-            <Link to="/beauty">
-              <ButtonStyled category="beauty">
-                <img src={lipsticks} alt="lipsticks" />
-                <H2Styled>Beauty</H2Styled>
-              </ButtonStyled>
-            </Link>
-          </Route>
-          <Route>
-            <Link to="/fashion">
-              <ButtonStyled category="fashion">
-                <img src={mannequin} alt="fashion mannequin" />
-                <H2Styled>Fashion</H2Styled>
-              </ButtonStyled>
-            </Link>
-          </Route>
-        </section>
-        <section>
-          <Route>
-            <Link to="/interior">
-              <ButtonStyled category="interior">
-                <img src={vase} alt="vase" />
-                <H2Styled>Interior</H2Styled>
-              </ButtonStyled>
-            </Link>
-          </Route>
-          <Route>
-            <Link to="/travel">
-              <ButtonStyled category="travel">
-                <img src={plane} alt="plane" />
-                <H2Styled>Travel</H2Styled>
-              </ButtonStyled>
-            </Link>
-          </Route>
-        </section>
-      </ContainerStyled>
-    </Switch>
+    <SectionStyled>
+      <Switch>
+        <ContainerStyled>
+          <section>
+            <Route>
+              <Link to="/food">
+                <ButtonStyled category="food">
+                  <IconsStyled src={fork} alt="fork and spoon" />
+                  <H2Styled>Food</H2Styled>
+                </ButtonStyled>
+              </Link>
+            </Route>
+            <Route>
+              <Link to="/fitness">
+                <ButtonStyled category="fitness">
+                  <IconsStyled src={dumbbell} alt="dumbbell" />
+                  <H2Styled>Fitness</H2Styled>
+                </ButtonStyled>
+              </Link>
+            </Route>
+          </section>
+          <section>
+            <Route>
+              <Link to="/beauty">
+                <ButtonStyled category="beauty">
+                  <img src={lipsticks} alt="lipsticks" />
+                  <H2Styled>Beauty</H2Styled>
+                </ButtonStyled>
+              </Link>
+            </Route>
+            <Route>
+              <Link to="/fashion">
+                <ButtonStyled category="fashion">
+                  <img src={mannequin} alt="fashion mannequin" />
+                  <H2Styled>Fashion</H2Styled>
+                </ButtonStyled>
+              </Link>
+            </Route>
+          </section>
+          <section>
+            <Route>
+              <Link to="/interior">
+                <ButtonStyled category="interior">
+                  <img src={vase} alt="vase" />
+                  <H2Styled>Interior</H2Styled>
+                </ButtonStyled>
+              </Link>
+            </Route>
+            <Route>
+              <Link to="/travel">
+                <ButtonStyled category="travel">
+                  <img src={plane} alt="plane" />
+                  <H2Styled>Travel</H2Styled>
+                </ButtonStyled>
+              </Link>
+            </Route>
+          </section>
+        </ContainerStyled>
+      </Switch>
+    </SectionStyled>
   )
 }
 
 const ContainerStyled = styled.section`
-  margin-top: 40px;
+  margin-top: 80px;
+  height: 100vh;
+`
+
+const SectionStyled = styled.section`
+  text-align: center;
+  margin: 20px;
 `
 
 const ButtonStyled = styled.button`
-  width: 128px;
-  height: 101px;
+  width: 130px;
+  height: 130px;
   background: transparent;
   margin: 10px;
   border-radius: 10%;
@@ -96,7 +104,7 @@ const ButtonStyled = styled.button`
       : 'var(--darkyellow)'};
 `
 const IconsStyled = styled.img`
-  margin-top: 10px;
+  margin: 10px 0;
   vertical-align: top;
 `
 

@@ -2,12 +2,8 @@
 
 exports[`ContactButton renders ContactButton correctly 1`] = `
 <a
+  className="ContactButton__AnchorStyled-sc-1kv6ekb-1 igrWRo"
   href="mailto:influencer@gmail.com"
-  style={
-    Object {
-      "textDecoration": "none",
-    }
-  }
 >
   <button
     className="ContactButton__ContactButtonStyled-sc-1kv6ekb-0 beJosE"

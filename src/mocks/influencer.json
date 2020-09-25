@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "username": "@fitness4life",
+    "username": "@Lena",
     "categories": ["Fitness"],
     "follower": 10000,
     "gender": "female",
@@ -19,7 +19,7 @@
     "age": "26 years",
     "location": "Berlin",
     "languages": ["English", "German"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/carlos-vaz-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/carlos-vaz-min.jpg"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "age": "28 years",
     "location": "Berlin",
     "languages": ["English", "German"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/any-haust-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/any-haust-min.jpg"
   },
   {
     "id": 4,
@@ -41,11 +41,11 @@
     "age": "20 years",
     "location": "Hamburg",
     "languages": ["English"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/aiony-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/aiony-min.jpg"
   },
   {
     "id": 5,
-    "username": "@VeganPlace",
+    "username": "@VeganPaula",
     "categories": ["Food"],
     "follower": 2500,
     "gender": "female",
@@ -86,7 +86,7 @@
     "age": "23 years",
     "location": "Hamburg",
     "languages": ["English"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/fezbot2000-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/fezbot2000-min.jpg"
   },
   {
     "id": 9,
@@ -108,7 +108,7 @@
     "age": "35 years",
     "location": "Stuttgart",
     "languages": ["German"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/svyatoslav-romanov-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/svyatoslav-romanov-min.jpg"
   },
   {
     "id": 11,
@@ -119,7 +119,7 @@
     "age": "29 years",
     "location": "Stuttgart",
     "languages": ["German", "English"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/sorin-sirbu-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/sorin-sirbu-min.jpg"
   },
   {
     "id": 12,
@@ -130,7 +130,7 @@
     "age": "29 years",
     "location": "Stuttgart",
     "languages": ["English"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/prince-akachi-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/prince-akachi-min.jpg"
   },
   {
     "id": 13,
@@ -141,7 +141,7 @@
     "age": "26 years",
     "location": "Berlin",
     "languages": ["English"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/joanna-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/joanna-min.jpg"
   },
   {
     "id": 14,
@@ -152,7 +152,7 @@
     "age": "21 years",
     "location": "Berlin",
     "languages": ["English"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/ian-dooley-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/aiony-min.jpg"
   },
   {
     "id": 15,
@@ -163,7 +163,7 @@
     "age": "23 years",
     "location": "Cologne",
     "languages": ["English", "German"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/gian-cescon-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/gian-cescon-min.jpg"
   },
   {
     "id": 16,
@@ -174,7 +174,7 @@
     "age": "28 years",
     "location": "Cologne",
     "languages": ["English"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/filip-mroz-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/filip-mroz-min.jpg"
   },
   {
     "id": 17,
@@ -185,7 +185,7 @@
     "age": "26 years",
     "location": "Stuttgart",
     "languages": ["English", "German"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/collins-lesulie-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/collins-lesulie-min.jpg"
   },
 
   {
@@ -197,7 +197,7 @@
     "age": "26 years",
     "location": "Berlin",
     "languages": ["English", "German"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/brooke-cagle-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/brooke-cagle-min.jpg"
   },
 
   {
@@ -209,7 +209,7 @@
     "age": "26 years",
     "location": "Hamburg",
     "languages": ["English", "German"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/amir-riazipour-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/amir-riazipour-min.jpg"
   },
   {
     "id": 20,
@@ -220,7 +220,7 @@
     "age": "25 years",
     "location": "Hamburg",
     "languages": ["English"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/alex-hddife-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/alex-hddife-min.jpg"
   },
   {
     "id": 21,
@@ -231,6 +231,6 @@
     "age": "23 years",
     "location": "Cologne",
     "languages": ["German"],
-    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/favourite/src/images/ian-dooleyw-min.jpg"
+    "image": "https://raw.githubusercontent.com/annidrumm/influencer-finder/master/src/images/ian-dooleyw-min.jpg"
   }
 ]

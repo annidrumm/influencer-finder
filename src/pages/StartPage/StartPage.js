@@ -1,23 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Switch, Route, Link } from 'react-router-dom'
-import MaleImage from '../../images/albert-dera-min.jpg'
-import FemaleImage from '../../images/wesley-tingey-min.jpg'
-import OtherMaleImage from '../../images/nico-marks-min.jpg'
-import OtherFemaleImage from '../../images/gisela-carolina-min.jpg'
+import NicoMarks from '../../images/nico-marks-min.jpg'
+import Lena from '../../images/wesley-tingey-min.jpg'
+import VeganPaula from '../../images/gisela-carolina-min.jpg'
+import LouLou from '../../images/any-haust-min.jpg'
 
 export default function StartPage() {
   return (
     <WrapperStyled>
       <ContainerStyled>
         <Box1Styled></Box1Styled>
-        <Image2Styled src={MaleImage}></Image2Styled>
+        <Image2Styled src={NicoMarks}></Image2Styled>
         <Box3Styled></Box3Styled>
-        <Image4Styled src={FemaleImage}></Image4Styled>
+        <Image4Styled src={Lena}></Image4Styled>
         <Box5Styled></Box5Styled>
-        <Image6Styled src={OtherFemaleImage}></Image6Styled>
+        <Image6Styled src={VeganPaula}></Image6Styled>
         <Box7Styled></Box7Styled>
-        <Image8Styled src={OtherMaleImage}></Image8Styled>
+        <Image8Styled src={LouLou}></Image8Styled>
         <Box9Styled></Box9Styled>
       </ContainerStyled>
       <TextContainerStyled>
@@ -63,7 +63,7 @@ const Image2Styled = styled.img`
   width: 100px;
   height: 100px;
   margin: 6px;
-  justify-content: space-evenly;
+  object-fit: cover;
 `
 const Box3Styled = styled.div`
   border: 2px solid var(--lightblue);
@@ -79,6 +79,7 @@ const Image4Styled = styled.img`
   width: 100px;
   height: 100px;
   margin: 6px;
+  object-fit: cover;
 `
 const Box5Styled = styled.div`
   border: 2px solid var(--font-color-white);
@@ -93,6 +94,7 @@ const Image6Styled = styled.img`
   width: 100px;
   height: 100px;
   margin: 6px;
+  object-fit: cover;
 `
 const Box7Styled = styled.div`
   border: 2px solid var(--darkyellow);
@@ -108,6 +110,7 @@ const Image8Styled = styled.img`
   width: 100px;
   height: 100px;
   margin: 6px;
+  object-fit: cover;
 `
 const Box9Styled = styled.div`
   border: 2px solid var(--lightpink);

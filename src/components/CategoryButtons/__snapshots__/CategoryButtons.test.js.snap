@@ -2,10 +2,10 @@
 
 exports[`CategoryButtons renders CategoryButtons correctly 1`] = `
 <section
-  className="CategoryButtons__SectionStyled-fe33yf-1 eUTwsm"
+  className="CategoryButtons__SectionStyled-fe33yf-1 cjRsGv"
 >
   <section
-    className="CategoryButtons__ContainerStyled-fe33yf-0 ggAkgj"
+    className="CategoryButtons__ContainerStyled-fe33yf-0 dAzUiW"
   >
     <section>
       <a
@@ -13,11 +13,11 @@ exports[`CategoryButtons renders CategoryButtons correctly 1`] = `
         onClick={[Function]}
       >
         <button
-          className="CategoryButtons__ButtonStyled-fe33yf-2 eEhnNm"
+          className="CategoryButtons__ButtonStyled-fe33yf-2 dcyjSd"
         >
           <img
             alt="fork and spoon"
-            className="CategoryButtons__IconsStyled-fe33yf-3 gHSayS"
+            className="CategoryButtons__IconsStyled-fe33yf-3 ZxEs"
             src="fork.svg"
           />
           <h2
@@ -32,11 +32,11 @@ exports[`CategoryButtons renders CategoryButtons correctly 1`] = `
         onClick={[Function]}
       >
         <button
-          className="CategoryButtons__ButtonStyled-fe33yf-2 jLejSs"
+          className="CategoryButtons__ButtonStyled-fe33yf-2 hodJBn"
         >
           <img
             alt="dumbbell"
-            className="CategoryButtons__IconsStyled-fe33yf-3 gHSayS"
+            className="CategoryButtons__IconsStyled-fe33yf-3 ZxEs"
             src="gym.svg"
           />
           <h2
@@ -53,7 +53,7 @@ exports[`CategoryButtons renders CategoryButtons correctly 1`] = `
         onClick={[Function]}
       >
         <button
-          className="CategoryButtons__ButtonStyled-fe33yf-2 YSSmf"
+          className="CategoryButtons__ButtonStyled-fe33yf-2 hXuZFc"
         >
           <img
             alt="lipsticks"
@@ -71,7 +71,7 @@ exports[`CategoryButtons renders CategoryButtons correctly 1`] = `
         onClick={[Function]}
       >
         <button
-          className="CategoryButtons__ButtonStyled-fe33yf-2 jVhgki"
+          className="CategoryButtons__ButtonStyled-fe33yf-2 gAUJfN"
         >
           <img
             alt="fashion mannequin"
@@ -91,7 +91,7 @@ exports[`CategoryButtons renders CategoryButtons correctly 1`] = `
         onClick={[Function]}
       >
         <button
-          className="CategoryButtons__ButtonStyled-fe33yf-2 jCiqwi"
+          className="CategoryButtons__ButtonStyled-fe33yf-2 eJpUsJ"
         >
           <img
             alt="vase"
@@ -109,7 +109,7 @@ exports[`CategoryButtons renders CategoryButtons correctly 1`] = `
         onClick={[Function]}
       >
         <button
-          className="CategoryButtons__ButtonStyled-fe33yf-2 eEhnNm"
+          className="CategoryButtons__ButtonStyled-fe33yf-2 dcyjSd"
         >
           <img
             alt="plane"

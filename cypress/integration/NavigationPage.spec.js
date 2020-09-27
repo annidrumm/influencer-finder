@@ -2,15 +2,18 @@
 
 describe('NavigationPage', () => {
   it('should load NavigationPage', () => {
-    cy.visit('http://localhost:3000/')
+    cy.visit('http://localhost:3000/navigate')
   })
   it('should go to CategoryPage', () => {
-    cy.contains('influencer').click()
+    cy.contains('Browse through profiles').click()
   })
-  it('should load CreateProfile', () => {
-    cy.contains('What categories are you looking for?')
+  it('should load Headline', () => {
+    cy.contains('Categories')
   })
-  it('should go to CategoryPage', () => {
+  it('should filter food profiles', () => {
     cy.contains('Food').click()
+  })
+  it('should go to center', () => {
+    cy.scrollTo('center')
   })
 })

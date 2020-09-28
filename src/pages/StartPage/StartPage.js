@@ -5,6 +5,7 @@ import NicoMarks from '../../images/nico-marks-min.jpg'
 import Lena from '../../images/wesley-tingey-min.jpg'
 import VeganPaula from '../../images/gisela-carolina-min.jpg'
 import LouLou from '../../images/any-haust-min.jpg'
+import Button from '../../components/Button/Button'
 
 export default function StartPage() {
   return (
@@ -30,7 +31,7 @@ export default function StartPage() {
       <Switch>
         <Route>
           <Link style={{ textDecoration: 'none' }} to="/navigate">
-            <StartButtonStyled>Start</StartButtonStyled>
+            <Button headline="Start">Start</Button>
           </Link>
         </Route>
       </Switch>
@@ -42,7 +43,6 @@ const WrapperStyled = styled.section`
   margin: 0px auto;
   max-width: 375px;
 `
-
 const ContainerStyled = styled.section`
   display: flex;
   flex-wrap: wrap;
@@ -60,7 +60,6 @@ const SmallBoxStyled = styled.div`
       ? 'var(--darkyellow)'
       : 'var(--darkyellow)'};
 `
-
 const MediumBoxStyled = styled.div`
   border: 2px solid var(--lightpink);
   background-color: var(--lightpink);
@@ -69,7 +68,6 @@ const MediumBoxStyled = styled.div`
   height: 90px;
   margin: 5px;
 `
-
 const LargeBoxStyled = styled.div`
   display: flex;
   border-radius: 10px;
@@ -83,29 +81,12 @@ const LargeBoxStyled = styled.div`
       ? 'var(--font-color-white)'
       : 'var(--font-color-white)'};
 `
-
 const ImageStyled = styled.img`
   border-radius: 50px;
   width: 100px;
   height: 100px;
   margin: 6px;
   object-fit: cover;
-`
-
-const StartButtonStyled = styled.button`
-  color: var(--font-color-white);
-  font-family: var(--font-weight-light);
-  font-size: 20px;
-  background: var(--darkgreen);
-  border-radius: 35px;
-  box-shadow: 0 3px 10px #0000008b;
-  width: 140px;
-  height: 75px;
-  text-align: center;
-  display: block;
-  margin: auto;
-  border: none;
-  cursor: pointer;
 `
 const TextStyled = styled.p`
   color: var(--font-color-white);

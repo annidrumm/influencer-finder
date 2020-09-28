@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components/macro'
 import { useHistory } from 'react-router-dom'
 import HeaderCreateProfile from '../Header/HeaderCreateProfile'
+import Button from '../Button/Button'
 
 export default function CreateProfile({ onCreateProfile }) {
   const history = useHistory()
@@ -83,11 +84,10 @@ export default function CreateProfile({ onCreateProfile }) {
             id="languages"
             placeholder="German, English"
             required
+            style={{ marginBottom: '35px' }}
           />
 
-          <SubmitButtonStyled value="Create profile" type="submit">
-            Submit
-          </SubmitButtonStyled>
+          <Button headline="Submit" value="Create profile" type="submit" />
         </FormStyled>
       </ContainerStyled>
     </main>
@@ -122,29 +122,9 @@ export default function CreateProfile({ onCreateProfile }) {
 const ContainerStyled = styled.section`
   margin: auto;
   display: block;
-  margin: 30px 0;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-`
-
-const SubmitButtonStyled = styled.button`
-  color: var(--font-color-white);
-  font-family: var(--font-weight-light);
-  font-size: 18px;
-  background: var(--darkgreen);
-  border: var(--darkgreen);
-  box-shadow: 0 3px 10px var(--boxshadow-color);
-  border-radius: 40px;
-  width: 130px;
-  height: 75px;
-  text-align: center;
-  display: block;
-  border: none;
-  margin: 30px 0;
-  margin-right: auto;
-  margin-left: auto;
-  cursor: pointer;
 `
 
 const FormStyled = styled.form`

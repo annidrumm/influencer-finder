@@ -38,7 +38,9 @@ export default function InfluencerList({ influencerData, onFavouriteClick }) {
                 Languages: {profile.languages.join(', ')}
               </DetailItemStyled>
             </DetailListStyled>
-            <Button headline="Contact" />
+            <AnchorStyled href="mailto:influencer@gmail.com">
+              <Button headline="Contact" />
+            </AnchorStyled>
           </section>
         )
       })}
@@ -94,6 +96,9 @@ const DetailItemStyled = styled.li`
   letter-spacing: 1px;
   margin: 10px 0;
   position: relative;
+`
+const AnchorStyled = styled.a`
+  text-decoration: none;
 `
 
 InfluencerList.propTypes = {

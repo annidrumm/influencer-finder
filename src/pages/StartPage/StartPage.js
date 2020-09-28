@@ -10,15 +10,15 @@ export default function StartPage() {
   return (
     <WrapperStyled>
       <ContainerStyled>
-        <Box1Styled></Box1Styled>
-        <Image2Styled src={NicoMarks}></Image2Styled>
-        <Box3Styled></Box3Styled>
-        <Image4Styled src={Lena}></Image4Styled>
-        <Box5Styled></Box5Styled>
-        <Image6Styled src={VeganPaula}></Image6Styled>
-        <Box7Styled></Box7Styled>
-        <Image8Styled src={LouLou}></Image8Styled>
-        <Box9Styled></Box9Styled>
+        <LargeBoxStyled box="green"></LargeBoxStyled>
+        <ImageStyled src={NicoMarks}></ImageStyled>
+        <SmallBoxStyled box="blue"></SmallBoxStyled>
+        <ImageStyled src={Lena}></ImageStyled>
+        <LargeBoxStyled box="white"></LargeBoxStyled>
+        <ImageStyled src={VeganPaula}></ImageStyled>
+        <SmallBoxStyled box="yellow"></SmallBoxStyled>
+        <ImageStyled src={LouLou}></ImageStyled>
+        <MediumBoxStyled box="pink"></MediumBoxStyled>
       </ContainerStyled>
       <TextContainerStyled>
         <TextStyled>
@@ -44,75 +44,24 @@ const WrapperStyled = styled.section`
 `
 
 const ContainerStyled = styled.section`
-  display: flexbox;
-  flex-flow: row wrap;
-`
-
-const Box1Styled = styled.div`
   display: flex;
-  border: 2px solid var(--darkgreen);
-  background-color: var(--darkgreen);
-  border-radius: 10px;
-  margin: 5px;
-  width: 130px;
-  height: 90px;
+  flex-wrap: wrap;
 `
-
-const Image2Styled = styled.img`
-  border-radius: 50px;
-  width: 100px;
-  height: 100px;
-  margin: 6px;
-  object-fit: cover;
-`
-const Box3Styled = styled.div`
-  border: 2px solid var(--lightblue);
+const SmallBoxStyled = styled.div`
   background-color: var(--lightblue);
   border-radius: 10px;
   margin: 5px;
-  width: 100px;
-  height: 90px;
-`
-
-const Image4Styled = styled.img`
-  border-radius: 50px;
-  width: 100px;
-  height: 100px;
-  margin: 6px;
-  object-fit: cover;
-`
-const Box5Styled = styled.div`
-  border: 2px solid var(--font-color-white);
-  background-color: var(--font-color-white);
-  border-radius: 10px;
-  width: 130px;
-  height: 90px;
-  margin: 5px;
-`
-const Image6Styled = styled.img`
-  border-radius: 50px;
-  width: 100px;
-  height: 100px;
-  margin: 6px;
-  object-fit: cover;
-`
-const Box7Styled = styled.div`
-  border: 2px solid var(--darkyellow);
-  background-color: var(--darkyellow);
-  border-radius: 10px;
   width: 110px;
   height: 90px;
-  margin: 5px;
+  background-color: ${({ box }) =>
+    box === 'blue'
+      ? 'var(--lightblue)'
+      : box === 'yellow'
+      ? 'var(--darkyellow)'
+      : 'var(--darkyellow)'};
 `
 
-const Image8Styled = styled.img`
-  border-radius: 50px;
-  width: 100px;
-  height: 100px;
-  margin: 6px;
-  object-fit: cover;
-`
-const Box9Styled = styled.div`
+const MediumBoxStyled = styled.div`
   border: 2px solid var(--lightpink);
   background-color: var(--lightpink);
   border-radius: 10px;
@@ -121,12 +70,33 @@ const Box9Styled = styled.div`
   margin: 5px;
 `
 
+const LargeBoxStyled = styled.div`
+  display: flex;
+  border-radius: 10px;
+  margin: 5px;
+  width: 130px;
+  height: 90px;
+  background-color: ${({ box }) =>
+    box === 'green'
+      ? 'var(--darkgreen)'
+      : box === 'white'
+      ? 'var(--font-color-white)'
+      : 'var(--font-color-white)'};
+`
+
+const ImageStyled = styled.img`
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  margin: 6px;
+  object-fit: cover;
+`
+
 const StartButtonStyled = styled.button`
   color: var(--font-color-white);
   font-family: var(--font-weight-light);
   font-size: 20px;
   background: var(--darkgreen);
-  border: var(--darkgreen);
   border-radius: 35px;
   box-shadow: 0 3px 10px #0000008b;
   width: 140px;
@@ -146,6 +116,7 @@ const TextStyled = styled.p`
   word-spacing: 0.2em;
 `
 const TextContainerStyled = styled.section`
-  margin-left: 60px;
-  margin-bottom: 35px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 25px;
 `

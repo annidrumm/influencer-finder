@@ -13,7 +13,7 @@ exports[`renders App correctly 1`] = `
         back.svg
       </svg>
       <h2
-        className="sc-AxirZ cHiglw"
+        className="sc-AxirZ cecVaG"
       >
         Categories
       </h2>
@@ -23,7 +23,7 @@ exports[`renders App correctly 1`] = `
     className="CategoryButtons__SectionStyled-fe33yf-1 cjRsGv"
   >
     <section
-      className="CategoryButtons__ContainerStyled-fe33yf-0 dAzUiW"
+      className="CategoryButtons__ContainerStyled-fe33yf-0 ggAkgj"
     >
       <section>
         <a

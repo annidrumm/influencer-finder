@@ -6,6 +6,6 @@ export default {
   component: CreateProfile,
 }
 
-export const createProfile = () => {
+export const fullPage = () => {
   return <CreateProfile />
 }

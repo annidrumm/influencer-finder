@@ -42,7 +42,6 @@ const HeadlineStyled = styled.h2`
   display: inline;
   font-weight: 300;
   color: var(--font-color-white);
-  border-bottom: 1px solid var(--darkgreen);
   padding-bottom: 5px;
   margin: 0 auto;
   max-width: 300px;

@@ -6,6 +6,7 @@ exports[`FavouriteButton renders FavouriteButton correctly 1`] = `
     className="FavouriteButton__ButtonStyled-sc-1d9fn40-0 eBMGRb"
   >
     <svg
+      className="FavouriteButton__HeartStyled-sc-1d9fn40-1 ejAJbr"
       fill="var(--lightpink)"
     >
       heart.svg

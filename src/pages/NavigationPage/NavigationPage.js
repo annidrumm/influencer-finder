@@ -31,13 +31,13 @@ export default function NavigationPage() {
 
 const ContainerStyled = styled.section`
   padding: 30px 0 30px 0;
-  margin: 30px auto;
+  display: grid;
+  place-items: center;
 `
 const ButtonStyled = styled.button`
   background: transparent;
   cursor: pointer;
   border: none;
-  margin: auto;
   display: block;
   margin-bottom: 50px;
 `
@@ -51,5 +51,4 @@ const H2Styled = styled.h2`
   font-weight: var(--font-weight-light);
   font-size: 22px;
   text-align: center;
-  margin-bottom: 10px;
 `

@@ -6,7 +6,7 @@ export default function FavouriteButton({ onClick, isFavourite }) {
   return (
     <section>
       <ButtonStyled onClick={onClick}>
-        <HeartIcon
+        <HeartStyled
           fill={isFavourite ? 'var(--darkpink)' : 'var(--lightpink)'}
         />
       </ButtonStyled>
@@ -25,4 +25,8 @@ const ButtonStyled = styled.button`
   margin-top: 15px;
   border: none;
   stroke: #e693b5;
+`
+
+const HeartStyled = styled(HeartIcon)`
+  margin-top: 3px;
 `

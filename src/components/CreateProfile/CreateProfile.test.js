@@ -1,70 +1,53 @@
 import React from 'react'
 import 'jest-styled-components'
 import '@testing-library/jest-dom'
-import { render, fireEvent } from '@testing-library/react'
+import { render, fireEvent, waitFor } from '@testing-library/react'
 import CreateProfile from './CreateProfile'
 import HeaderCreateProfile from '../Header/HeaderCreateProfile'
 import { MemoryRouter } from 'react-router-dom'
 
 describe('CreateProfile', () => {
-  it('should watch input correctly', () => {
-    const { container } = render(
+  it('creates a new profile', async () => {
+    const { getByText, getByAltText, getByPlaceholderText } = render(
       <MemoryRouter>
-        <HeaderCreateProfile headline="Create profile" />
-        <CreateProfile />
+        <HeaderCreateProfile headline="Create profile" /> <CreateProfile />
       </MemoryRouter>
     )
 
-    const username = container.querySelector("input[name='username']")
-    const categories = container.querySelector("input[name='categories']")
-    const follower = container.querySelector("input[name='follower']")
-    const gender = container.querySelector("input[name='gender']")
-    const age = container.querySelector("input[name='age']")
-    const location = container.querySelector("input[name='location']")
-    const languages = container.querySelector("input[name='languages']")
-
-    fireEvent.input(username, {
+    fireEvent.input(getByPlaceholderText('fitness4life'), {
       target: {
         value: '@fitness4life',
       },
     })
-    fireEvent.input(categories, {
+    fireEvent.input(getByPlaceholderText('Food, Travel, Fitness, Beauty'), {
       target: {
         value: 'Fitness',
       },
     })
-    fireEvent.input(follower, {
+    fireEvent.input(getByPlaceholderText('1200'), {
       target: {
-        value: '1000',
+        value: '1200',
       },
     })
-    fireEvent.input(gender, {
+    fireEvent.input(getByPlaceholderText('female, male, diverse'), {
       target: {
         value: 'female',
       },
     })
-    fireEvent.input(age, {
+    fireEvent.input(getByPlaceholderText('28'), {
       target: {
         value: '28',
       },
     })
-    fireEvent.input(location, {
+    fireEvent.input(getByPlaceholderText('Berlin'), {
       target: {
         value: 'Hamburg',
       },
     })
-    fireEvent.input(languages, {
+    fireEvent.input(getByPlaceholderText('German, English'), {
       target: {
         value: 'German',
       },
     })
-
-    expect(username.value).toEqual('@fitness4life')
-    expect(categories.value).toEqual('Fitness')
-    expect(follower.value).toEqual('1000')
-    expect(gender.value).toEqual('female')
-    expect(age.value).toEqual('28')
-    expect(location.value).toEqual('Hamburg')
-    expect(languages.value).toEqual('German')
   })
 })

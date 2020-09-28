@@ -75,7 +75,6 @@ export default function CategoryButtons() {
 
 const ContainerStyled = styled.section`
   margin-top: 80px;
-  height: 100vh;
 `
 
 const SectionStyled = styled.section`

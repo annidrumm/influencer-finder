@@ -23,7 +23,7 @@ export default function HeaderCreateProfile({ headline }) {
       <HeadlineStyled>{headline}</HeadlineStyled>
       <Switch>
         <Route>
-          <Link to="/">
+          <Link to="/navigate">
             <NavigateStyled />
           </Link>
         </Route>
@@ -42,7 +42,6 @@ const HeadlineStyled = styled.h2`
   display: inline;
   font-weight: 300;
   color: var(--font-color-white);
-  border-bottom: 1px solid var(--darkgreen);
   padding-bottom: 5px;
   margin: 0 auto;
 `

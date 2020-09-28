@@ -8,17 +8,17 @@ export default function NavigationPage() {
   return (
     <Switch>
       <ContainerStyled>
+        <H2Styled>Set up a profile</H2Styled>
         <Route>
           <Link style={{ textDecoration: 'none' }} to="/create">
-            <H2Styled>Set up a profile</H2Styled>
             <ButtonStyled category="influencer">
               <ImageStyled src={Influencer} alt="instagram influencer" />
             </ButtonStyled>
           </Link>
         </Route>
+        <H2Styled>Browse through profiles</H2Styled>
         <Route>
           <Link style={{ textDecoration: 'none' }} to="/categories">
-            <H2Styled>Browse through profiles</H2Styled>
             <ButtonStyled category="userCompany">
               <ImageStyled src={browse} alt="office" />
             </ButtonStyled>
@@ -30,16 +30,15 @@ export default function NavigationPage() {
 }
 
 const ContainerStyled = styled.section`
-  padding: 30px 0 30px 0;
-  margin: 30px auto;
+  display: grid;
+  place-items: center;
+  margin-top: 50px;
 `
 const ButtonStyled = styled.button`
   background: transparent;
   cursor: pointer;
   border: none;
-  margin: auto;
   display: block;
-  margin-bottom: 50px;
 `
 const ImageStyled = styled.img`
   height: 180px;
@@ -51,5 +50,4 @@ const H2Styled = styled.h2`
   font-weight: var(--font-weight-light);
   font-size: 22px;
   text-align: center;
-  margin-bottom: 10px;
 `

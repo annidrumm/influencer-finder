@@ -6,6 +6,6 @@ export default {
   component: CategoryButtons,
 }
 
-export const allCategories = () => {
+export const categories = () => {
   return <CategoryButtons />
 }

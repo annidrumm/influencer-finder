@@ -1,6 +1,7 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import NavigationPage from './pages/NavigationPage/NavigationPage.js'
+import StartPage from './pages/StartPage/StartPage.js'
 import CreateProfile from './components/CreateProfile/CreateProfile.js'
 import Profile from './components/Profile/Profile.js'
 import CategoryPage from './pages/CategoryPage/CategoryPage.js'
@@ -19,6 +20,9 @@ export default function App() {
     <main>
       <Switch>
         <Route exact path="/">
+          <StartPage />
+        </Route>
+        <Route exact path="/navigate">
           <NavigationPage />
         </Route>
         <Route path="/create">

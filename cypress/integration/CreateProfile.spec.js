@@ -23,8 +23,8 @@ describe('CreateProfile', () => {
     cy.get('#gender').type('female')
   })
   it('should fill age', () => {
-    cy.get('#age').clear()
-    cy.get('#age').type('28')
+    cy.get('#birthday').clear()
+    cy.get('#birthday').type('28')
   })
   it('should fill location', () => {
     cy.get('#location').clear()

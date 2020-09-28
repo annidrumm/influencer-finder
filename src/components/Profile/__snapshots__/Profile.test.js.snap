@@ -6,40 +6,56 @@ exports[`Profile display your profile 1`] = `
     className="Profile__ContainerStyled-sc-1vgne1u-0 csLHlM"
   >
     <h2
-      className="Profile__UsernameStyled-sc-1vgne1u-1 hPkWuw"
+      className="Profile__UsernameStyled-sc-1vgne1u-1 bwYhat"
     />
     <h3
-      className="Profile__CategoriesStyled-sc-1vgne1u-2 dMxBJB"
+      className="Profile__CategoriesStyled-sc-1vgne1u-2 bFlpUe"
     />
   </section>
   <ul
-    className="Profile__DetailListStyled-sc-1vgne1u-3 fvTNMu"
+    className="Profile__DetailListStyled-sc-1vgne1u-3 bbzroo"
   >
     <li
-      className="Profile__DetailItemStyled-sc-1vgne1u-4 eSiUTR"
+      className="Profile__DetailItemStyled-sc-1vgne1u-4 gdXsuA"
     >
-      Follower: 
+      <strong>
+        Follower:
+      </strong>
+       
     </li>
     <li
-      className="Profile__DetailItemStyled-sc-1vgne1u-4 eSiUTR"
+      className="Profile__DetailItemStyled-sc-1vgne1u-4 gdXsuA"
     >
-      Gender: 
+      <strong>
+        Gender:
+      </strong>
+       
     </li>
     <li
-      className="Profile__DetailItemStyled-sc-1vgne1u-4 eSiUTR"
+      className="Profile__DetailItemStyled-sc-1vgne1u-4 gdXsuA"
       id="age"
     >
-      Age: 
+      <strong>
+        Age:
+      </strong>
+       
+       years
     </li>
     <li
-      className="Profile__DetailItemStyled-sc-1vgne1u-4 eSiUTR"
+      className="Profile__DetailItemStyled-sc-1vgne1u-4 gdXsuA"
     >
-      Location: 
+      <strong>
+        Location:
+      </strong>
+       
     </li>
     <li
-      className="Profile__DetailItemStyled-sc-1vgne1u-4 eSiUTR"
+      className="Profile__DetailItemStyled-sc-1vgne1u-4 gdXsuA"
     >
-      Languages: 
+      <strong>
+        Languages:
+      </strong>
+       
     </li>
   </ul>
 </section>

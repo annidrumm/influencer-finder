@@ -13,7 +13,7 @@ exports[`renders App correctly 1`] = `
         back.svg
       </svg>
       <h2
-        className="sc-AxirZ bJXjVj"
+        className="sc-AxirZ bzWpCj"
       >
         Categories
       </h2>
@@ -39,7 +39,7 @@ exports[`renders App correctly 1`] = `
               src="fork.svg"
             />
             <h2
-              className="CategoryButtons__H2Styled-fe33yf-4 fWGdzg"
+              className="CategoryButtons__H2Styled-fe33yf-4 iidzug"
             >
               Food
             </h2>
@@ -58,7 +58,7 @@ exports[`renders App correctly 1`] = `
               src="gym.svg"
             />
             <h2
-              className="CategoryButtons__H2Styled-fe33yf-4 fWGdzg"
+              className="CategoryButtons__H2Styled-fe33yf-4 iidzug"
             >
               Fitness
             </h2>
@@ -78,7 +78,7 @@ exports[`renders App correctly 1`] = `
               src="beauty.svg"
             />
             <h2
-              className="CategoryButtons__H2Styled-fe33yf-4 fWGdzg"
+              className="CategoryButtons__H2Styled-fe33yf-4 iidzug"
             >
               Beauty
             </h2>
@@ -96,7 +96,7 @@ exports[`renders App correctly 1`] = `
               src="mannequin.svg"
             />
             <h2
-              className="CategoryButtons__H2Styled-fe33yf-4 fWGdzg"
+              className="CategoryButtons__H2Styled-fe33yf-4 iidzug"
             >
               Fashion
             </h2>
@@ -116,7 +116,7 @@ exports[`renders App correctly 1`] = `
               src="vase.svg"
             />
             <h2
-              className="CategoryButtons__H2Styled-fe33yf-4 fWGdzg"
+              className="CategoryButtons__H2Styled-fe33yf-4 iidzug"
             >
               Interior
             </h2>
@@ -134,7 +134,7 @@ exports[`renders App correctly 1`] = `
               src="plane.svg"
             />
             <h2
-              className="CategoryButtons__H2Styled-fe33yf-4 fWGdzg"
+              className="CategoryButtons__H2Styled-fe33yf-4 iidzug"
             >
               Travel
             </h2>

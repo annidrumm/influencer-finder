@@ -33,7 +33,7 @@ const Header = styled.section`
 const HeadlineStyled = styled.h2`
   display: flex;
   font-weight: 300;
-  color: var(--font-color-white);
+  color: var(--main-font-color);
   padding-bottom: 5px;
   margin: 20px 110px auto auto;
   align-items: center;

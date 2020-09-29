@@ -78,8 +78,8 @@ const LargeBoxStyled = styled.div`
     box === 'green'
       ? 'var(--darkgreen)'
       : box === 'white'
-      ? 'var(--font-color-white)'
-      : 'var(--font-color-white)'};
+      ? 'var(--main-font-color)'
+      : 'var(--main-font-color)'};
 `
 const ImageStyled = styled.img`
   border-radius: 50px;
@@ -89,7 +89,7 @@ const ImageStyled = styled.img`
   object-fit: cover;
 `
 const TextStyled = styled.p`
-  color: var(--font-color-white);
+  color: var(--main-font-color);
   font-family: var(--font-weight-light);
   font-size: 20px;
   text-align: left;

@@ -2,6 +2,6 @@
 
 exports[`Button renders Button correctly 1`] = `
 <button
-  className="Button__ButtonStyled-kr25vp-0 cfwKBq"
+  className="Button__ButtonStyled-kr25vp-0 hVIQhu"
 />
 `;

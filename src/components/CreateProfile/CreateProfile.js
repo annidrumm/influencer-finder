@@ -139,4 +139,6 @@ const InputStyled = styled.input`
   padding: 10px;
   border: none;
   box-shadow: 1px 1px 4px 1px rgb(58, 57, 57);
+  display: grid;
+  place-items: center;
 `

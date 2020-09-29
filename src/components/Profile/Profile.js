@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components/macro'
+import defaultPicture from '../../icons/default-image.svg'
 
 export default function Profile({
   username,
@@ -20,6 +21,7 @@ export default function Profile({
   return (
     <section>
       <ContainerStyled>
+        <ImageStyled src={defaultPicture} />
         <UsernameStyled>{username}</UsernameStyled>
         <CategoriesStyled>{categories}</CategoriesStyled>
       </ContainerStyled>
@@ -46,7 +48,17 @@ export default function Profile({
 
 const ContainerStyled = styled.section`
   background: var(--transparent-blue);
-  height: 200px;
+  height: 250px;
+`
+
+const ImageStyled = styled.img`
+  width: 140px;
+  height: 140px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0 0 0;
+  border-radius: 50%;
 `
 
 const UsernameStyled = styled.h2`
@@ -54,7 +66,7 @@ const UsernameStyled = styled.h2`
   font-weight: var(--font-weight-semibold);
   font-size: 25px;
   text-align: center;
-  padding: 80px 0 0 0;
+  padding: 20px 0 0 0;
   margin-top: 0;
   margin-bottom: 0;
 `

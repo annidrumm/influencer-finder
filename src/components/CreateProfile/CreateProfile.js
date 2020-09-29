@@ -11,85 +11,83 @@ export default function CreateProfile({ onCreateProfile }) {
   }
   return (
     <main>
-      <ContainerStyled>
-        <HeaderCreateProfile headline="Create profile" />
-        <FormStyled onSubmit={handleSubmit}>
-          <LabelStyled htmlFor="username">Username:</LabelStyled>
-          <InputStyled
-            type="text"
-            name="username"
-            id="username"
-            placeholder="fitness4life"
-            required
-          />
+      <HeaderCreateProfile headline="Create profile" />
+      <FormStyled onSubmit={handleSubmit}>
+        <LabelStyled htmlFor="username">Username:</LabelStyled>
+        <InputStyled
+          type="text"
+          name="username"
+          id="username"
+          placeholder="fitness4life"
+          required
+        />
 
-          <LabelStyled htmlFor="categories">Categories: </LabelStyled>
-          <InputStyled
-            type="text"
-            pattern="[a-zA-Z, ]*"
-            name="categories"
-            id="categories"
-            placeholder="Food, Travel, Fitness, Beauty"
-            required
-          />
+        <LabelStyled htmlFor="categories">Categories: </LabelStyled>
+        <InputStyled
+          type="text"
+          pattern="[a-zA-Z, ]*"
+          name="categories"
+          id="categories"
+          placeholder="Food, Travel, Fitness, Beauty"
+          required
+        />
 
-          <LabelStyled htmlFor="follower">Follower:</LabelStyled>
-          <InputStyled
-            type="number"
-            pattern="[0-9k]*"
-            name="follower"
-            id="follower"
-            placeholder="1200"
-            min="1"
-            required
-          />
+        <LabelStyled htmlFor="follower">Follower:</LabelStyled>
+        <InputStyled
+          type="number"
+          pattern="[0-9k]*"
+          name="follower"
+          id="follower"
+          placeholder="1200"
+          min="1"
+          required
+        />
 
-          <LabelStyled htmlFor="gender">Gender:</LabelStyled>
-          <InputStyled
-            type="text"
-            pattern="[a-zA-Z, ]*"
-            name="gender"
-            id="gender"
-            placeholder="female, male, diverse"
-            required
-          />
+        <LabelStyled htmlFor="gender">Gender:</LabelStyled>
+        <InputStyled
+          type="text"
+          pattern="[a-zA-Z, ]*"
+          name="gender"
+          id="gender"
+          placeholder="female, male, diverse"
+          required
+        />
 
-          <LabelStyled htmlFor="age">Age:</LabelStyled>
-          <InputStyled
-            type="number"
-            pattern="[0-9]*"
-            name="birthday"
-            id="birthday"
-            placeholder="28"
-            max="100"
-            min="18"
-            required
-          />
+        <LabelStyled htmlFor="age">Age:</LabelStyled>
+        <InputStyled
+          type="number"
+          pattern="[0-9]*"
+          name="birthday"
+          id="birthday"
+          placeholder="28"
+          max="100"
+          min="18"
+          required
+        />
 
-          <LabelStyled htmlFor="location">Location:</LabelStyled>
-          <InputStyled
-            type="text"
-            pattern="[a-zA-Z, ]*"
-            name="location"
-            id="location"
-            placeholder="Berlin"
-            required
-          />
+        <LabelStyled htmlFor="location">Location:</LabelStyled>
+        <InputStyled
+          type="text"
+          pattern="[a-zA-Z, ]*"
+          name="location"
+          id="location"
+          placeholder="Berlin"
+          required
+        />
 
-          <LabelStyled htmlFor="languages">Languages:</LabelStyled>
-          <InputStyled
-            type="text"
-            pattern="[a-zA-Z, ]*"
-            name="languages"
-            id="languages"
-            placeholder="German, English"
-            required
-            style={{ marginBottom: '35px' }}
-          />
+        <LabelStyled htmlFor="languages">Languages:</LabelStyled>
+        <InputStyled
+          type="text"
+          pattern="[a-zA-Z, ]*"
+          name="languages"
+          id="languages"
+          placeholder="German, English"
+          required
+          style={{ marginBottom: '35px' }}
+        />
 
-          <Button headline="Submit" value="Create profile" type="submit" />
-        </FormStyled>
-      </ContainerStyled>
+        <Button headline="Submit" value="Create profile" type="submit" />
+      </FormStyled>
     </main>
   )
 
@@ -118,12 +116,6 @@ export default function CreateProfile({ onCreateProfile }) {
     routeChange()
   }
 }
-
-const ContainerStyled = styled.section`
-  margin: 0px auto;
-  max-width: 375px;
-  text-align: center;
-`
 
 const FormStyled = styled.form`
   padding: 10px;

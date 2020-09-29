@@ -39,7 +39,7 @@ const HeadlineStyled = styled.h2`
 `
 const ArrowStyled = styled(Arrow)`
   fill: var(--darkgreen);
-  left: 10px;
+  margin-left: 15px;
   margin-top: 25px;
   cursor: pointer;
 `

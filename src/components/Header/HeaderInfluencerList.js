@@ -46,12 +46,12 @@ const HeadlineStyled = styled.h2`
 `
 const ArrowStyled = styled(Arrow)`
   fill: var(--darkgreen);
-  left: 10px;
+  margin-left: 15px;
   margin-top: 25px;
   cursor: pointer;
 `
 const HeartStyled = styled(Heart)`
-  right: 10px;
+  margin-right: 15px;
   margin-top: 25px;
   cursor: pointer;
   fill: var(--darkpink);

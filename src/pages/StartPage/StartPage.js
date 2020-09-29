@@ -40,8 +40,8 @@ export default function StartPage() {
 }
 
 const WrapperStyled = styled.section`
-  margin: 0px auto;
-  max-width: 375px;
+  height: 100vh;
+  overflow-y: hidden;
 `
 const ContainerStyled = styled.section`
   display: flex;

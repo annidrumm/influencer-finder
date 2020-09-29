@@ -40,8 +40,8 @@ export default function StartPage() {
 }
 
 const WrapperStyled = styled.section`
-  height: 100vh;
-  overflow-y: hidden;
+  margin: 0px auto;
+  max-width: 375px;
 `
 const ContainerStyled = styled.section`
   display: flex;
@@ -89,7 +89,7 @@ const ImageStyled = styled.img`
   object-fit: cover;
 `
 const TextStyled = styled.p`
-  color: var(--main-font-color);
+  color: var(--font-color-white);
   font-family: var(--font-weight-light);
   font-size: 20px;
   text-align: left;

@@ -17,7 +17,7 @@ export default createGlobalStyle`
     --darkpink: #E693B5;
     --boxshadow-color: #0000008b;
 
-    --font-color-white: #FFFFFF;
+    --main-font-color: #FFFFFF;
     --font-weight-semibold: 600;
     --font-weight-regular: 400;
     --font-weight-light: 300;
@@ -27,10 +27,11 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 112.5%;
     background: var( --background-darkblue); 
-    color: var(--font-color-white);
+    color: var(--main-font-color);
     margin: 0 auto;
-    /* max-width: 375px; */
+     max-width: 375px; 
     height: 100%;
 }
+
 
 `

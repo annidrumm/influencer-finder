@@ -19,7 +19,7 @@ export default function HeaderCreateProfile({ headline }) {
 
   return (
     <Header>
-      <ArrowStyled onClick={handleClick} />
+      <GoBackButtonStyled onClick={handleClick} />
       <HeadlineStyled>{headline}</HeadlineStyled>
       <Switch>
         <Route>
@@ -35,27 +35,24 @@ export default function HeaderCreateProfile({ headline }) {
 const Header = styled.section`
   display: flex;
   grid-column: 1/3;
-  margin: 20px 0;
 `
 
 const HeadlineStyled = styled.h2`
   display: inline;
   font-weight: 300;
-  color: var(--font-color-white);
+  color: var(--main-font-color);
   padding-bottom: 5px;
-  margin: 0 auto;
+  margin: 20px auto;
 `
-const ArrowStyled = styled(Arrow)`
+const GoBackButtonStyled = styled(Arrow)`
   fill: var(--darkgreen);
-  position: absolute;
-  left: 10%;
-  margin-top: 10px;
+  margin-left: 15px;
+  margin-top: 25px;
   cursor: pointer;
 `
 const NavigateStyled = styled(Navigate)`
-  position: absolute;
-  right: 40px;
-  margin-top: 10px;
+  margin-right: 15px;
+  margin-top: 25px;
   cursor: pointer;
   fill: var(--darkgreen);
 `

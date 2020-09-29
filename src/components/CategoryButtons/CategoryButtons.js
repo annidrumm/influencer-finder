@@ -108,7 +108,7 @@ const IconsStyled = styled.img`
 `
 
 const H2Styled = styled.h2`
-  color: var(--font-color-white);
+  color: var(--main-font-color);
   font-size: 20px;
   font-weight: var(--font-weight-light);
   vertical-align: bottom;

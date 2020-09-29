@@ -18,7 +18,7 @@ export default function HeaderCategoryPage({ headline }) {
   return (
     <main>
       <Header>
-        <ArrowStyled onClick={handleClick} />
+        <GoBackButtonStyled onClick={handleClick} />
         <HeadlineStyled>{headline}</HeadlineStyled>
       </Header>
     </main>
@@ -28,20 +28,19 @@ export default function HeaderCategoryPage({ headline }) {
 const Header = styled.section`
   display: flex;
   grid-column: 1/3;
-  margin: 20px 0;
 `
 
 const HeadlineStyled = styled.h2`
-  display: inline;
+  display: flex;
   font-weight: 300;
-  color: var(--font-color-white);
+  color: var(--main-font-color);
   padding-bottom: 5px;
-  margin: 0 auto;
+  margin: 20px 100px auto auto;
+  align-items: center;
 `
-const ArrowStyled = styled(Arrow)`
+const GoBackButtonStyled = styled(Arrow)`
   fill: var(--darkgreen);
-  position: absolute;
-  left: 10%;
-  margin-top: 10px;
+  margin-left: 15px;
+  margin-top: 25px;
   cursor: pointer;
 `

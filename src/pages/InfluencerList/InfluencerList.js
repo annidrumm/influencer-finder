@@ -6,7 +6,7 @@ import Button from '../../components/Button/Button.js'
 
 export default function InfluencerList({ influencerData, onFavouriteClick }) {
   return (
-    <section className="profiles">
+    <WrapperStyled className="profiles">
       {influencerData?.map((profile) => {
         return (
           <section key={profile.id}>
@@ -44,9 +44,14 @@ export default function InfluencerList({ influencerData, onFavouriteClick }) {
           </section>
         )
       })}
-    </section>
+    </WrapperStyled>
   )
 }
+
+const WrapperStyled = styled.section`
+  margin: 0px auto;
+  max-width: 375px;
+`
 
 const ContainerStyled = styled.section`
   background: var(--transparent-blue);

@@ -11,7 +11,7 @@ export default function Button({ headline }) {
 }
 
 const ButtonStyled = styled.button`
-  color: var(--font-color-white);
+  color: var(--main-font-color);
   font-family: var(--font-weight-light);
   background: var(--darkgreen);
   border: var(--darkgreen);

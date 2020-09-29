@@ -46,7 +46,7 @@ const ImageStyled = styled.img`
   border-radius: 15%;
 `
 const H2Styled = styled.h2`
-  color: var(--font-color-white);
+  color: var(--main-font-color);
   font-weight: var(--font-weight-light);
   font-size: 22px;
   text-align: center;

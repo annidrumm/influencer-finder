@@ -28,7 +28,6 @@ export default function HeaderCategoryPage({ headline }) {
 const Header = styled.section`
   display: flex;
   grid-column: 1/3;
-  margin: 20px 0;
 `
 
 const HeadlineStyled = styled.h2`
@@ -36,12 +35,11 @@ const HeadlineStyled = styled.h2`
   font-weight: 300;
   color: var(--font-color-white);
   padding-bottom: 5px;
-  margin: 0 auto;
+  margin: 20px auto;
 `
 const ArrowStyled = styled(Arrow)`
   fill: var(--darkgreen);
-  position: absolute;
   left: 10px;
-  margin-top: 10px;
+  margin-top: 25px;
   cursor: pointer;
 `

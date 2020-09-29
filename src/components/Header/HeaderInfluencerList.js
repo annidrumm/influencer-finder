@@ -23,7 +23,7 @@ export default function HeaderInfluencerList({ headline }) {
       <HeadlineStyled>{headline}</HeadlineStyled>
       <Switch>
         <Route>
-          <Link to="/favourites">
+          <Link id="favourite-page" to="/favourites">
             <HeartStyled />
           </Link>
         </Route>

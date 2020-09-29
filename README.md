@@ -16,8 +16,8 @@ Are you creating a campaign and need someone to promote it? Most preferably some
 
 ### `Demo`
 
-You view the app here:
-[Demo Version](https://influencer-finder.vercel.app/)
+You can view the app here:
+[Demo Version](https://influencer-finder-9hxrj9djk.vercel.app/)
 
 ## `Tech Stack`
 
@@ -47,4 +47,4 @@ You view the app here:
 5. To run unit and component tests
    `npm test`
 6. To run Cypress tests
-   `npm run cypress`
+   `npm run cypress` and `npm start`

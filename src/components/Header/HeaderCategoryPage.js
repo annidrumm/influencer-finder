@@ -35,7 +35,7 @@ const HeadlineStyled = styled.h2`
   font-weight: 300;
   color: var(--main-font-color);
   padding-bottom: 5px;
-  margin: 20px 110px auto auto;
+  margin: 20px 100px auto auto;
   align-items: center;
 `
 const GoBackButtonStyled = styled(Arrow)`

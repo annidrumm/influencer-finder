@@ -31,11 +31,12 @@ const Header = styled.section`
 `
 
 const HeadlineStyled = styled.h2`
-  display: inline;
+  display: flex;
   font-weight: 300;
   color: var(--font-color-white);
   padding-bottom: 5px;
-  margin: 20px auto;
+  margin: 20px 110px auto auto;
+  align-items: center;
 `
 const ArrowStyled = styled(Arrow)`
   fill: var(--darkgreen);

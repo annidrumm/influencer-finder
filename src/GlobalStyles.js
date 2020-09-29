@@ -29,8 +29,9 @@ body {
     background: var( --background-darkblue); 
     color: var(--font-color-white);
     margin: 0 auto;
-    /* max-width: 375px; */
+     max-width: 375px; 
     height: 100%;
 }
+
 
 `

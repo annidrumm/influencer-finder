@@ -120,10 +120,8 @@ export default function CreateProfile({ onCreateProfile }) {
 }
 
 const ContainerStyled = styled.section`
-  margin: auto;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0px auto;
+  max-width: 375px;
   text-align: center;
 `
 

@@ -44,12 +44,11 @@ const HeadlineStyled = styled.h2`
   color: var(--font-color-white);
   padding-bottom: 5px;
   margin: 0 auto;
-  max-width: 300px;
 `
 const ArrowStyled = styled(Arrow)`
   fill: var(--darkgreen);
   position: absolute;
-  left: 10%;
+  left: 10px;
   margin-top: 10px;
   cursor: pointer;
 `

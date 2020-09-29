@@ -5,7 +5,7 @@ import styled from 'styled-components/macro'
 export default function FavouriteButton({ onClick, isFavourite }) {
   return (
     <section>
-      <ButtonStyled onClick={onClick}>
+      <ButtonStyled id="like-button" onClick={onClick}>
         <HeartStyled
           fill={isFavourite ? 'var(--darkpink)' : 'var(--lightpink)'}
         />

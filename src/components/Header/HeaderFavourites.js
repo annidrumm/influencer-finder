@@ -23,7 +23,7 @@ export default function HeaderFavourites({ headline }) {
       <HeadlineStyled>{headline}</HeadlineStyled>
       <Switch>
         <Route>
-          <Link to="/categories">
+          <Link id="category-link" to="/categories">
             <BrowseStyled />
           </Link>
         </Route>

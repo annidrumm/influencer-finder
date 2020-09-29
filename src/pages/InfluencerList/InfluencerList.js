@@ -39,7 +39,7 @@ export default function InfluencerList({ influencerData, onFavouriteClick }) {
               </DetailItemStyled>
             </DetailListStyled>
             <AnchorStyled href="mailto:influencer@gmail.com">
-              <Button headline="Contact" />
+              <Button id="contact-button" headline="Contact" />
             </AnchorStyled>
           </section>
         )

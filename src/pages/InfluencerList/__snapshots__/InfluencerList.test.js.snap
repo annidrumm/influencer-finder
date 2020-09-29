@@ -124,6 +124,7 @@ exports[`InfluencerList renders influencer details correctly 1`] = `
       <section>
         <button
           className="c5"
+          id="like-button"
           onClick={[Function]}
         >
           <svg
@@ -200,6 +201,7 @@ exports[`InfluencerList renders influencer details correctly 1`] = `
       <section>
         <button
           className="c5"
+          id="like-button"
           onClick={[Function]}
         >
           <svg

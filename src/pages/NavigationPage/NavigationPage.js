@@ -19,7 +19,7 @@ export default function NavigationPage() {
         <H2Styled>Browse through profiles</H2Styled>
         <Route>
           <Link style={{ textDecoration: 'none' }} to="/categories">
-            <ButtonStyled category="userCompany">
+            <ButtonStyled id="button" category="userCompany">
               <ImageStyled src={browse} alt="office" />
             </ButtonStyled>
           </Link>

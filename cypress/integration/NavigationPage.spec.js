@@ -5,7 +5,7 @@ describe('NavigationPage', () => {
     cy.visit('http://localhost:3000/navigate')
   })
   it('should go to CategoryPage', () => {
-    cy.contains('Browse through profiles').click()
+    cy.get('#button').click()
   })
   it('should load Headline', () => {
     cy.contains('Categories')

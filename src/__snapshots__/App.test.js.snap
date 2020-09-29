@@ -7,13 +7,13 @@ exports[`renders App correctly 1`] = `
       className="sc-AxjAm dUszGo"
     >
       <svg
-        className="sc-AxiKw iDrcjI"
+        className="sc-AxiKw isIpfm"
         onClick={[Function]}
       >
         back.svg
       </svg>
       <h2
-        className="sc-AxirZ kyiZEI"
+        className="sc-AxirZ bJXjVj"
       >
         Categories
       </h2>

@@ -19,7 +19,7 @@ export default function HeaderFavourites({ headline }) {
 
   return (
     <Header>
-      <ArrowStyled onClick={handleClick} />
+      <GoBackButtonStyled onClick={handleClick} />
       <HeadlineStyled>{headline}</HeadlineStyled>
       <Switch>
         <Route>
@@ -44,7 +44,7 @@ const HeadlineStyled = styled.h2`
   padding-bottom: 5px;
   margin: 20px auto;
 `
-const ArrowStyled = styled(Arrow)`
+const GoBackButtonStyled = styled(Arrow)`
   fill: var(--darkgreen);
   margin-left: 15px;
   margin-top: 25px;

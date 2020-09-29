@@ -3,20 +3,24 @@
 exports[`Profile display your profile 1`] = `
 <section>
   <section
-    className="Profile__ContainerStyled-sc-1vgne1u-0 csLHlM"
+    className="Profile__ContainerStyled-sc-1vgne1u-0 jQaQPJ"
   >
+    <img
+      className="Profile__ImageStyled-sc-1vgne1u-1 iRYdQZ"
+      src="default-image.svg"
+    />
     <h2
-      className="Profile__UsernameStyled-sc-1vgne1u-1 bwYhat"
+      className="Profile__UsernameStyled-sc-1vgne1u-2 goUbuk"
     />
     <h3
-      className="Profile__CategoriesStyled-sc-1vgne1u-2 bFlpUe"
+      className="Profile__CategoriesStyled-sc-1vgne1u-3 fvfCkL"
     />
   </section>
   <ul
-    className="Profile__DetailListStyled-sc-1vgne1u-3 bbzroo"
+    className="Profile__DetailListStyled-sc-1vgne1u-4 kyWEGX"
   >
     <li
-      className="Profile__DetailItemStyled-sc-1vgne1u-4 gdXsuA"
+      className="Profile__DetailItemStyled-sc-1vgne1u-5 kSFOKB"
     >
       <strong>
         Follower:
@@ -24,7 +28,7 @@ exports[`Profile display your profile 1`] = `
        
     </li>
     <li
-      className="Profile__DetailItemStyled-sc-1vgne1u-4 gdXsuA"
+      className="Profile__DetailItemStyled-sc-1vgne1u-5 kSFOKB"
     >
       <strong>
         Gender:
@@ -32,7 +36,7 @@ exports[`Profile display your profile 1`] = `
        
     </li>
     <li
-      className="Profile__DetailItemStyled-sc-1vgne1u-4 gdXsuA"
+      className="Profile__DetailItemStyled-sc-1vgne1u-5 kSFOKB"
       id="age"
     >
       <strong>
@@ -42,7 +46,7 @@ exports[`Profile display your profile 1`] = `
        years
     </li>
     <li
-      className="Profile__DetailItemStyled-sc-1vgne1u-4 gdXsuA"
+      className="Profile__DetailItemStyled-sc-1vgne1u-5 kSFOKB"
     >
       <strong>
         Location:
@@ -50,7 +54,7 @@ exports[`Profile display your profile 1`] = `
        
     </li>
     <li
-      className="Profile__DetailItemStyled-sc-1vgne1u-4 gdXsuA"
+      className="Profile__DetailItemStyled-sc-1vgne1u-5 kSFOKB"
     >
       <strong>
         Languages:

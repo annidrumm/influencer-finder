@@ -4,16 +4,16 @@ exports[`Headline CategoryPage renders CategoryPage correctly 1`] = `
 <section>
   <main>
     <section
-      className="sc-AxjAm ljJdnD"
+      className="sc-AxjAm dUszGo"
     >
       <svg
-        className="sc-AxiKw iRsRKy"
+        className="sc-AxiKw iDrcjI"
         onClick={[Function]}
       >
         back.svg
       </svg>
       <h2
-        className="sc-AxirZ cecVaG"
+        className="sc-AxirZ kyiZEI"
       >
         Categories
       </h2>
@@ -149,16 +149,16 @@ exports[`Headline CategoryPage renders CategoryPage correctly 1`] = `
 exports[`Headline renders correctly 1`] = `
 <main>
   <section
-    className="sc-AxjAm ljJdnD"
+    className="sc-AxjAm dUszGo"
   >
     <svg
-      className="sc-AxiKw iRsRKy"
+      className="sc-AxiKw iDrcjI"
       onClick={[Function]}
     >
       back.svg
     </svg>
     <h2
-      className="sc-AxirZ cecVaG"
+      className="sc-AxirZ kyiZEI"
     />
   </section>
 </main>

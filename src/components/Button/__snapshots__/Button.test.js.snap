@@ -1,12 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button renders Button correctly 1`] = `
-<a
-  className="Button__AnchorStyled-kr25vp-1 fHyKfv"
-  href="mailto:influencer@gmail.com"
->
-  <button
-    className="Button__ButtonStyled-kr25vp-0 jMPXhI"
-  />
-</a>
+<button
+  className="Button__ButtonStyled-kr25vp-0 cfwKBq"
+/>
 `;

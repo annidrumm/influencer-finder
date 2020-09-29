@@ -4,16 +4,16 @@ exports[`renders App correctly 1`] = `
 <section>
   <main>
     <section
-      className="sc-AxjAm ljJdnD"
+      className="sc-AxjAm dUszGo"
     >
       <svg
-        className="sc-AxiKw iRsRKy"
+        className="sc-AxiKw iDrcjI"
         onClick={[Function]}
       >
         back.svg
       </svg>
       <h2
-        className="sc-AxirZ cecVaG"
+        className="sc-AxirZ kyiZEI"
       >
         Categories
       </h2>

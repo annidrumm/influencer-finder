@@ -13,7 +13,7 @@ exports[`Headline CategoryPage renders CategoryPage correctly 1`] = `
         back.svg
       </svg>
       <h2
-        className="sc-AxirZ bzWpCj"
+        className="sc-AxirZ iIQoai"
       >
         Categories
       </h2>
@@ -158,7 +158,7 @@ exports[`Headline renders correctly 1`] = `
       back.svg
     </svg>
     <h2
-      className="sc-AxirZ bzWpCj"
+      className="sc-AxirZ iIQoai"
     />
   </section>
 </main>

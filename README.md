@@ -17,7 +17,7 @@ Are you creating a campaign and need someone to promote it? Most preferably some
 ### `Demo`
 
 You can view the app here:
-[Demo Version](https://influencer-finder-9hxrj9djk.vercel.app/)
+[Demo Version](https://influencer-finder.vercel.app/)
 
 ## `Tech Stack`
 

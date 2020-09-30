@@ -11,6 +11,7 @@ import HeaderFavourites from './components/Header/HeaderFavourites'
 import HeaderCreateProfile from './components/Header/HeaderCreateProfile'
 import useInfluencers from './hooks/useInfluencers'
 import useProfile from './hooks/useProfile'
+import FavouritePage from './pages/FavouritePage/FavouritePage.js'
 
 export default function App() {
   const [influencers, setInfluencers] = useInfluencers()
@@ -102,7 +103,7 @@ export default function App() {
         </Route>
         <Route path="/favourites">
           <HeaderFavourites headline="Favourites" />
-          <InfluencerList
+          <FavouritePage
             onFavouriteClick={toggleFavourite}
             influencerData={influencers.filter(
               (profile) => profile.isFavourite

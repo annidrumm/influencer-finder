@@ -6,7 +6,7 @@
 
 ## `Description`
 
-### An app to build brand awareness
+### Influencer Finder – an app to build brand awareness
 
 The right influencers can help you spread awareness about your brands by helping you reach out to your target audience. Companies partner with influencers to let more people know about their products without promoting their brand directly.
 

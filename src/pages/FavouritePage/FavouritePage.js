@@ -1,24 +1,17 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
-import FavouriteButton from '../../components/FavouriteButton/FavouriteButton.js'
-import Button from '../../components/Button/Button.js'
+import { ReactComponent as HeartIcon } from '../../icons/heart.svg'
 
 export default function FavouritePage({ influencerData, onFavouriteClick }) {
   return (
     <section className="profiles">
       {influencerData?.map((profile) => {
         return (
-          <section key={profile.id}>
-            {/* <ContainerStyled> */}
+          <WrapperStyled key={profile.id}>
             <ImageStyled src={profile.image} />
             <UsernameStyled>{profile.username}</UsernameStyled>
             <CategoriesStyled>{profile.categories.join(', ')}</CategoriesStyled>
-            <FavouriteButton
-              onClick={() => onFavouriteClick(profile)}
-              isFavourite={profile.isFavourite}
-            />
-            {/* </ContainerStyled> */}
             <DetailListStyled>
               <DetailItemStyled key={profile.username}>
                 Follower: {profile.follower.toLocaleString('en-US')}
@@ -36,20 +29,71 @@ export default function FavouritePage({ influencerData, onFavouriteClick }) {
                 Languages: {profile.languages.join(', ')}
               </DetailItemStyled>
             </DetailListStyled>
-            <AnchorStyled href="mailto:influencer@gmail.com">
-              <Button id="contact-button" headline="Contact" />
-            </AnchorStyled>
-          </section>
+            <ButtonWrapperStyled>
+              <FavouriteButtonStyled
+                id="like-button"
+                onClick={() => onFavouriteClick(profile)}
+                isFavourite={profile.isFavourite}
+              >
+                <HeartStyled
+                  id="like-button"
+                  onClick={() => onFavouriteClick(profile)}
+                  isFavourite={profile.isFavourite}
+                  fill={'var(--darkpink)'}
+                />
+              </FavouriteButtonStyled>
+              <AnchorStyled href="mailto:influencer@gmail.com">
+                <ButtonStyled id="contact-button">Contact</ButtonStyled>
+              </AnchorStyled>
+            </ButtonWrapperStyled>
+          </WrapperStyled>
         )
       })}
     </section>
   )
 }
 
-// const ContainerStyled = styled.section`
-//   background: var(--transparent-blue);
-//   height: 300px;
-// `
+const WrapperStyled = styled.section`
+  border: 1px solid white;
+  border-radius: 15px 50px;
+  margin: 20px;
+  height: 640px;
+`
+
+const ButtonWrapperStyled = styled.section`
+  position: absolute;
+  margin: auto 30px;
+  text-align: center;
+`
+
+const FavouriteButtonStyled = styled.button`
+  background: var(--lightpink);
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  position: relative;
+  stroke: #e693b5;
+  height: 70px;
+  width: 70px;
+  margin: 20px;
+`
+
+const HeartStyled = styled(HeartIcon)``
+
+const ButtonStyled = styled.button`
+  color: var(--main-font-color);
+  font-family: var(--font-weight-light);
+  background: var(--darkgreen);
+  border: var(--darkgreen);
+  box-shadow: 0 3px 10px var(--boxshadow-color);
+  font-size: 18px;
+  border-radius: 40px;
+  width: 120px;
+  height: 75px;
+  position: relative;
+  margin: 20px;
+  cursor: pointer;
+`
 
 const ImageStyled = styled.img`
   width: 120px;
@@ -81,11 +125,11 @@ const CategoriesStyled = styled.h3`
 
 const DetailListStyled = styled.ul`
   text-align: left;
-  margin: 0;
+  margin: 0 auto;
   list-style-type: none;
   font-family: 'Poppins';
   font-weight: var(--font-weight-light);
-  margin: 50px 0 40px 0;
+  margin: 20px 0 30px 0;
   width: 300px;
   margin-left: auto;
   margin-right: auto;

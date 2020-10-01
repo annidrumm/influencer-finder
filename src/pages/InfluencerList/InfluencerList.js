@@ -50,7 +50,7 @@ export default function InfluencerList({ influencerData, onFavouriteClick }) {
 
 const WrapperStyled = styled.section`
   margin: 0px auto;
-  max-width: 375px;
+  max-width: 400px;
 `
 
 const ContainerStyled = styled.section`

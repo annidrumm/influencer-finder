@@ -35,12 +35,7 @@ export default function FavouritePage({ influencerData, onFavouriteClick }) {
                 onClick={() => onFavouriteClick(profile)}
                 isFavourite={profile.isFavourite}
               >
-                <HeartStyled
-                  id="like-button"
-                  onClick={() => onFavouriteClick(profile)}
-                  isFavourite={profile.isFavourite}
-                  fill={'var(--darkpink)'}
-                />
+                <HeartStyled id="like-button" fill={'var(--darkpink)'} />
               </FavouriteButtonStyled>
               <AnchorStyled href="mailto:influencer@gmail.com">
                 <ButtonStyled id="contact-button">Contact</ButtonStyled>
@@ -56,13 +51,10 @@ export default function FavouritePage({ influencerData, onFavouriteClick }) {
 const WrapperStyled = styled.section`
   border: 1px solid white;
   border-radius: 15px 50px;
-  margin: 20px;
-  height: 640px;
+  margin: 10px 20px 30px 20px;
 `
 
 const ButtonWrapperStyled = styled.section`
-  position: absolute;
-  margin: auto 30px;
   text-align: center;
 `
 
@@ -71,8 +63,8 @@ const FavouriteButtonStyled = styled.button`
   border-radius: 50%;
   text-align: center;
   border: none;
-  position: relative;
   stroke: #e693b5;
+  cursor: pointer;
   height: 70px;
   width: 70px;
   margin: 20px;
@@ -90,9 +82,8 @@ const ButtonStyled = styled.button`
   border-radius: 40px;
   width: 120px;
   height: 75px;
-  position: relative;
-  margin: 20px;
   cursor: pointer;
+  margin: 20px;
 `
 
 const ImageStyled = styled.img`
@@ -125,11 +116,9 @@ const CategoriesStyled = styled.h3`
 
 const DetailListStyled = styled.ul`
   text-align: left;
-  margin: 0 auto;
   list-style-type: none;
   font-family: 'Poppins';
   font-weight: var(--font-weight-light);
-  margin: 20px 0 30px 0;
   width: 300px;
   margin-left: auto;
   margin-right: auto;

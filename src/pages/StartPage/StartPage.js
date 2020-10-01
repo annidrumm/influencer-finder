@@ -40,8 +40,7 @@ export default function StartPage() {
 }
 
 const WrapperStyled = styled.section`
-  margin: 0px auto;
-  max-width: 375px;
+  margin: 5px auto;
 `
 const ContainerStyled = styled.section`
   display: flex;

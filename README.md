@@ -2,19 +2,15 @@
 
 > Final project for neuefische web development bootcamp
 
-![influencer-finder](src/images/Headline.png)
-
-## `Description`
-
-### Influencer Finder – an app to build brand awareness
+### An App To Build Brand Awareness
 
 The right influencers can help you spread awareness about your brands by helping you reach out to your target audience. Companies partner with influencers to let more people know about their products without promoting their brand directly.
 
 Are you creating a campaign and need someone to promote it? Most preferably someone adored by millions, who nailed social media to perfection? With this app you can browse through thousands of influencers and find the one that will fit just right.
 
-### Final Design – created in Adobe XD
+### Final Design Created In Adobe XD
 
-![influencer-finder](src/images/app1.png)
+![influencer-finder](src/images/preview-vertical.png)
 
 ### `Demo`
 

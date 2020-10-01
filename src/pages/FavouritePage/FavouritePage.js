@@ -1,26 +1,17 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
-import FavouriteButton from '../../components/FavouriteButton/FavouriteButton.js'
-import Button from '../../components/Button/Button.js'
+import { ReactComponent as HeartIcon } from '../../icons/heart.svg'
 
-export default function InfluencerList({ influencerData, onFavouriteClick }) {
+export default function FavouritePage({ influencerData, onFavouriteClick }) {
   return (
-    <WrapperStyled className="profiles">
+    <section className="profiles">
       {influencerData?.map((profile) => {
         return (
-          <section key={profile.id}>
-            <ContainerStyled>
-              <ImageStyled src={profile.image} />
-              <UsernameStyled>{profile.username}</UsernameStyled>
-              <CategoriesStyled>
-                {profile.categories.join(', ')}
-              </CategoriesStyled>
-              <FavouriteButton
-                onClick={() => onFavouriteClick(profile)}
-                isFavourite={profile.isFavourite}
-              />
-            </ContainerStyled>
+          <WrapperStyled key={profile.id}>
+            <ImageStyled src={profile.image} />
+            <UsernameStyled>{profile.username}</UsernameStyled>
+            <CategoriesStyled>{profile.categories.join(', ')}</CategoriesStyled>
             <DetailListStyled>
               <DetailItemStyled key={profile.username}>
                 Follower: {profile.follower.toLocaleString('en-US')}
@@ -38,24 +29,61 @@ export default function InfluencerList({ influencerData, onFavouriteClick }) {
                 Languages: {profile.languages.join(', ')}
               </DetailItemStyled>
             </DetailListStyled>
-            <AnchorStyled href="mailto:influencer@gmail.com">
-              <Button id="contact-button" headline="Contact" />
-            </AnchorStyled>
-          </section>
+            <ButtonWrapperStyled>
+              <FavouriteButtonStyled
+                id="like-button"
+                onClick={() => onFavouriteClick(profile)}
+                isFavourite={profile.isFavourite}
+              >
+                <HeartStyled id="like-button" fill={'var(--darkpink)'} />
+              </FavouriteButtonStyled>
+              <AnchorStyled href="mailto:influencer@gmail.com">
+                <ButtonStyled id="contact-button">Contact</ButtonStyled>
+              </AnchorStyled>
+            </ButtonWrapperStyled>
+          </WrapperStyled>
         )
       })}
-    </WrapperStyled>
+    </section>
   )
 }
 
 const WrapperStyled = styled.section`
-  margin: 0px auto;
-  max-width: 400px;
+  border: 1px solid white;
+  border-radius: 15px 50px;
+  margin: 10px 20px 30px 20px;
 `
 
-const ContainerStyled = styled.section`
-  background: var(--transparent-blue);
-  height: 300px;
+const ButtonWrapperStyled = styled.section`
+  text-align: center;
+`
+
+const FavouriteButtonStyled = styled.button`
+  background: var(--lightpink);
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  stroke: #e693b5;
+  cursor: pointer;
+  height: 70px;
+  width: 70px;
+  margin: 20px;
+`
+
+const HeartStyled = styled(HeartIcon)``
+
+const ButtonStyled = styled.button`
+  color: var(--main-font-color);
+  font-family: var(--font-weight-light);
+  background: var(--darkgreen);
+  border: var(--darkgreen);
+  box-shadow: 0 3px 10px var(--boxshadow-color);
+  font-size: 18px;
+  border-radius: 40px;
+  width: 120px;
+  height: 75px;
+  cursor: pointer;
+  margin: 20px;
 `
 
 const ImageStyled = styled.img`
@@ -88,11 +116,9 @@ const CategoriesStyled = styled.h3`
 
 const DetailListStyled = styled.ul`
   text-align: left;
-  margin: 0;
   list-style-type: none;
   font-family: 'Poppins';
   font-weight: var(--font-weight-light);
-  margin: 50px 0 40px 0;
   width: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -106,6 +132,6 @@ const AnchorStyled = styled.a`
   text-decoration: none;
 `
 
-InfluencerList.propTypes = {
+FavouritePage.propTypes = {
   influencerData: PropTypes.array,
 }

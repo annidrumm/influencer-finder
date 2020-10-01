@@ -12,6 +12,8 @@ The right influencers can help you spread awareness about your brands by helping
 
 Are you creating a campaign and need someone to promote it? Most preferably someone adored by millions, who nailed social media to perfection? With this app you can browse through thousands of influencers and find the one that will fit just right.
 
+### Final design created in Adobe xd
+
 ![influencer-finder](src/images/app.png)
 
 ### `Demo`

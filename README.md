@@ -10,7 +10,7 @@ Are you creating a campaign and need someone to promote it? Most preferably some
 
 ### Final Design Created In Adobe XD
 
-![influencer-finder](src/images/preview-vertical.png)
+![influencer-finder](src/images/influencer.png)
 
 ### `Demo`
 
